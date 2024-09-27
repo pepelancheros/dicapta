@@ -10,6 +10,13 @@
 
   --c-indigo: #2c3e50;
 
+  --c-gray-300: #eeeeee;
+  --c-gray-500: #808080;
+  --c-gray-700: #3c3c3c;
+
+  --c-blue-300: #046be2;
+  --c-blue-500: #0f52ba;
+
   --c-green: #00bd7e;
 
   --c-divider-light-1: rgba(60, 60, 60, 0.29);
@@ -34,7 +41,7 @@
 
   --color-heading: var(--c-text-light-1);
   --color-text: var(--c-text-light-1);
-  --color-text-secondary: var(--c-green);
+  --color-text-secondary: var(--c-blue-500);
 }
 
 @media (prefers-color-scheme: dark) {

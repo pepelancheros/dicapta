@@ -1,4 +1,4 @@
-@use "@/utils/mixins.scss";
+@use "@/utils/mixins.scss" as *;
 
 // Sizes system in rem to use in the font-sizes, spacing, etc.
 $size-4: pxToRem(4px);

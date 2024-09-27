@@ -21,6 +21,7 @@ import { RouterLink, RouterView } from "vue-router";
   align-items: center;
   width: 100%;
   font-size: 12px;
+  padding: $size-16 $size-32;
 
   a {
     padding: 0 1rem;

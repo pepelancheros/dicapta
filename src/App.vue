@@ -10,9 +10,3 @@ import Navbar from "@/components/Navbar.vue";
 
   <RouterView class="content" />
 </template>
-
-<style scoped>
-header {
-  margin-bottom: 2rem;
-}
-</style>

@@ -3,7 +3,6 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
@@ -11,4 +10,17 @@ a {
   text-decoration: none;
   transition: 0.4s;
   padding: 3px;
+}
+
+button {
+  border: none;
+  background-color: var(--c-blue-500);
+  border-radius: 50px;
+  color: var(--c-white-soft);
+  font-size: 24px;
+  padding: 8px 24px;
+}
+
+button:hover {
+  background-color: var(--c-blue-300);
 }
