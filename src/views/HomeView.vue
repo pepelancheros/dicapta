@@ -90,6 +90,74 @@
       <p class="contact__text">Let us help you reach new markets</p>
       <button class="contact__button">Contact us</button>
     </section>
+    <section class="our-work">
+      <h2 class="our-work__title">Our exceptional work</h2>
+      <div class="our-work__content">
+        <div class="our-work__element">
+          <iframe
+            width="200"
+            height="150"
+            title="Dicapta accessibility"
+            src="https://www.youtube.com/embed/giFtMHZSrjg?si=c2GVQYeq_17-fUWR&amp;wmode=transparent"
+            frameborder="0"
+            class="our-work__iframe"
+          ></iframe>
+          <p class="our-work__text">Accessibility</p>
+        </div>
+        <div class="our-work__element">
+          <iframe
+            width="200"
+            height="150"
+            title="Dicapta technology"
+            src="https://www.youtube.com/embed/yz7WlHlS_Fw?si=5ycJWgXqlMgdgRwM&amp;amp;wmode=transparent"
+            frameborder="0"
+            class="our-work__iframe"
+          ></iframe>
+          <p class="our-work__text">Technology</p>
+        </div>
+        <div class="our-work__element">
+          <iframe
+            width="200"
+            height="150"
+            title="Dicapta media services"
+            src="https://www.youtube.com/embed/RaGw21RNca8?si=jaD5mXXYEh5sx09w&amp;amp;wmode=transparent"
+            frameborder="0"
+            class="our-work__iframe"
+          ></iframe>
+          <p class="our-work__text">Media services</p>
+        </div>
+      </div>
+    </section>
+    <section class="our-partners">
+      <h2 class="our-partners__title">Our partners</h2>
+      <div class="our-partners__content">
+        <img
+          src="@/assets/images/fredrogers.png"
+          alt="fred rogers productions logo"
+          class="our-partners__img"
+        />
+        <img
+          src="@/assets/images/sesame.png"
+          alt="sesame workshop logo"
+          class="our-partners__img"
+        />
+        <img
+          src="@/assets/images/pov.png"
+          alt="pov logo"
+          class="our-partners__img"
+        />
+        <img
+          src="@/assets/images/passport.png"
+          alt="passport to knowledge logo"
+          class="our-partners__img"
+        />
+        <img
+          src="@/assets/images/waterbear.png"
+          alt="water bear logo"
+          class="our-partners__img"
+        />
+      </div>
+    </section>
   </main>
 </template>
 
@@ -132,8 +200,8 @@ main {
   &__title {
     text-align: center;
     color: var(--color-text-secondary);
-    font-size: $size-48;
-    margin-bottom: $size-32;
+    font-size: $size-32;
+    margin-bottom: $size-24;
   }
 
   &__buttons-container {
@@ -213,6 +281,55 @@ main {
   }
 }
 
+.our-work {
+  background-color: var(--c-gray-300);
+  padding: $size-32 0;
+
+  &__title {
+    color: var(--c-blue-500);
+    font-size: $size-32;
+    text-align: center;
+    margin-bottom: $size-32;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $size-768;
+    margin: auto;
+  }
+
+  &__element {
+    margin-bottom: $size-24;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: $size-24;
+  }
+}
+
+.our-partners {
+  padding: $size-32 0;
+
+  &__title {
+    font-size: $size-32;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: $size-384;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 110px;
+  }
+}
 // styles for tablet size (768px) and higher
 @media all and (min-width: 48rem) {
   .banner {
@@ -222,6 +339,10 @@ main {
   }
 
   .services {
+    &__title {
+      font-size: $size-48;
+    }
+
     &__button {
       margin-bottom: $size-48;
     }
@@ -234,7 +355,7 @@ main {
     }
 
     &__button-text {
-      font-size: $size-32;
+      font-size: $size-24;
     }
 
     &__info-container {
@@ -245,6 +366,32 @@ main {
 
     &__info-item {
       margin-bottom: 0;
+    }
+  }
+
+  .our-work {
+    &__title {
+      font-size: $size-48;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__element {
+      margin-bottom: 0;
+    }
+  }
+
+  .our-partners {
+    &__title {
+      font-size: $size-48;
+    }
+
+    &__content {
+      max-width: $size-768;
     }
   }
 }
