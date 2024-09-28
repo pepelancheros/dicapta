@@ -158,8 +158,64 @@
         />
       </div>
     </section>
+    <section class="why">
+      <h2 class="why__title">Why chose Dicapta?</h2>
+      <Carousel class="why__carousel" :autoplay="15000" :wrap-around="true">
+        <Slide v-for="quote in quotes" :key="quote.person">
+          <div class="why__element">
+            <img
+              class="why__quote-icon"
+              src="@/assets/images/quotes.svg"
+              alt="quotation mark icon"
+            />
+            <p class="why__quote-text">{{ quote.text }}</p>
+            <p class="why__quote-info">{{ quote.person }}</p>
+            <p class="why__quote-info">{{ quote.role }}</p>
+            <p class="why__quote-info">{{ quote.place }}</p>
+          </div>
+        </Slide>
+
+        <template #addons>
+          <Navigation />
+          <Pagination />
+        </template>
+      </Carousel>
+    </section>
   </main>
 </template>
+
+<script setup>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { ref } from "vue";
+
+const quotes = ref([
+  {
+    text: "It was essential to providing accommodations in this course that we were able to work with a company willing to get creative, innovate, and share their knowledge of creating accessible digital experiences with us as we navigated a new situation.",
+    person: "Julie Clemetson",
+    role: "University Student Services",
+    place: "Johns Hopkins University",
+  },
+  {
+    text: "Dicapta has been a thoughtful partner who has helped us see opportunities and needs as we work to create content that is both accessible and authentic. I especially appreciate Dicapta’s focus on the Hispanic community and their willingness to provide insight into ways that we can make our content stronger to better serve our audience.",
+    person: "Erin Dodson",
+    role: "Director of Post-Production",
+    place: "Fred Rogers Productions",
+  },
+  {
+    text: "Dicapta was an excellent partner in creating high-quality Spanish language captions and dubbing and Described Video - both English and Spanish - for our 3-hour American Public Television series, “SEARCHING: Our Quest for Meaning in the Age of Science.” For we producers, it was a very easy relationship, and all technical aspects of the quite complex process went forward on schedule and on budget. In many decades of producing for public TV, this was one of the easiest and most successful sub-contracts.",
+    person: "Geoff Haines-Stiles",
+    role: "Co-Founder and CEO",
+    place: "Passport to Knowledge (P2K)",
+  },
+  {
+    text: "I use video description whenever possible, and I am so grateful for it. It allows me to see through someone else's eyes what is happening on the screen.",
+    person: "Judy Mathews, MS",
+    role: "CVRT, Assistive",
+    place: "Technology Specialist",
+  },
+]);
+</script>
 
 <style scoped lang="scss">
 main {
@@ -330,6 +386,83 @@ main {
     width: 110px;
   }
 }
+
+.why {
+  background-color: var(--c-gray-300);
+  padding: $size-32 0;
+
+  &__title {
+    color: var(--c-blue-500);
+    font-size: $size-32;
+    text-align: center;
+    margin-bottom: $size-16;
+  }
+
+  &__carousel {
+    max-width: $size-384;
+    margin: auto;
+  }
+
+  &__element {
+    max-width: $size-256;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--c-blue-700);
+    border-bottom: 4px solid var(--c-blue-700);
+    padding: $size-16 0 $size-24;
+    position: relative;
+    margin-bottom: $size-32;
+
+    &:after,
+    &:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(238, 238, 238, 0);
+      border-top-color: #eeeeee;
+      border-width: 30px;
+      margin-left: -30px;
+    }
+
+    &:before {
+      border-color: rgba(3, 56, 135, 0);
+      border-top-color: #033887;
+      border-width: 36px;
+      margin-left: -36px;
+    }
+  }
+
+  &__quote-icon {
+    width: 80px;
+  }
+
+  &__quote-text {
+    max-width: $size-384;
+    text-align: left;
+    margin: 0 auto $size-24;
+  }
+
+  &__quote-info {
+    text-align: right;
+    color: var(--c-blue-700);
+  }
+}
+
+::v-deep .carousel__next,
+::v-deep .carousel__prev {
+  &:hover {
+    color: var(--c-blue-500);
+    background-color: transparent;
+  }
+}
 // styles for tablet size (768px) and higher
 @media all and (min-width: 48rem) {
   .banner {
@@ -392,6 +525,20 @@ main {
 
     &__content {
       max-width: $size-768;
+    }
+  }
+
+  .why {
+    &__title {
+      font-size: $size-48;
+    }
+
+    &__carousel {
+      max-width: $size-640;
+    }
+
+    &__element {
+      max-width: $size-512;
     }
   }
 }
