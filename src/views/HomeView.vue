@@ -95,8 +95,8 @@
       <div class="our-work__content">
         <div class="our-work__element">
           <iframe
-            width="200"
-            height="150"
+            width="300"
+            height="200"
             title="Dicapta accessibility"
             src="https://www.youtube.com/embed/giFtMHZSrjg?si=c2GVQYeq_17-fUWR&amp;wmode=transparent"
             frameborder="0"
@@ -106,8 +106,8 @@
         </div>
         <div class="our-work__element">
           <iframe
-            width="200"
-            height="150"
+            width="300"
+            height="200"
             title="Dicapta technology"
             src="https://www.youtube.com/embed/yz7WlHlS_Fw?si=5ycJWgXqlMgdgRwM&amp;amp;wmode=transparent"
             frameborder="0"
@@ -117,8 +117,8 @@
         </div>
         <div class="our-work__element">
           <iframe
-            width="200"
-            height="150"
+            width="300"
+            height="200"
             title="Dicapta media services"
             src="https://www.youtube.com/embed/RaGw21RNca8?si=jaD5mXXYEh5sx09w&amp;amp;wmode=transparent"
             frameborder="0"
@@ -244,32 +244,34 @@ main {
 }
 
 .banner {
-  background-color: var(--c-gray-700);
+  background: radial-gradient(var(--c-gray-700), var(--c-black));
   position: relative;
-  height: 400px;
+  height: 500px;
   margin-bottom: $size-32;
 
   &__img {
     width: 100%;
     opacity: 0.8;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
   }
 
   &__text {
     position: absolute;
     top: 60px;
-    left: 50px;
+    left: 140px;
     color: var(--c-white-soft);
     max-width: 300px;
   }
 
   &__text-title {
     font-size: $size-48;
+    font-weight: 500;
   }
 
   &__text-subtitle {
     font-size: $size-16;
+    font-weight: 500;
   }
 }
 
@@ -278,7 +280,7 @@ main {
     text-align: center;
     color: var(--color-text-secondary);
     font-size: $size-32;
-    margin-bottom: $size-24;
+    margin-bottom: $size-16;
   }
 
   &__buttons-container {
@@ -350,7 +352,7 @@ main {
 
 .contact {
   text-align: center;
-  margin: $size-24;
+  margin: $size-48;
 
   &__text {
     font-size: $size-24;
@@ -360,7 +362,7 @@ main {
 
 .our-work {
   background-color: var(--c-gray-300);
-  padding: $size-32 0;
+  padding: $size-24 0 $size-48;
 
   &__title {
     color: var(--c-blue-500);
@@ -373,7 +375,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: $size-768;
+    max-width: $size-1024;
     margin: auto;
   }
 
@@ -404,7 +406,7 @@ main {
   }
 
   &__img {
-    width: 110px;
+    width: 150px;
   }
 }
 
@@ -420,19 +422,19 @@ main {
   }
 
   &__carousel {
-    max-width: $size-384;
+    max-width: $size-640;
     margin: auto;
   }
 
   &__element {
-    max-width: $size-256;
+    max-width: $size-512;
     display: flex;
     flex-direction: column;
     border-top: 4px solid var(--c-blue-700);
     border-bottom: 4px solid var(--c-blue-700);
-    padding: $size-16 0 $size-24;
+    padding: $size-16 $size-16 $size-24;
     position: relative;
-    margin-bottom: $size-32;
+    margin: $size-32;
 
     &:after,
     &:before {
@@ -481,6 +483,7 @@ main {
   padding: $size-32 0;
   margin: auto;
   max-width: 850px;
+  margin-bottom: $size-32;
 
   &__title {
     font-size: $size-32;
@@ -502,8 +505,9 @@ main {
     background-color: transparent;
   }
 }
+
 // styles for tablet size (768px) and higher
-@media all and (min-width: 48rem) {
+@media all and (min-width: $size-768) {
   .banner {
     &__img {
       object-position: 0 30%;
@@ -548,8 +552,8 @@ main {
 
     &__content {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__element {
@@ -563,7 +567,7 @@ main {
     }
 
     &__content {
-      max-width: $size-768;
+      max-width: $size-896;
     }
   }
 
@@ -573,11 +577,20 @@ main {
     }
 
     &__carousel {
-      max-width: $size-640;
+      max-width: $size-896;
     }
 
     &__element {
-      max-width: $size-512;
+      max-width: $size-896;
+    }
+
+    &__quote-text {
+      font-size: $size-16;
+      max-width: $size-640;
+    }
+
+    &__quote-info {
+      font-size: $size-16;
     }
   }
 
@@ -589,6 +602,14 @@ main {
     &__cards-section {
       flex-direction: row;
       align-items: flex-start;
+    }
+  }
+}
+
+@media all and (min-width: $size-896) {
+  .our-work {
+    &__content {
+      flex-direction: row;
     }
   }
 }

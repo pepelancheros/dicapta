@@ -78,7 +78,7 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  padding: $size-16 $size-32;
+  padding: $size-24 $size-32;
   background-color: var(--c-gray-300);
   justify-content: space-between;
 
@@ -102,7 +102,7 @@
   }
 
   &__address-container {
-    margin-left: $size-24;
+    margin: 0 $size-24;
 
     h2 {
       margin-left: 0;
@@ -116,7 +116,7 @@
 }
 
 .logo {
-  max-width: $size-128;
+  max-width: $size-192;
   margin-bottom: $size-4;
 }
 
@@ -128,8 +128,8 @@
     display: flex;
 
     img {
-      height: $size-16;
-      margin-right: $size-4;
+      height: $size-24;
+      margin-right: $size-8;
     }
   }
 }
@@ -141,12 +141,12 @@
   align-items: center;
 
   img {
-    width: $size-64;
+    width: $size-96;
   }
 }
 
 h2 {
-  font-size: $size-12;
+  font-size: $size-16;
   font-weight: 600;
   margin-bottom: $size-12;
   margin-left: $size-4;

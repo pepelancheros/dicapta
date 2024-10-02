@@ -19,6 +19,7 @@ const props = defineProps(["title", "image", "text"]);
   align-items: center;
   margin-top: 80px;
   position: relative;
+  box-shadow: 7px 7px 10px 2px #0000002e;
 
   &__title {
     color: var(--c-white-soft);
