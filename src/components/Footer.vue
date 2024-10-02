@@ -77,6 +77,7 @@
 <style lang="scss">
 .footer {
   display: flex;
+  flex-wrap: wrap;
   padding: $size-16 $size-32;
   background-color: var(--c-gray-300);
   justify-content: space-between;
@@ -85,7 +86,7 @@
     display: flex;
     flex-direction: column;
     max-width: 170px;
-    margin: 0 $size-16;
+    margin: 0 $size-16 $size-16;
 
     &:last-of-type {
       margin-right: 0;
