@@ -181,6 +181,26 @@
         </template>
       </Carousel>
     </section>
+    <section class="whats-new">
+      <h2 class="whats-new__title">Whats new?</h2>
+      <div class="whats-new__cards-section">
+        <NewsCard
+          title="Newsletters"
+          image="src/assets/images/newsletter-sept.jpg"
+          text="September Newsletter"
+        />
+        <NewsCard
+          title="Expert Insights"
+          image="src/assets/images/newsletter-sept.jpg"
+          text="Embracing diversity in audio description"
+        />
+        <NewsCard
+          title="Blog"
+          image="src/assets/images/newsletter-sept.jpg"
+          text="Ushering in a new era of accessibility"
+        />
+      </div>
+    </section>
   </main>
 </template>
 
@@ -188,6 +208,7 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 import { ref } from "vue";
+import NewsCard from "@/components/NewsCard.vue";
 
 const quotes = ref([
   {
@@ -456,6 +477,24 @@ main {
   }
 }
 
+.whats-new {
+  padding: $size-32 0;
+  margin: auto;
+  max-width: 850px;
+
+  &__title {
+    font-size: $size-32;
+    text-align: center;
+  }
+
+  &__cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 ::v-deep .carousel__next,
 ::v-deep .carousel__prev {
   &:hover {
@@ -539,6 +578,17 @@ main {
 
     &__element {
       max-width: $size-512;
+    }
+  }
+
+  .whats-new {
+    &__title {
+      font-size: $size-48;
+    }
+
+    &__cards-section {
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
 }
