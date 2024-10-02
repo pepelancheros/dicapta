@@ -46,7 +46,7 @@ import { RouterLink, RouterView } from "vue-router";
     padding: 0;
 
     img {
-      max-width: 130px;
+      max-width: 180px;
     }
   }
 }
