@@ -9,6 +9,8 @@ import { RouterLink, RouterView } from "vue-router";
     /></RouterLink>
     <div>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/mission">Mission</RouterLink>
+      <RouterLink to="/consulting">Consulting</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </div>
   </nav>
@@ -27,6 +29,7 @@ import { RouterLink, RouterView } from "vue-router";
     padding: 0 1rem;
     border-left: 1px solid var(--color-border);
     color: var(--color-text);
+    font-size: $size-16;
 
     &:first-of-type {
       border: 0;
@@ -46,7 +49,7 @@ import { RouterLink, RouterView } from "vue-router";
     padding: 0;
 
     img {
-      max-width: 256px;
+      max-width: $size-256;
     }
   }
 }

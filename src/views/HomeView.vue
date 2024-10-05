@@ -7,7 +7,7 @@
         alt="A family watches TV and laughs"
       />
       <div class="banner__text">
-        <p class="banner__text-title">DICAPTA</p>
+        <h1 class="banner__text-title">DICAPTA</h1>
         <p class="banner__text-subtitle">
           Disabilities Collaborative Organization, bringing access through the
           power of technology for all.
@@ -46,45 +46,7 @@
           /><span class="services__button-text">Live events accessibility</span>
         </button>
       </div>
-      <div class="services__info-section">
-        <div class="services__info-container">
-          <div class="services__info-item">
-            <div class="services__info-img-container">
-              <img
-                class="services__info-img"
-                src="@/assets/images/video.png"
-                alt="video icon"
-              />
-            </div>
-            <p class="services__info-title">4000+ Hours</p>
-            <p class="services__info-text">ACCESSIBILITY ASSETS PRODUCED</p>
-          </div>
-          <div class="services__info-item">
-            <div class="services__info-img-container">
-              <img
-                class="services__info-img"
-                src="@/assets/images/emergingtechnologies.png"
-                alt="computer and phone icon"
-              />
-            </div>
-            <p class="services__info-title">Emerging Technogies</p>
-            <p class="services__info-text">DEVELOPMENT</p>
-          </div>
-          <div class="services__info-item">
-            <div class="services__info-img-container">
-              <img
-                class="services__info-img"
-                src="@/assets/images/mutilingualexpertise.png"
-                alt="chat icon"
-              />
-            </div>
-            <p class="services__info-title">Multilingual Expertise</p>
-            <p class="services__info-text">
-              ENGLISH, SPANISH, FRENCH AND PORTUGUESE MARKET REACH
-            </p>
-          </div>
-        </div>
-      </div>
+      <RowWithIconsAndText :elements="rowWithIconsArray" />
     </section>
     <section class="contact">
       <p class="contact__text">Let us help you reach new markets</p>
@@ -208,6 +170,7 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 import { ref } from "vue";
+import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import NewsCard from "@/components/NewsCard.vue";
 
 const quotes = ref([
@@ -236,6 +199,27 @@ const quotes = ref([
     place: "Technology Specialist",
   },
 ]);
+
+const rowWithIconsArray = ref([
+  {
+    imageUrl: "src/assets/images/emergingtechnologies.png",
+    imageAlt: "video icon",
+    title: "4000+ Hours",
+    text: "ACCESSIBILITY ASSETS PRODUCED",
+  },
+  {
+    imageUrl: "src/assets/images/emergingtechnologies.png",
+    imageAlt: "computer and phone icon",
+    title: "Emerging Technogies",
+    text: "DEVELOPMENT",
+  },
+  {
+    imageUrl: "src/assets/images/mutilingualexpertise.png",
+    imageAlt: "chat icon",
+    title: "Multilingual Expertise",
+    text: "ENGLISH, SPANISH, FRENCH AND PORTUGUESE MARKET REACH",
+  },
+]);
 </script>
 
 <style scoped lang="scss">
@@ -259,7 +243,7 @@ main {
   &__text {
     position: absolute;
     top: 60px;
-    left: 140px;
+    left: 50px;
     color: var(--c-white-soft);
     max-width: 300px;
   }
@@ -307,46 +291,6 @@ main {
     font-size: $size-24;
     text-align: left;
     color: var(--c-black);
-  }
-
-  &__info-section {
-    background-color: var(--c-gray-300);
-  }
-
-  &__info-container {
-    display: flex;
-    flex-direction: column;
-    padding: $size-64 0;
-    margin: auto;
-    max-width: $size-256;
-  }
-
-  &__info-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 33%;
-    text-align: center;
-    margin-bottom: $size-32;
-  }
-
-  &__info-img-container {
-    height: 70px;
-  }
-
-  &__info-img {
-    width: 60px;
-    margin-bottom: $size-16;
-  }
-
-  &__info-title {
-    font-size: $size-24;
-    font-weight: 500;
-    margin-bottom: $size-12;
-  }
-
-  &__info-subtitle {
-    font-size: $size-16;
   }
 }
 
@@ -512,6 +456,10 @@ main {
     &__img {
       object-position: 0 30%;
     }
+
+    &__text {
+      left: 140px;
+    }
   }
 
   .services {
@@ -532,16 +480,6 @@ main {
 
     &__button-text {
       font-size: $size-24;
-    }
-
-    &__info-container {
-      flex-direction: row;
-      max-width: $size-768;
-      justify-content: space-between;
-    }
-
-    &__info-item {
-      margin-bottom: 0;
     }
   }
 
@@ -567,7 +505,7 @@ main {
     }
 
     &__content {
-      max-width: $size-896;
+      max-width: $size-1024;
     }
   }
 
@@ -577,11 +515,11 @@ main {
     }
 
     &__carousel {
-      max-width: $size-896;
+      max-width: $size-1024;
     }
 
     &__element {
-      max-width: $size-896;
+      max-width: $size-1024;
     }
 
     &__quote-text {

@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   transition: 0.4s;
   padding: 3px;
+  color: var(--c-blue-500);
 }
 
 button {
