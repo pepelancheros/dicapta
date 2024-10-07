@@ -6,13 +6,14 @@
         v-for="element in elements"
         :key="element.title"
       >
-        <div class="row-component__image-container">
+        <div v-if="element.imageUrl" class="row-component__image-container">
           <img
             class="row-component__image"
             :src="element.imageUrl"
             :alt="element.imageAlt"
           />
         </div>
+        <span v-else class="lnr" :class="element.icon"></span>
         <p class="row-component__title">{{ element.title }}</p>
         <p class="row-component__text">{{ element.text }}</p>
       </div>
@@ -28,8 +29,9 @@ const props = defineProps({
     validator: (value) => {
       return value.every(
         (element) =>
-          typeof element.imageUrl === "string" &&
-          typeof element.imageAlt === "string" &&
+          ((typeof element.imageUrl === "string" &&
+            typeof element.imageAlt === "string") ||
+            typeof element.icon) &&
           typeof element.title === "string" &&
           typeof element.text === "string"
       );
@@ -76,6 +78,15 @@ const props = defineProps({
 
   &__text {
     font-size: $size-16;
+  }
+
+  .lnr {
+    font-size: 80px;
+    margin-bottom: $size-16;
+
+    &:before {
+      color: var(--c-blue-500);
+    }
   }
 }
 

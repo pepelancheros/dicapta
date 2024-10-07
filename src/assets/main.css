@@ -1,6 +1,7 @@
 @import "./base.css";
 
 #app {
+  font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   font-weight: normal;
 }
@@ -24,4 +25,14 @@ button {
 button:hover {
   background-color: var(--c-blue-300);
   cursor: pointer;
+}
+
+.title-global,
+h2,
+h1 {
+  font-family: "Hind", sans-serif;
+}
+
+.text-centered {
+  text-align: center;
 }

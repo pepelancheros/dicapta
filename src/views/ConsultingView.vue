@@ -6,7 +6,9 @@
         src="@/assets/images/consulting-banner.png"
         alt="Conference room. A woman holds a phone that shows the All4Access app."
       />
-      <p class="banner__text">Creating more inclusive environments</p>
+      <p class="banner__text title-global">
+        Creating more inclusive environments
+      </p>
     </section>
     <section>
       <h1 class="title">Sensitivity Training and Workshops</h1>
@@ -96,19 +98,19 @@ import TwoColumns from "@/components/TwoColumns.vue";
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "src/assets/images/consulting-tailored-icon.png",
+    imageUrl: "/src/assets/images/consulting-tailored-icon.png",
     imageAlt: "an icon of a ruler and a pencil",
     title: "Tailor-Made",
     text: "Our programs are tailor-made to support your specific goals.",
   },
   {
-    imageUrl: "src/assets/images/consulting-on-site-icon.png",
+    imageUrl: "/src/assets/images/consulting-on-site-icon.png",
     imageAlt: "icon of a person doing a presentation",
     title: "On-Site",
     text: "Your staff will receive on-site training to optimize their work time.",
   },
   {
-    imageUrl: "src/assets/images/consulting-blind.png",
+    imageUrl: "/src/assets/images/consulting-blind.png",
     imageAlt: "icon of a blind person",
     title: "Team-Members with disabilities",
     text: "Improve your staff’s empathy by working face-to-face with team-members with disabilities.",
