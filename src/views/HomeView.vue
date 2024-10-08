@@ -29,7 +29,7 @@
             src="@/assets/images/audiodescription.png"
             alt="audio description icon"
             class="services__button-img"
-          /><span class="services__button-text">Audio description</span>
+          /><span class="services__button-text">Audio Description</span>
         </button>
         <button class="services__button">
           <img
@@ -43,14 +43,14 @@
             src="@/assets/images/liveevents.png"
             alt="live events icon"
             class="services__button-img"
-          /><span class="services__button-text">Live events accessibility</span>
+          /><span class="services__button-text">Live Events Accessibility</span>
         </button>
       </div>
       <RowWithIconsAndText :elements="rowWithIconsArray" />
     </section>
     <section class="contact">
       <p class="contact__text">Let us help you reach new markets</p>
-      <button class="contact__button">Contact us</button>
+      <button class="contact__button">Contact Us</button>
     </section>
     <section class="our-work">
       <h2 class="our-work__title">Our exceptional work</h2>
@@ -121,7 +121,7 @@
       </div>
     </section>
     <section class="why">
-      <h2 class="why__title">Why chose Dicapta?</h2>
+      <h2 class="why__title">Why choose Dicapta?</h2>
       <Carousel class="why__carousel" :autoplay="15000" :wrap-around="true">
         <Slide v-for="quote in quotes" :key="quote.person">
           <div class="why__element">

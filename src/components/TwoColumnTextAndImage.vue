@@ -20,21 +20,32 @@
 </template>
 
 <script setup>
-const {
-  title,
-  buttonText,
-  imageUrl,
-  imageAlt,
-  imageText,
-  imageFirst = false,
-} = defineProps([
-  "title",
-  "buttonText",
-  "imageUrl",
-  "imageAlt",
-  "imageText",
-  "imageFirst",
-]);
+const props = defineProps({
+  title: {
+    type: String,
+    default: "",
+  },
+  buttonText: {
+    type: String,
+    default: "",
+  },
+  imageUrl: {
+    type: String,
+    default: "",
+  },
+  imageAlt: {
+    type: String,
+    default: "",
+  },
+  imageText: {
+    type: String,
+    default: "",
+  },
+  imageFirst: {
+    type: Boolean,
+    default: false,
+  },
+});
 </script>
 
 <style scoped lang="scss">

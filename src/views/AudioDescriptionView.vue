@@ -28,7 +28,7 @@
           frameborder="0"
           allowfullscreen="allowfullscreen"
         ></iframe>
-        <button>Contact us</button>
+        <button>Contact Us</button>
       </template>
     </TwoColumns>
   </div>

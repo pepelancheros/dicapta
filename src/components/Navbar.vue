@@ -11,13 +11,18 @@ import { RouterLink, RouterView } from "vue-router";
       <li><RouterLink to="/">Home</RouterLink></li>
       <li>
         <RouterLink to="/services">Services</RouterLink>
-        <ul>
+        <ul class="navbar__submenu">
+          <li>
+            <RouterLink to="/services/multilingual-dubbing"
+              >Multilingual dubbing</RouterLink
+            >
+          </li>
           <li>
             <RouterLink to="/services/audio-description"
               >Audio description</RouterLink
             >
           </li>
-          <li><RouterLink to="/services/captioning">Captioning</RouterLink></li>
+          <li><RouterLink to="/services/caption">Caption</RouterLink></li>
           <li><RouterLink to="/services/consulting">Consulting</RouterLink></li>
           <li>
             <RouterLink to="/services/media-production"
@@ -28,7 +33,7 @@ import { RouterLink, RouterView } from "vue-router";
       </li>
       <li>
         <RouterLink to="/projects">Projects</RouterLink>
-        <ul>
+        <ul class="navbar__submenu">
           <li>
             <RouterLink to="/projects/all4voicing-lite"
               >All4Voicing lite</RouterLink
@@ -36,11 +41,20 @@ import { RouterLink, RouterView } from "vue-router";
           </li>
         </ul>
       </li>
-      <li><RouterLink to="/resources">Resources</RouterLink></li>
+      <li>
+        <RouterLink to="/resources">Resources</RouterLink>
+        <ul class="navbar__submenu">
+          <li>
+            <RouterLink to="/resources/accessibility-tips"
+              >Accessibility tips</RouterLink
+            >
+          </li>
+        </ul>
+      </li>
       <li><RouterLink to="/news">News</RouterLink></li>
       <li>
         <RouterLink to="/about">About Dicapta</RouterLink>
-        <ul>
+        <ul class="navbar__submenu">
           <li><RouterLink to="/about/mission">Mission</RouterLink></li>
         </ul>
       </li>
@@ -68,6 +82,7 @@ import { RouterLink, RouterView } from "vue-router";
     border-left: 1px solid var(--color-border);
     color: var(--color-text);
     font-size: $size-16;
+    font-weight: 500;
 
     &:first-of-type {
       border: 0;
@@ -93,6 +108,10 @@ import { RouterLink, RouterView } from "vue-router";
 
   &__elements {
     display: flex;
+  }
+
+  &__submenu {
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.12);
   }
 
   ul {

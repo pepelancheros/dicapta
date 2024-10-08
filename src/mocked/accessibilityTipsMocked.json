@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Proper ettiquete for dining with someone with a visual disability",
+      "imgUrl": "/src/assets/images/articles/test1.png",
+      "imgAlt": "",
+      "publishDate": "03 November 2023"
+    },
+    {
+      "id": 2,
+      "title": "Refine your documents with accessible hyperlinks",
+      "imgUrl": "/src/assets/images/articles/test2.png",
+      "imgAlt": "",
+      "publishDate": "03 November 2023"
+    }
+  ]
+}

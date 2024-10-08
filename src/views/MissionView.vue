@@ -144,7 +144,7 @@
         </p>
       </TwoColumnTextAndImage>
     </section>
-    <button class="contact-us-button">Let's keep in touch. Contact us!</button>
+    <button class="contact-us-button">Let's keep in touch. Contact Us!</button>
   </main>
 </template>
 

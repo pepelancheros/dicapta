@@ -86,7 +86,7 @@
           </ul>
         </template>
       </TwoColumns>
-      <button class="contact-button">contact us</button>
+      <button class="contact-button">Contact Us</button>
     </section>
   </main>
 </template>

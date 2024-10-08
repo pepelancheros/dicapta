@@ -10,7 +10,7 @@
           src="/src/assets/images/media-production.jpg"
           alt="A man holds a professional camera."
         />
-        <button>Contact us</button>
+        <button>Contact Us</button>
       </template>
       <template #right-column>
         <h2>
