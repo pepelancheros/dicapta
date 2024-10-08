@@ -39,6 +39,17 @@ import { RouterLink, RouterView } from "vue-router";
               >All4Voicing lite</RouterLink
             >
           </li>
+          <li>
+            <RouterLink to="/projects/integra">Integra</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/projects/all4access">All4Access</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/projects/previous-projects"
+              >Previous projects</RouterLink
+            >
+          </li>
         </ul>
       </li>
       <li>

@@ -13,6 +13,9 @@ import NewsView from "@/views/NewsView.vue";
 import All4VoicingLiteView from "@/views/All4VoicingLiteView.vue";
 import AccessibilityTipsView from "@/views/AccessibilityTipsView.vue";
 import MultilingualDubbingView from "@/views/MultilingualDubbingView.vue";
+import All4AccessView from "@/views/All4AccessView.vue";
+import IntegraView from "@/views/IntegraView.vue";
+import PreviousProjectsView from "@/views/PreviousProjectsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +66,21 @@ const router = createRouter({
           path: "all4voicing-lite",
           component: All4VoicingLiteView,
           name: "all4voicing lite",
+        },
+        {
+          path: "integra",
+          component: IntegraView,
+          name: "integra",
+        },
+        {
+          path: "all4access",
+          component: All4AccessView,
+          name: "all4access",
+        },
+        {
+          path: "previous-projects",
+          component: PreviousProjectsView,
+          name: "previous projects",
         },
       ],
     },
