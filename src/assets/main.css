@@ -33,6 +33,10 @@ h1 {
   font-family: "Hind", sans-serif;
 }
 
+h2 {
+  line-height: 2rem;
+}
+
 .text-centered {
   text-align: center;
 }
