@@ -10,6 +10,7 @@
         :title="article.title"
         :imgUrl="article.imgUrl"
         :imgAlt="article.imgAlt"
+        :publishDate="article.publishDate"
       ></ArticleCard>
     </div>
   </div>
@@ -20,10 +21,6 @@ import ArticleCard from "@/components/ArticleCard.vue";
 import json from "@/mocked/accessibilityTipsMocked.json";
 
 const articles = json.articles;
-
-function mueche() {
-  console.log("json", articles);
-}
 </script>
 
 <style scoped lang="scss">
@@ -32,7 +29,7 @@ function mueche() {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--c-blue-100);
+    background-color: var(--c-gray-300);
     padding: $size-48;
 
     h1 {
@@ -55,8 +52,10 @@ function mueche() {
   }
 
   &__content {
-    padding: $size-24 $size-32;
+    padding: $size-24 $size-64;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 </style>

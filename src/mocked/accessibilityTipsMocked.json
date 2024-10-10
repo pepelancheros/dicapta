@@ -13,6 +13,20 @@
       "imgUrl": "/src/assets/images/articles/test2.png",
       "imgAlt": "",
       "publishDate": "03 November 2023"
+    },
+    {
+      "id": 3,
+      "title": "Browser Accessibility plugins that are useful for everyone",
+      "imgUrl": "/src/assets/images/articles/test3.jpg",
+      "imgAlt": "",
+      "publishDate": "01 November 2023"
+    },
+    {
+      "id": 4,
+      "title": "Why Should You Use Inclusive Language?",
+      "imgUrl": "/src/assets/images/articles/test4.png",
+      "imgAlt": "",
+      "publishDate": "01 November 2023"
     }
   ]
 }
