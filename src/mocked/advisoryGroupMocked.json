@@ -1,0 +1,68 @@
+{
+  "team": [
+    {
+      "name": "Angela Roth",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Barbara Ghammashi",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Carlos Martinez",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Conchita Hernandez",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Corinne Vinopol",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Dean Lermen",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Gabriel Ponte-Fleary",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Howard Rosenblum",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Ileana Rivera",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Jacklyn Packer",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Jo Ann McCann",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Juanita Rodriguez",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Judy Mathews",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Myrna Medina",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Ricardo López",
+      "photo": "/src/assets/images/team/avatar.png"
+    },
+    {
+      "name": "Susan LaVenture",
+      "photo": "/src/assets/images/team/avatar.png"
+    }
+  ]
+}

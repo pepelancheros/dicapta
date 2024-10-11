@@ -16,6 +16,7 @@ import MultilingualDubbingView from "@/views/MultilingualDubbingView.vue";
 import All4AccessView from "@/views/All4AccessView.vue";
 import IntegraView from "@/views/IntegraView.vue";
 import PreviousProjectsView from "@/views/PreviousProjectsView.vue";
+import OurTeamView from "@/views/OurTeamView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -110,6 +111,11 @@ const router = createRouter({
           path: "mission",
           name: "mission",
           component: MissionView,
+        },
+        {
+          path: "our-team",
+          name: "our team",
+          component: OurTeamView,
         },
       ],
     },

@@ -67,6 +67,7 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/about">About Dicapta</RouterLink>
         <ul class="navbar__submenu">
           <li><RouterLink to="/about/mission">Mission</RouterLink></li>
+          <li><RouterLink to="/about/our-team">Our Team</RouterLink></li>
         </ul>
       </li>
     </ul>
