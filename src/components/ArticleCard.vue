@@ -1,5 +1,5 @@
 <template>
-  <div class="article-card">
+  <a class="article-card" :href="link">
     <div class="article-card__img-container">
       <img :src="imgUrl" :alt="imgAlt" />
     </div>
@@ -10,7 +10,7 @@
         >Published: {{ publishDate }}</span
       >
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup>
@@ -32,6 +32,10 @@ const props = defineProps({
     default: "",
   },
   imgAlt: {
+    type: String,
+    default: "",
+  },
+  link: {
     type: String,
     default: "",
   },

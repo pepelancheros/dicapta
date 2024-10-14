@@ -11,6 +11,7 @@
         :imgUrl="article.imgUrl"
         :imgAlt="article.imgAlt"
         :publishDate="article.publishDate"
+        :link="`/resources/accessibility-tips/${article.id}`"
       ></ArticleCard>
     </div>
   </div>

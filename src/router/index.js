@@ -18,6 +18,7 @@ import IntegraView from "@/views/IntegraView.vue";
 import PreviousProjectsView from "@/views/PreviousProjectsView.vue";
 import OurTeamView from "@/views/OurTeamView.vue";
 import OurPartnersView from "@/views/OurPartnersView.vue";
+import ArticleView from "@/views/ArticleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -95,6 +96,11 @@ const router = createRouter({
           path: "accessibility-tips",
           component: AccessibilityTipsView,
           name: "accessibility tips",
+        },
+        {
+          path: "accessibility-tips/:id",
+          component: ArticleView,
+          name: "article",
         },
       ],
     },
