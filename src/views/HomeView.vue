@@ -17,35 +17,37 @@
     <section class="services">
       <h2 class="services__title">Our Services</h2>
       <div class="services__buttons-container">
-        <button class="services__button">
+        <a href="/services/multilingual-dubbing" class="services__button">
           <img
             src="@/assets/images/dubbing.png"
             alt="dubbing icon"
             class="services__button-img"
           /><span class="services__button-text">Dubbing</span>
-        </button>
-        <button class="services__button">
+        </a>
+        <a href="/services/audio-description" class="services__button">
           <img
             src="@/assets/images/audiodescription.png"
             alt="audio description icon"
             class="services__button-img"
           /><span class="services__button-text">Audio Description</span>
-        </button>
-        <button class="services__button">
+        </a>
+        <a href="/services/consulting" class="services__button">
           <img
             src="@/assets/images/consulting.png"
             alt="consulting icon"
             class="services__button-img"
           /><span class="services__button-text">Consulting</span>
-        </button>
-        <button class="services__button">
+        </a>
+        <a href="" class="services__button">
           <img
             src="@/assets/images/liveevents.png"
             alt="live events icon"
             class="services__button-img"
           /><span class="services__button-text">Live Events Accessibility</span>
-        </button>
+        </a>
       </div>
+    </section>
+    <section>
       <RowWithIconsAndText :elements="rowWithIconsArray" />
     </section>
     <section class="contact">
@@ -202,7 +204,7 @@ const quotes = ref([
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "src/assets/images/emergingtechnologies.png",
+    imageUrl: "src/assets/images/video.png",
     imageAlt: "video icon",
     title: "4000+ Hours",
     text: "ACCESSIBILITY ASSETS PRODUCED",
@@ -260,6 +262,8 @@ main {
 }
 
 .services {
+  padding: $size-24 0;
+
   &__title {
     text-align: center;
     color: var(--color-text-secondary);
@@ -280,17 +284,29 @@ main {
     align-items: center;
     flex: 0 50%;
     margin-bottom: $size-32;
+    color: var(--c-black);
+
+    &:hover {
+      font-weight: 500;
+      color: var(--c-blue-500);
+
+      img {
+        width: 110px;
+      }
+    }
   }
 
   &__button-img {
     width: 100px;
+    transition: 1s;
   }
 
   &__button-text {
     margin-left: $size-16;
     font-size: $size-24;
     text-align: left;
-    color: var(--c-black);
+    color: inherit;
+    font-weight: inherit;
   }
 }
 
@@ -306,7 +322,7 @@ main {
 
 .our-work {
   background-color: var(--c-gray-300);
-  padding: $size-24 0 $size-48;
+  padding: $size-48 0;
 
   &__title {
     color: var(--c-blue-500);
@@ -334,7 +350,7 @@ main {
 }
 
 .our-partners {
-  padding: $size-32 0;
+  padding: $size-48 0;
 
   &__title {
     font-size: $size-32;
@@ -356,7 +372,7 @@ main {
 
 .why {
   background-color: var(--c-gray-300);
-  padding: $size-32 0;
+  padding: $size-48 0;
 
   &__title {
     color: var(--c-blue-500);
@@ -424,7 +440,7 @@ main {
 }
 
 .whats-new {
-  padding: $size-32 0;
+  padding: $size-48 0;
   margin: auto;
   max-width: 850px;
   margin-bottom: $size-32;
@@ -463,8 +479,11 @@ main {
   }
 
   .services {
+    padding: $size-48 0;
+
     &__title {
       font-size: $size-48;
+      margin-bottom: $size-48;
     }
 
     &__button {
@@ -484,6 +503,8 @@ main {
   }
 
   .our-work {
+    padding: $size-64 0;
+
     &__title {
       font-size: $size-48;
     }
@@ -500,6 +521,8 @@ main {
   }
 
   .our-partners {
+    padding: $size-64 0;
+
     &__title {
       font-size: $size-48;
     }
@@ -510,6 +533,8 @@ main {
   }
 
   .why {
+    padding: $size-64 0;
+
     &__title {
       font-size: $size-48;
     }
@@ -533,6 +558,8 @@ main {
   }
 
   .whats-new {
+    padding: $size-64 0;
+
     &__title {
       font-size: $size-48;
     }
