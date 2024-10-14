@@ -94,27 +94,27 @@
       <h2 class="our-partners__title">Our partners</h2>
       <div class="our-partners__content">
         <img
-          src="@/assets/images/fredrogers.png"
+          src="@/assets/images/logos/frp.png"
           alt="fred rogers productions logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/sesame.png"
+          src="@/assets/images/logos/sesame-workshop.png"
           alt="sesame workshop logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/pov.png"
+          src="@/assets/images/logos/pov.png"
           alt="pov logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/passport.png"
+          src="@/assets/images/logos/ptk.png"
           alt="passport to knowledge logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/waterbear.png"
+          src="@/assets/images/logos/wb.png"
           alt="water bear logo"
           class="our-partners__img"
         />
@@ -442,8 +442,8 @@ main {
   }
 }
 
-::v-deep .carousel__next,
-::v-deep .carousel__prev {
+:deep(.carousel__next),
+:deep(.carousel__prev) {
   &:hover {
     color: var(--c-blue-500);
     background-color: transparent;
