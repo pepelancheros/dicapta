@@ -46,7 +46,13 @@ const props = defineProps({
 .article-card {
   max-width: $size-384;
   margin: $size-24;
-  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    box-shadow: 0 16px 24px 8px rgba(0, 0, 0, 0.12);
+    max-width: 387px;
+  }
+
   cursor: pointer;
 
   h2 {
