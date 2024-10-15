@@ -39,6 +39,10 @@ h2 {
   line-height: 2rem;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .text-centered {
   text-align: center;
 }

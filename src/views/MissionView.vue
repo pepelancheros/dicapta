@@ -172,10 +172,6 @@ import TwoColumnTextAndImage from "@/components/TwoColumnTextAndImage.vue";
     color: var(--c-white-soft);
     max-width: 550px;
     font-size: $size-48;
-
-    strong {
-      font-weight: 600;
-    }
   }
 }
 

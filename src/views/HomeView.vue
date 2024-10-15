@@ -38,7 +38,7 @@
             class="services__button-img"
           /><span class="services__button-text">Consulting</span>
         </a>
-        <a href="" class="services__button">
+        <a href="/projects/previous-projects" class="services__button">
           <img
             src="@/assets/images/liveevents.png"
             alt="live events icon"

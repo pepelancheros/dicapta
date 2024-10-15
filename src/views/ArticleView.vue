@@ -59,9 +59,5 @@ const currentArticle = articles.filter(
     float: left;
     margin-right: $size-24;
   }
-
-  :deep(strong) {
-    font-weight: 600;
-  }
 }
 </style>
