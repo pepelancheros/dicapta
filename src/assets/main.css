@@ -13,17 +13,21 @@ a {
   color: var(--c-blue-500);
 }
 
-button {
+button,
+.button {
   border: none;
   background-color: var(--c-blue-500);
   border-radius: 50px;
   color: var(--c-white-soft);
   font-size: 24px;
   padding: 8px 24px;
+  text-align: center;
 }
 
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
   background-color: var(--c-blue-300);
   cursor: pointer;
   box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.12);
@@ -45,4 +49,8 @@ strong {
 
 .text-centered {
   text-align: center;
+}
+
+.blue-title {
+  color: var(--c-blue-500);
 }

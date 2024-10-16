@@ -19,6 +19,7 @@ import PreviousProjectsView from "@/views/PreviousProjectsView.vue";
 import OurTeamView from "@/views/OurTeamView.vue";
 import OurPartnersView from "@/views/OurPartnersView.vue";
 import ArticleView from "@/views/ArticleView.vue";
+import TvMovieAccessView from "@/views/TvMovieAccessView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +66,11 @@ const router = createRouter({
       name: "projects",
       component: ProjectsView,
       children: [
+        {
+          path: "tv-movie-access",
+          component: TvMovieAccessView,
+          name: "tv & movie access",
+        },
         {
           path: "all4voicing-lite",
           component: All4VoicingLiteView,

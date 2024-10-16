@@ -144,7 +144,7 @@ const televisionPartners = [
   "/src/assets/images/logos/semillitas.png",
   "/src/assets/images/logos/sesame-workshop.png",
   "/src/assets/images/logos/spf.png",
-  "/src/assets/images/logos/trace.png",
+  "/src/assets/images/logos/trece.png",
   "/src/assets/images/logos/wb.png",
   "/src/assets/images/logos/wipr.png",
   "/src/assets/images/logos/wucf.png",

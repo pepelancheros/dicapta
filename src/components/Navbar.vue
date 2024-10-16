@@ -35,6 +35,11 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/projects">Projects</RouterLink>
         <ul class="navbar__submenu">
           <li>
+            <RouterLink to="/projects/tv-movie-access"
+              >TV & Movie Access</RouterLink
+            >
+          </li>
+          <li>
             <RouterLink to="/projects/all4voicing-lite"
               >All4Voicing lite</RouterLink
             >
