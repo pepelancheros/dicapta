@@ -13,12 +13,12 @@
           <ul class="navbar__submenu">
             <li>
               <RouterLink to="/services/multilingual-dubbing"
-                >Multilingual dubbing</RouterLink
+                >Multilingual Dubbing</RouterLink
               >
             </li>
             <li>
               <RouterLink to="/services/audio-description"
-                >Audio description</RouterLink
+                >Audio Description</RouterLink
               >
             </li>
             <li><RouterLink to="/services/caption">Caption</RouterLink></li>
@@ -27,7 +27,7 @@
             </li>
             <li>
               <RouterLink to="/services/media-production"
-                >Media production</RouterLink
+                >Media Production</RouterLink
               >
             </li>
           </ul>
@@ -44,7 +44,7 @@
             </li>
             <li>
               <RouterLink to="/projects/all4voicing-lite"
-                >All4Voicing lite</RouterLink
+                >All4Voicing Lite</RouterLink
               >
             </li>
             <li>
@@ -55,7 +55,7 @@
             </li>
             <li>
               <RouterLink to="/projects/previous-projects"
-                >Previous projects</RouterLink
+                >Previous Projects</RouterLink
               >
             </li>
           </ul>
@@ -67,7 +67,12 @@
           <ul class="navbar__submenu">
             <li>
               <RouterLink to="/resources/accessibility-tips"
-                >Accessibility tips</RouterLink
+                >Accessibility Tips</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/resources/information-sheets"
+                >Information Sheets</RouterLink
               >
             </li>
           </ul>
@@ -211,6 +216,13 @@
                 to="/resources/accessibility-tips"
                 @click="handleMobileNavElementClick"
                 >Accessibility tips</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/resources/information-sheets"
+                @click="handleMobileNavElementClick"
+                >Information Sheets</RouterLink
               >
             </li>
           </ul>

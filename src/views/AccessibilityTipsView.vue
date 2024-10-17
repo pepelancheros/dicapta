@@ -1,5 +1,5 @@
 <template>
-  <div class="accessibility-tips">
+  <main class="accessibility-tips">
     <div class="accessibility-tips__header">
       <h1>Dicapta Accessibility Tips</h1>
     </div>
@@ -14,7 +14,7 @@
         :link="`/resources/accessibility-tips/${article.id}`"
       ></ArticleCard>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>

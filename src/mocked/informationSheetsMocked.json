@@ -1,0 +1,88 @@
+{
+  "sheets": [
+    {
+      "id": 1,
+      "title": "DeafBlindness in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/deaf-blindness-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/deaf-blindness-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Hispanic Children with Disabilities in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/hispanic-children-with-disabilities-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/hispanic-children-with-disabilities-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Deafness in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/deafness-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/deafness-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 4,
+      "title": "Blindness in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/blindnes-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/blindnes-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 5,
+      "title": "Latinos in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/latinos-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/latinos-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 6,
+      "title": "Latinos with Disabilities in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/latinos-with-disablities-in-the-usa.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/latinos-with-disablities-in-the-usa.pdf"
+    },
+    {
+      "id": 7,
+      "title": "Sensory Disabilities in the USA",
+      "imgUrl": "/src/assets/images/pdf-images/sensory-disabilities-in-the-usa-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/sensory-disabilities-in-the-usa-2022.pdf"
+    },
+    {
+      "id": 8,
+      "title": "Be Our Partner",
+      "imgUrl": "/src/assets/images/pdf-images/be-our-partner.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/be-our-partner.pdf"
+    },
+    {
+      "id": 9,
+      "title": "You Are Our Partner So What Now?",
+      "imgUrl": "/src/assets/images/pdf-images/you-are-our-partner-so-what-now.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/you-are-our-partner-so-what-now.pdf"
+    },
+    {
+      "id": 10,
+      "title": "GoCC4All Emergency Information",
+      "imgUrl": "/src/assets/images/pdf-images/gocc4all-emergency-information-at-your-fingertips.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/gocc4all-emergency-information-at-your-fingertips.pdf"
+    },
+    {
+      "id": 11,
+      "title": "All4Access Effortless Universal Access",
+      "imgUrl": "/src/assets/images/pdf-images/all4access-effortless-universal-access-2022.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/all4access-effortless-universal-access-2022.pdf"
+    },
+    {
+      "id": 12,
+      "title": "Accessible Screenings Guidelines",
+      "imgUrl": "/src/assets/images/pdf-images/accesible-screenings-guidelines-dicapta.png",
+      "imgAlt": "",
+      "pdfUrl": "/src/assets/pdf/accesible-screenings-guidelines-dicapta.pdf"
+    }
+  ]
+}

@@ -20,6 +20,8 @@ import OurTeamView from "@/views/OurTeamView.vue";
 import OurPartnersView from "@/views/OurPartnersView.vue";
 import ArticleView from "@/views/ArticleView.vue";
 import TvMovieAccessView from "@/views/TvMovieAccessView.vue";
+import InformationSheetsView from "@/views/InformationSheetsView.vue";
+import InformationSheetsSpecificView from "@/views/InformationSheetsSpecificView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -107,6 +109,16 @@ const router = createRouter({
           path: "accessibility-tips/:id",
           component: ArticleView,
           name: "article",
+        },
+        {
+          path: "information-sheets",
+          component: InformationSheetsView,
+          name: "information sheets",
+        },
+        {
+          path: "information-sheets/:id",
+          component: InformationSheetsSpecificView,
+          name: "information sheets specific view",
         },
       ],
     },

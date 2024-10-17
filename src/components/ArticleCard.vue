@@ -47,16 +47,24 @@ const props = defineProps({
   max-width: $size-384;
   margin: $size-24;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 0;
 
   &:hover {
     box-shadow: 0 16px 24px 8px rgba(0, 0, 0, 0.12);
     max-width: 387px;
+    border-top: 0.25rem solid var(--c-blue-500);
+
+    h2 {
+      color: var(--c-blue-500);
+    }
   }
 
   cursor: pointer;
 
   h2 {
     font-size: $size-24;
+    color: var(--c-black);
+    line-height: 2rem;
   }
 
   &__img-container {
@@ -79,6 +87,7 @@ const props = defineProps({
     display: block;
     width: 100%;
     text-align: right;
+    color: var(--c-black);
   }
 }
 </style>
