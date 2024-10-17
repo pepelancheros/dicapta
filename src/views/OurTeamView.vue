@@ -114,6 +114,7 @@ const advisoryGroup = advisory.team;
     width: 100%;
     height: 500px;
     object-fit: cover;
+    object-position: 43% 0;
   }
 }
 
@@ -137,6 +138,7 @@ const advisoryGroup = advisory.team;
 
     p {
       margin-bottom: $size-16;
+      padding: 0 $size-16;
     }
   }
 

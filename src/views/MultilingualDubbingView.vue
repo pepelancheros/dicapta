@@ -1,5 +1,5 @@
 <template>
-  <div class="dubbing">
+  <main class="dubbing">
     <h1 class="dubbing__title">Multilingual dubbing</h1>
     <p class="dubbing__subtitle">
       Helps your production reach a greater and diverse audience
@@ -51,7 +51,7 @@
         <button>Contact Us</button>
       </template>
     </TwoColumns>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -81,12 +81,12 @@ const rowWithIconsArray = ref([
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
-    margin-top: $size-192;
+    margin-top: $size-96;
   }
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-24;
   }
 
   .row-element {
@@ -99,6 +99,14 @@ const rowWithIconsArray = ref([
 
   button {
     margin: auto;
+  }
+}
+
+@media all and (min-width: $size-768) {
+  .dubbing {
+    &__title {
+      margin-top: $size-192;
+    }
   }
 }
 </style>

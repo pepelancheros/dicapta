@@ -92,10 +92,10 @@
       <RowWithIconsAndText class="row-element" :elements="rowWithIconsArray" />
       <TwoColumns>
         <template #left-column>
-          <h2>
+          <h3>
             The <a href="https://all4access.com">All4Access</a> clearinghouse
             aims to increase access using technology.
-          </h2>
+          </h3>
           <p>
             The clearinghouse can store and share different types of
             accessibility elements, such as captions, audio description, and
@@ -121,10 +121,10 @@
           />
         </template>
         <template #right-column>
-          <h2>
+          <h3>
             Use the All4Access app on your mobile device to synchronize and play
             accessibility elements associated with media content.
-          </h2>
+          </h3>
           <p>
             With All4Access, users can easily enjoy content with the
             accessibility they need (captions, audio description, ASL, etc.)

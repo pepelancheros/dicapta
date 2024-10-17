@@ -1,5 +1,5 @@
 <template>
-  <div class="all4voicing">
+  <main class="all4voicing">
     <h1 class="all4voicing__title">all4Voicing Lite</h1>
     <p class="all4voicing__subtitle">
       A one-stop shop for making videos accessible to people with visual
@@ -26,7 +26,7 @@
         educational content.
       </p>
     </TwoColumnTextAndImage>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -62,16 +62,27 @@ const rowWithIconsArray = ref([
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
-    margin-top: $size-192;
+    margin-top: $size-96;
+    padding: 0 $size-16;
   }
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-24;
+    padding: 0 $size-16;
   }
 
   &__info {
     padding: $size-64 $size-32;
+  }
+}
+
+// styles for tablet size (768px) and higher
+@media all and (min-width: $size-768) {
+  .all4voicing {
+    &__title {
+      margin-top: $size-192;
+    }
   }
 }
 </style>

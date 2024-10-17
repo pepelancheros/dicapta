@@ -34,13 +34,22 @@ button:focus,
 }
 
 .title-global,
+h3,
 h2,
 h1 {
   font-family: "Hind", sans-serif;
 }
 
-h2 {
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
   line-height: 2rem;
+}
+
+h2 {
+  line-height: 3rem;
+  font-weight: 600;
 }
 
 strong {

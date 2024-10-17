@@ -14,8 +14,15 @@ import Footer from "@/components/Footer.vue";
   <Footer></Footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .content {
-  margin-top: 137px;
+  margin-top: 70px;
+}
+
+// styles for tablet size (768px) and higher
+@media all and (min-width: $size-768) {
+  .content {
+    margin-top: 117px;
+  }
 }
 </style>

@@ -38,7 +38,7 @@
     <div class="partners__gray-section">
       <TwoColumns>
         <template #left-column>
-          <h2>Benefits of being Our Partner include:</h2>
+          <h3>Benefits of being Our Partner include:</h3>
           <ul>
             <li>
               Making your content accessible for good to children with sensory
@@ -76,7 +76,7 @@
     </div>
     <TwoColumns>
       <template #left-column>
-        <h2>Our Partners in Accessibility</h2>
+        <h3>Our Partners in Accessibility</h3>
         <p>
           Our partners are helping us spread the word about sensory disabilities
           issues, campaigning to promote accessible content, publicizing the use
@@ -189,7 +189,7 @@ const breakpoints = {
   }
 
   h1 {
-    margin-top: $size-192;
+    margin-top: $size-96;
   }
 
   &__content {
@@ -226,6 +226,14 @@ const breakpoints = {
   &:hover {
     color: var(--c-blue-500);
     background-color: transparent;
+  }
+}
+
+@media all and (min-width: $size-768) {
+  .partners {
+    h1 {
+      margin-top: $size-192;
+    }
   }
 }
 </style>

@@ -19,10 +19,10 @@
       <RowWithIconsAndText class="row-element" :elements="rowWithIconsArray" />
       <TwoColumns>
         <template #left-column>
-          <h2>
+          <h3>
             Our workshops are designed to educate your team on inclusion and
             foster good customer service for people with disabilities.
-          </h2>
+          </h3>
           <p>
             Our services will expand the knowledge of your employees to equip
             them with a comprehensive understanding of diverse perspectives.
@@ -61,10 +61,10 @@
           />
         </template>
         <template #right-column>
-          <h2>
+          <h3>
             As part of your DEI efforts, it’s crucial to include accessibility
             beyond basic ADA compliance.
-          </h2>
+          </h3>
           <p>
             Our services will expand the knowledge of your employees to equip
             them with a better understanding of diverse perspectives.

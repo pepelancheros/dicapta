@@ -27,24 +27,14 @@ const articles = json.articles;
 <style scoped lang="scss">
 .accessibility-tips {
   &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--c-gray-300);
-    padding: $size-48;
+    padding: $size-16;
 
     h1 {
-      font-size: $size-48;
+      font-size: $size-32;
       font-weight: 600;
-      margin-right: $size-24;
+      text-align: center;
     }
-  }
-
-  &__icon-container {
-    background-color: var(--c-blue-200);
-    height: fit-content;
-    border-radius: 50px;
-    padding: $size-4 $size-8;
   }
 
   &__icon {
@@ -53,10 +43,27 @@ const articles = json.articles;
   }
 
   &__content {
-    padding: $size-24 $size-64;
+    padding: $size-24 $size-16;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+// styles for tablet size (768px) and higher
+@media all and (min-width: $size-768) {
+  .accessibility-tips {
+    &__header {
+      padding: $size-48;
+
+      h1 {
+        font-size: $size-48;
+      }
+    }
+
+    &__content {
+      padding: $size-24 $size-64;
+    }
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="audio-description">
+  <main class="audio-description">
     <h1 class="audio-description__title">Audio description</h1>
     <p class="audio-description__subtitle">
       Services that bring images, videos, movies or any other visual to everyone
@@ -7,10 +7,10 @@
     <RowWithIconsAndText :elements="rowWithIconsArray" />
     <TwoColumns>
       <template #left-column>
-        <h2>
+        <h3>
           Audio description provides people who are blind or have low vision
           with access to video content.
-        </h2>
+        </h3>
         <p>
           Audio description, also known as video description or descriptive
           service, is the narration of key visual elements of a program so that
@@ -31,7 +31,7 @@
         <button>Contact Us</button>
       </template>
     </TwoColumns>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -64,12 +64,22 @@ const rowWithIconsArray = ref([
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
-    margin-top: $size-192;
+    margin-top: $size-96;
+    padding: 0 $size-16;
   }
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-24;
+    padding: 0 $size-16;
+  }
+}
+
+@media all and (min-width: $size-768) {
+  .audio-description {
+    &__title {
+      margin-top: $size-192;
+    }
   }
 }
 </style>

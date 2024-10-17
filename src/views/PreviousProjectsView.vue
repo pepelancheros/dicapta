@@ -16,9 +16,9 @@
       />
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
-          <h2>
+          <h3>
             Reach a wider audience and provide them with a better experience
-          </h2>
+          </h3>
           <p>
             Dicapta has offered interpretation and captioning services across
             the U.S., Canada, Spain, and South America. No matter where you hold
@@ -39,7 +39,7 @@
       </TwoColumns>
     </section>
     <section>
-      <h2 class="previous-projects__title">GoCC4All</h2>
+      <h3 class="previous-projects__title">GoCC4All</h3>
       <p class="previous-projects__subtitle">
         Delivering emergency alerts and TV captions in an accessible way
       </p>
@@ -49,12 +49,12 @@
       />
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
-          <h2>
+          <h3>
             <a href="https://gocc4all.dicaptafoundation.org">GoCC4All</a> is an
             app designed to deliver emergency alerts and TV captions in an
             accessible way to individuals with disabilities, especially those
             who are deaf-blind.
-          </h2>
+          </h3>
           <p>
             The emergency module delivers geolocated alerts from the Integrated
             Public Warning and Warning System (IPAWS). It also permits the
@@ -125,10 +125,10 @@
           </div>
         </template>
         <template #right-column>
-          <h2>
+          <h3>
             Dicapta developed a proprietary administrative platform to monitor
             the company's workflows.
-          </h2>
+          </h3>
           <p>
             From closed captioning to audio description, accessible real-time
             conferences, dubbing, and subtitling, the platform facilitates
@@ -153,7 +153,7 @@
       <RowWithIconsAndText class="row-element" :elements="rowWithIconsOther" />
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
-          <h2>C&amp;CC Cloud &amp; Captioning</h2>
+          <h3>C&amp;CC Cloud &amp; Captioning</h3>
           <p>
             C&amp;CC is an inexpensive and easy way to generate captions made
             possible by integrating machine learning algorithms with a
@@ -177,7 +177,7 @@
           />
         </template>
         <template #right-column>
-          <h2>Closed Captioning Performance Supervisor</h2>
+          <h3>Closed Captioning Performance Supervisor</h3>
           <p>
             Our Closed Captioning Performance Supervisor reviews captions
             delivered in real-time by video broadcasters and provides the
@@ -195,7 +195,7 @@
       </p>
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
-          <h2>Digital Aided Descriptions (DAD) Platform</h2>
+          <h3>Digital Aided Descriptions (DAD) Platform</h3>
           <p>
             The Digital Aided Descriptions (DAD) web-based platform allows
             students to create, as a team, descriptions for images that may
@@ -318,7 +318,8 @@ const rowWithIconsOther = ref([
     margin-top: $size-64;
 
     &--first-title {
-      margin-top: $size-192;
+      margin-top: $size-96;
+      padding: 0 $size-16;
     }
   }
 
@@ -357,6 +358,12 @@ const rowWithIconsOther = ref([
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
   .previous-projects {
+    &__title {
+      &--first-title {
+        margin-top: $size-192;
+      }
+    }
+
     &__container {
       max-width: $size-1024;
       padding: 0 $size-32;

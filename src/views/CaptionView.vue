@@ -1,5 +1,5 @@
 <template>
-  <div class="caption">
+  <main class="caption">
     <section>
       <h1 class="caption__title">Caption</h1>
       <p class="caption__subtitle">
@@ -8,7 +8,7 @@
       <RowWithIconsAndText class="row-element" :elements="rowWithIconsArray" />
       <TwoColumns>
         <template #left-column>
-          <h2>Ask for packages available based on your production needs.</h2>
+          <h3>Ask for packages available based on your production needs.</h3>
           <p>
             Captions are the text displayed over a video and contain all of the
             video's audio information. This feature allows the hearing impaired
@@ -80,7 +80,7 @@
         </template>
       </TwoColumns>
     </section>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -113,7 +113,8 @@ const rowWithIconsArray = ref([
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
-    margin-top: $size-192;
+    margin-top: $size-96;
+    padding: 0 $size-16;
 
     &--no-top-margin {
       margin-top: $size-24;
@@ -122,7 +123,8 @@ const rowWithIconsArray = ref([
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-24;
+    padding: 0 $size-16;
   }
 
   .row-element {
@@ -131,6 +133,14 @@ const rowWithIconsArray = ref([
 
   button {
     margin-top: $size-24;
+  }
+}
+
+@media all and (min-width: $size-768) {
+  .caption {
+    &__title {
+      margin-top: $size-192;
+    }
   }
 }
 </style>

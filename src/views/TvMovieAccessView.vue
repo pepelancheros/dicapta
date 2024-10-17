@@ -209,9 +209,10 @@ const cards = cardsContent.cards;
 }
 
 .informational-text {
-  font-size: $size-24;
+  font-size: $size-16;
   max-width: $size-1280;
   margin: auto;
+  padding: 0 $size-16;
 }
 
 .tv-movie-access {
@@ -226,10 +227,10 @@ const cards = cardsContent.cards;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 30%;
+    max-width: 30%;
 
     img {
-      max-width: 100px;
+      max-width: 60px;
       transition: 0.5s;
     }
 
@@ -237,6 +238,7 @@ const cards = cardsContent.cards;
       color: var(--c-white);
       font-weight: 500;
       text-align: center;
+      font-size: $size-12;
     }
 
     &:hover {
@@ -310,6 +312,10 @@ const cards = cardsContent.cards;
       padding: $size-48 $size-32;
     }
   }
+
+  h2 {
+    line-height: 3rem;
+  }
 }
 
 // styles for tablet size (768px) and higher
@@ -322,6 +328,22 @@ const cards = cardsContent.cards;
     &__text {
       top: 140px;
       left: 140px;
+    }
+  }
+
+  .informational-text {
+    font-size: $size-24;
+  }
+
+  .tv-movie-access {
+    &__contents-element {
+      img {
+        max-width: 100px;
+      }
+
+      p {
+        font-size: $size-16;
+      }
     }
   }
 }

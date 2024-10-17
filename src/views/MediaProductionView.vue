@@ -1,5 +1,5 @@
 <template>
-  <div class="media-production">
+  <main class="media-production">
     <h1 class="media-production__title">Media production</h1>
     <p class="media-production__subtitle">
       Services and Resources for People with Disabilities
@@ -13,11 +13,11 @@
         <button>Contact Us</button>
       </template>
       <template #right-column>
-        <h2>
+        <h3>
           A talented team of filmmakers, producers, and a production and
           post-production infrastructure are ready to support your next media
           project.
-        </h2>
+        </h3>
         <p>
           In addition to scripting and producing proprietary content for
           education, dissemination, and training purposes, Dicapta offers its
@@ -119,7 +119,7 @@
         </template>
       </TwoColumns>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -128,16 +128,18 @@ import TwoColumns from "@/components/TwoColumns.vue";
 
 <style scoped lang="scss">
 .media-production {
-  margin-top: $size-192;
   &__title {
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
+    margin-top: $size-96;
+    padding: 0 $size-16;
   }
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-24;
+    padding: 0 $size-16;
   }
 }
 
@@ -153,8 +155,15 @@ import TwoColumns from "@/components/TwoColumns.vue";
 iframe {
   width: 300px;
 }
+
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
+  .media-production {
+    &__title {
+      margin-top: $size-192;
+    }
+  }
+
   .spacing {
     padding-top: $size-48;
     padding-bottom: $size-32;
