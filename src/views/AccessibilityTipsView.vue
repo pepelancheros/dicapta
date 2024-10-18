@@ -43,10 +43,12 @@ const articles = json.articles;
   }
 
   &__content {
-    padding: $size-24 $size-16;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
+    max-width: $size-1024;
+    margin: auto;
+    padding: $size-48 $size-16;
   }
 }
 
@@ -59,10 +61,6 @@ const articles = json.articles;
       h1 {
         font-size: $size-48;
       }
-    }
-
-    &__content {
-      padding: $size-24 $size-64;
     }
   }
 }

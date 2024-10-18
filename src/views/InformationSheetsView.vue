@@ -4,23 +4,20 @@
       <h1>Information Sheets</h1>
     </div>
     <div class="information-sheets__content">
-      <a
-        :href="`/resources/information-sheets/${sheet.id}`"
-        class="information-sheets__element"
+      <InformationSheetsCard
         v-for="sheet in sheets"
         :key="sheet.id"
-      >
-        <div class="information-sheets__element-title-container">
-          <h2 class="information-sheets__element-title">{{ sheet.title }}</h2>
-        </div>
-        <img :src="sheet.imgUrl" alt="" />
-      </a>
+        :sheetId="sheet.id"
+        :title="sheet.title"
+        :imgUrl="sheet.imgUrl"
+      />
     </div>
   </main>
 </template>
 
 <script setup>
 import json from "@/mocked/informationSheetsMocked.json";
+import InformationSheetsCard from "@/components/InformationSheetsCard.vue";
 
 const sheets = json.sheets;
 </script>
@@ -45,50 +42,6 @@ const sheets = json.sheets;
     max-width: $size-1024;
     margin: auto;
     padding: $size-48 $size-16;
-  }
-
-  &__element {
-    max-width: 300px;
-    margin-bottom: $size-48;
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    img {
-      width: 100%;
-    }
-
-    &:hover {
-      max-width: 310px;
-      box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.24);
-      border-top: 0.25rem solid var(--c-blue-500);
-
-      h2 {
-        color: var(--c-blue-500);
-      }
-    }
-  }
-
-  &__element-title-container {
-    height: 100%;
-    height: -moz-available; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__element-title {
-    color: var(--c-black);
-    font-size: $size-16;
-    line-height: 1.5rem;
-    padding: 12px;
-    text-align: center;
-    margin-bottom: 0;
   }
 }
 

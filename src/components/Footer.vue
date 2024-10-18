@@ -24,10 +24,16 @@
     </div>
     <section class="disclaimer">
       <h2 class="disclaimer__text">Disclaimer</h2>
-      <img
-        src="@/assets/images/ideas-that-work-logo.png"
-        alt="ideas that work logo"
-      />
+      <a
+        href="https://www.ed.gov/about/ed-offices/osers/osep"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="@/assets/images/ideas-that-work-logo.png"
+          alt="ideas that work logo"
+        />
+      </a>
     </section>
     <section class="footer__section">
       <h2>Explore</h2>
@@ -68,7 +74,7 @@
           32708
         </p>
         <p>Call: 407-389-0712<br />Fax: 407-682-1997</p>
-        <p>info@dicapta.complex</p>
+        <p>info@dicapta.com</p>
       </address>
     </section>
   </div>

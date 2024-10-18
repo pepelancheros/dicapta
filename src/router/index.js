@@ -99,28 +99,26 @@ const router = createRouter({
       path: "/resources",
       name: "resources",
       component: ResourcesView,
-      children: [
-        {
-          path: "accessibility-tips",
-          component: AccessibilityTipsView,
-          name: "accessibility tips",
-        },
-        {
-          path: "accessibility-tips/:id",
-          component: ArticleView,
-          name: "article",
-        },
-        {
-          path: "information-sheets",
-          component: InformationSheetsView,
-          name: "information sheets",
-        },
-        {
-          path: "information-sheets/:id",
-          component: InformationSheetsSpecificView,
-          name: "information sheets specific view",
-        },
-      ],
+    },
+    {
+      path: "/resources/accessibility-tips",
+      component: AccessibilityTipsView,
+      name: "accessibility tips",
+    },
+    {
+      path: "/resources/accessibility-tips/:id",
+      component: ArticleView,
+      name: "article",
+    },
+    {
+      path: "/resources/information-sheets",
+      component: InformationSheetsView,
+      name: "information sheets",
+    },
+    {
+      path: "/resources/information-sheets/:id",
+      component: InformationSheetsSpecificView,
+      name: "information sheets specific view",
     },
     {
       path: "/news",

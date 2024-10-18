@@ -44,22 +44,21 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .article-card {
-  max-width: $size-384;
-  margin: $size-24;
+  max-width: 300px;
+  margin-bottom: $size-48;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
   padding: 0;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 16px 24px 8px rgba(0, 0, 0, 0.12);
-    max-width: 387px;
+    max-width: 310px;
     border-top: 0.25rem solid var(--c-blue-500);
 
     h2 {
       color: var(--c-blue-500);
     }
   }
-
-  cursor: pointer;
 
   h2 {
     font-size: $size-24;
