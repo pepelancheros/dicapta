@@ -121,7 +121,10 @@
           >
         </li>
         <li>
-          <RouterLink class="navbar__main-link" to="/services"
+          <RouterLink
+            class="navbar__main-link"
+            to="/services"
+            @click="handleMobileNavElementClick"
             >Services</RouterLink
           >
           <ul class="navbar__submenu">
