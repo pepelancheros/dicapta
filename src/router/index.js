@@ -14,7 +14,6 @@ import All4VoicingLiteView from "@/views/All4VoicingLiteView.vue";
 import AccessibilityTipsView from "@/views/AccessibilityTipsView.vue";
 import MultilingualDubbingView from "@/views/MultilingualDubbingView.vue";
 import All4AccessView from "@/views/All4AccessView.vue";
-import IntegraView from "@/views/IntegraView.vue";
 import PreviousProjectsView from "@/views/PreviousProjectsView.vue";
 import OurTeamView from "@/views/OurTeamView.vue";
 import OurPartnersView from "@/views/OurPartnersView.vue";
@@ -22,6 +21,7 @@ import ArticleView from "@/views/ArticleView.vue";
 import TvMovieAccessView from "@/views/TvMovieAccessView.vue";
 import InformationSheetsView from "@/views/InformationSheetsView.vue";
 import InformationSheetsSpecificView from "@/views/InformationSheetsSpecificView.vue";
+import PressView from "@/views/PressView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +35,7 @@ const router = createRouter({
       path: "/services",
       name: "services",
       component: ServicesView,
+      redirect: "/#services",
       children: [
         {
           path: "multilingual-dubbing",
@@ -67,6 +68,7 @@ const router = createRouter({
       path: "/projects",
       name: "projects",
       component: ProjectsView,
+      redirect: "/projects/tv-movie-access",
       children: [
         {
           path: "tv-movie-access",
@@ -77,11 +79,6 @@ const router = createRouter({
           path: "all4voicing-lite",
           component: All4VoicingLiteView,
           name: "all4voicing lite",
-        },
-        {
-          path: "integra",
-          component: IntegraView,
-          name: "integra",
         },
         {
           path: "all4access",
@@ -99,31 +96,40 @@ const router = createRouter({
       path: "/resources",
       name: "resources",
       component: ResourcesView,
-    },
-    {
-      path: "/resources/accessibility-tips",
-      component: AccessibilityTipsView,
-      name: "accessibility tips",
-    },
-    {
-      path: "/resources/accessibility-tips/:id",
-      component: ArticleView,
-      name: "article",
-    },
-    {
-      path: "/resources/information-sheets",
-      component: InformationSheetsView,
-      name: "information sheets",
-    },
-    {
-      path: "/resources/information-sheets/:id",
-      component: InformationSheetsSpecificView,
-      name: "information sheets specific view",
+      children: [
+        {
+          path: "/resources/accessibility-tips",
+          component: AccessibilityTipsView,
+          name: "accessibility tips",
+        },
+        {
+          path: "/resources/accessibility-tips/:id",
+          component: ArticleView,
+          name: "article",
+        },
+        {
+          path: "/resources/information-sheets",
+          component: InformationSheetsView,
+          name: "information sheets",
+        },
+        {
+          path: "/resources/information-sheets/:id",
+          component: InformationSheetsSpecificView,
+          name: "information sheets specific view",
+        },
+      ],
     },
     {
       path: "/news",
       name: "news",
       component: NewsView,
+      children: [
+        {
+          path: "/news/press",
+          component: PressView,
+          name: "press",
+        },
+      ],
     },
     {
       path: "/about",
@@ -148,6 +154,19 @@ const router = createRouter({
       ],
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 100,
+        behavior: "smooth",
+      };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
 });
 
 export default router;

@@ -1,10 +1,7 @@
 <template>
-  <a
-    :href="`/resources/information-sheets/${sheetId}`"
-    class="information-sheets-card"
-  >
-    <div class="information-sheets-card__title-container">
-      <h2 class="information-sheets-card__title">{{ title }}</h2>
+  <a :href="href" class="generic-card">
+    <div class="generic-card__title-container">
+      <h2 class="generic-card__title">{{ title }}</h2>
     </div>
     <img :src="imgUrl" alt="" />
   </a>
@@ -12,10 +9,6 @@
 
 <script setup>
 const props = defineProps({
-  sheetId: {
-    type: Number,
-    default: 0,
-  },
   title: {
     type: String,
     default: "",
@@ -24,11 +17,15 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  href: {
+    type: String,
+    default: "",
+  },
 });
 </script>
 
 <style scoped lang="scss">
-.information-sheets-card {
+.generic-card {
   max-width: 300px;
   margin-bottom: $size-48;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);

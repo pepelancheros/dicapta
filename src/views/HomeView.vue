@@ -14,7 +14,7 @@
         </p>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <h2 class="services__title">Our Services</h2>
       <div class="services__buttons-container">
         <a href="/services/multilingual-dubbing" class="services__button">

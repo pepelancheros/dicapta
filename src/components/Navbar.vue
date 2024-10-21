@@ -48,9 +48,6 @@
               >
             </li>
             <li>
-              <RouterLink to="/projects/integra">Integra</RouterLink>
-            </li>
-            <li>
               <RouterLink to="/projects/all4access">All4Access</RouterLink>
             </li>
             <li>
@@ -77,7 +74,14 @@
             </li>
           </ul>
         </li>
-        <li><RouterLink to="/news">News</RouterLink></li>
+        <li>
+          <RouterLink class="navbar__main-link" to="/news">News</RouterLink>
+          <ul class="navbar__submenu">
+            <li>
+              <RouterLink to="/news/press">Press</RouterLink>
+            </li>
+          </ul>
+        </li>
         <li>
           <RouterLink class="navbar__main-link" to="/about"
             >About Dicapta</RouterLink
@@ -182,13 +186,6 @@
             </li>
             <li>
               <RouterLink
-                to="/projects/integra"
-                @click="handleMobileNavElementClick"
-                >Integra</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
                 to="/projects/all4access"
                 @click="handleMobileNavElementClick"
                 >All4Access</RouterLink
@@ -231,6 +228,13 @@
           <RouterLink to="/news" @click="handleMobileNavElementClick"
             >News</RouterLink
           >
+          <ul class="navbar__submenu">
+            <li>
+              <RouterLink to="/news/press" @click="handleMobileNavElementClick"
+                >Press</RouterLink
+              >
+            </li>
+          </ul>
         </li>
         <li>
           <RouterLink

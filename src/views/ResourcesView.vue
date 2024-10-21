@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main v-if="isParent">
     <section class="banner">
       <img
         class="banner__img"
@@ -19,25 +19,25 @@
       Dicapta and the industry. We provide timely blog posts, white papers, case
       studies, information sheets.
     </p>
-    <section class="information-sheets">
-      <h2 class="information-sheets__title">Information Sheets</h2>
-      <div class="information-sheets__container">
-        <InformationSheetsCard
-          class="information-sheets__card"
+    <section class="information-sheets-section">
+      <h2 class="information-sheets-section__title">Information Sheets</h2>
+      <div class="information-sheets-section__container">
+        <GenericCard
+          class="information-sheets-section__card"
           v-for="sheet in sheets.slice(0, 3)"
           :key="sheet.id"
-          :sheetId="sheet.id"
+          :href="`/resources/information-sheets/${sheet.id}`"
           :title="sheet.title"
           :imgUrl="sheet.imgUrl"
         />
       </div>
       <a href="/resources/information-sheets" class="button">More</a>
     </section>
-    <section class="accessibility-tips">
-      <h2 class="accessibility-tips__title">Accessibility Tips</h2>
-      <div class="accessibility-tips__container">
+    <section class="accessibility-tips-section">
+      <h2 class="accessibility-tips-section__title">Accessibility Tips</h2>
+      <div class="accessibility-tips-section__container">
         <ArticleCard
-          class="accessibility-tips__card"
+          class="accessibility-tips-section__card"
           v-for="article in accesibilityArticles.slice(0, 3)"
           :key="article.id"
           :title="article.title"
@@ -50,16 +50,24 @@
       <a href="/resources/accessibility-tips" class="button">More</a>
     </section>
   </main>
+  <RouterView v-else />
 </template>
 
 <script setup>
 import jsonSheets from "@/mocked/informationSheetsMocked.json";
-import InformationSheetsCard from "@/components/InformationSheetsCard.vue";
+import GenericCard from "@/components/GenericCard.vue";
 import ArticleCard from "@/components/ArticleCard.vue";
 import Accessibilityjson from "@/mocked/accessibilityTipsMocked.json";
+import { RouterView } from "vue-router";
+import { useRoute } from "vue-router";
+import { computed } from "vue";
 
 const sheets = jsonSheets.sheets;
 const accesibilityArticles = Accessibilityjson.articles;
+const route = useRoute();
+const isParent = computed(() => route.fullPath === "/resources");
+
+console.log("AAAAA", route.fullPath);
 </script>
 
 <style scoped lang="scss">
@@ -97,7 +105,7 @@ const accesibilityArticles = Accessibilityjson.articles;
   margin-bottom: $size-48;
 }
 
-.information-sheets {
+.information-sheets-section {
   max-width: $size-1024;
   margin: auto;
   padding: 0 $size-16;
@@ -123,7 +131,7 @@ const accesibilityArticles = Accessibilityjson.articles;
   }
 }
 
-.accessibility-tips {
+.accessibility-tips-section {
   max-width: $size-1024;
   margin: auto;
   padding: 0 $size-16;
@@ -161,7 +169,7 @@ const accesibilityArticles = Accessibilityjson.articles;
     }
   }
 
-  .information-sheets {
+  .information-sheets-section {
     &__container {
       justify-content: space-between;
     }
@@ -172,7 +180,7 @@ const accesibilityArticles = Accessibilityjson.articles;
     }
   }
 
-  .accessibility-tips {
+  .accessibility-tips-section {
     &__container {
       justify-content: space-between;
     }
