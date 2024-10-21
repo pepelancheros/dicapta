@@ -1,0 +1,40 @@
+{
+  "kit": [
+    {
+      "title": "DICAPTA",
+      "subtitle": "Boilerplate",
+      "imgUrl": "/src/assets/images/cover_dicapta_boilerplate.png",
+      "href": "/src/assets/pdf/dicapta-boilerplate.pdf"
+    },
+    {
+      "title": "DICAPTA",
+      "subtitle": "Logo - Transparent / Large",
+      "imgUrl": "/src/assets/logo.png",
+      "href": "/src/assets/logo.png"
+    },
+    {
+      "title": "ALL4ACCESS",
+      "subtitle": "Logo - Transparent / Large",
+      "imgUrl": "/src/assets/images/logos/all-4-access-hd.png",
+      "href": "/src/assets/images/logos/all-4-access-hd.png"
+    },
+    {
+      "title": "ALL4ACCESS",
+      "subtitle": "Efforless Universal Access",
+      "imgUrl": "/src/assets/images/pdf-images/all4access-eua.png",
+      "href": "/src/assets/pdf/all4access-eua.pdf"
+    },
+    {
+      "title": "GoCC4ALL",
+      "subtitle": "Logo - Transparent / Small",
+      "imgUrl": "/src/assets/images/logos/gocc4all.png",
+      "href": "/src/assets/images/logos/gocc4all.png"
+    },
+    {
+      "title": "GoCC4ALL",
+      "subtitle": "Emergency Information",
+      "imgUrl": "/src/assets/images/pdf-images/gocc4all-emergency-information-at-your-fingertips.png",
+      "href": "/src/assets/pdf/gocc4all-emergency-information-at-your-fingertips.pdf"
+    }
+  ]
+}

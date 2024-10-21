@@ -1,7 +1,13 @@
 <template>
-  <a :href="href" class="generic-card">
-    <div class="generic-card__title-container">
+  <a
+    :href="href"
+    class="generic-card"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div class="generic-card__text-container">
       <h2 class="generic-card__title">{{ title }}</h2>
+      <p v-if="text" class="generic-card__text">{{ text }}</p>
     </div>
     <img :src="imgUrl" alt="" />
   </a>
@@ -10,6 +16,10 @@
 <script setup>
 const props = defineProps({
   title: {
+    type: String,
+    default: "",
+  },
+  text: {
     type: String,
     default: "",
   },
@@ -26,7 +36,7 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .generic-card {
-  max-width: 300px;
+  width: 300px;
   margin-bottom: $size-48;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
   padding: 0;
@@ -49,12 +59,9 @@ const props = defineProps({
     }
   }
 
-  &__title-container {
-    height: 100%;
-    height: -moz-available; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
+  &__text-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -63,9 +70,17 @@ const props = defineProps({
     color: var(--c-black);
     font-size: $size-16;
     line-height: 1.5rem;
-    padding: 12px;
+    padding: $size-12;
     text-align: center;
     margin-bottom: 0;
+  }
+
+  &__text {
+    color: var(--c-black);
+    font-size: $size-16;
+    line-height: 1.5rem;
+    padding: 0 $size-12 $size-12 $size-12;
+    text-align: center;
   }
 }
 </style>

@@ -4,16 +4,24 @@
       <h1>Press Kit</h1>
     </div>
     <div class="press__content">
-      <!-- <GenericCard
-        title="DICAPTA"
-        imgUrl="/src/assets/images/pdf-images/hispanic-children-with-disabilities-in-the-usa-2022.png"
-      /> -->
+      <GenericCard
+        class="press__card"
+        v-for="(element, index) in pressKit"
+        :key="index"
+        :title="element.title"
+        :text="element.subtitle"
+        :imgUrl="element.imgUrl"
+        :href="element.href"
+      />
     </div>
   </main>
 </template>
 
 <script setup>
-// import GenericCard from "@/components/GenericCard.vue";
+import json from "@/mocked/pressKitMocked.json";
+import GenericCard from "@/components/GenericCard.vue";
+
+const pressKit = json.kit;
 </script>
 
 <style scoped lang="scss">
@@ -36,6 +44,12 @@
     max-width: $size-1024;
     margin: auto;
     padding: $size-48 $size-16;
+  }
+
+  &__card {
+    :deep(img) {
+      margin: auto;
+    }
   }
 }
 
