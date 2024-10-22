@@ -22,6 +22,8 @@ import TvMovieAccessView from "@/views/TvMovieAccessView.vue";
 import InformationSheetsView from "@/views/InformationSheetsView.vue";
 import InformationSheetsSpecificView from "@/views/InformationSheetsSpecificView.vue";
 import PressView from "@/views/PressView.vue";
+import ArticleCaseStudiesView from "@/views/ArticleCaseStudiesView.vue";
+import ArticleWhitePapersView from "@/views/ArticleWhitePapersView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -116,6 +118,16 @@ const router = createRouter({
           path: "/resources/information-sheets/:id",
           component: InformationSheetsSpecificView,
           name: "information sheets specific view",
+        },
+        {
+          path: "/resources/case-study",
+          component: ArticleCaseStudiesView,
+          name: "case study",
+        },
+        {
+          path: "/resources/white-paper",
+          component: ArticleWhitePapersView,
+          name: "white paper",
         },
       ],
     },

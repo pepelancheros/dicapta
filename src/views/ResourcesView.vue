@@ -65,7 +65,7 @@
             necessary tools to access the material and be on equal footing with
             her classmates.
           </p>
-          <a href="">Read More</a>
+          <a href="/resources/case-study">Read More</a>
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
             description, emphasizing including racial and ethnic characteristics
             when describing individuals/people in media.
           </p>
-          <a href="">Read More</a>
+          <a href="/resources/white-paper">Read More</a>
         </div>
       </div>
     </section>
@@ -209,6 +209,10 @@ console.log("AAAAA", route.fullPath);
   a {
     padding-left: 0;
     font-size: $size-16;
+
+    &:hover {
+      color: var(--c-blue-300);
+    }
   }
 }
 
