@@ -49,6 +49,44 @@
       </div>
       <a href="/resources/accessibility-tips" class="button">More</a>
     </section>
+    <section class="accessibility-tips-section">
+      <h2 class="accessibility-tips-section__title">Case Studies</h2>
+      <div class="accessibility-tips-section__container">
+        <div class="mocked-card">
+          <img src="@/assets/images/shutterstock.jpg" alt="" />
+          <h3>
+            Empowering Accessibility: How All4Access Technology Transformed
+            Access for a Blind Student at Johns Hopkins
+          </h3>
+          <p>
+            A blind Johns Hopkins student was taking a Turkish culture class,
+            but she could not access the course's video materials. Thanks to the
+            use of Dicapta's All4Access technology, the student received the
+            necessary tools to access the material and be on equal footing with
+            her classmates.
+          </p>
+          <a href="">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section class="accessibility-tips-section">
+      <h2 class="accessibility-tips-section__title">White Papers</h2>
+      <div class="accessibility-tips-section__container">
+        <div class="mocked-card">
+          <img src="@/assets/images/girl-and-boy-illustration.png" alt="" />
+          <h3>
+            Embracing Diversity in Audio Description: A Paradigm Shift for
+            Inclusivity
+          </h3>
+          <p>
+            This white paper explores the evolving paradigm in audio
+            description, emphasizing including racial and ethnic characteristics
+            when describing individuals/people in media.
+          </p>
+          <a href="">Read More</a>
+        </div>
+      </div>
+    </section>
   </main>
   <RouterView v-else />
 </template>
@@ -154,6 +192,23 @@ console.log("AAAAA", route.fullPath);
   &__card {
     margin-left: $size-24;
     margin-right: $size-24;
+  }
+}
+
+.mocked-card {
+  max-width: 400px;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: $size-12;
+  }
+
+  a {
+    padding-left: 0;
+    font-size: $size-16;
   }
 }
 
