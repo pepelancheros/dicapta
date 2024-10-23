@@ -204,19 +204,19 @@ const quotes = ref([
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "/assets/images/video.png",
+    imageUrl: "src/assets/images/video.png",
     imageAlt: "video icon",
     title: "4000+ Hours",
     text: "ACCESSIBILITY ASSETS PRODUCED",
   },
   {
-    imageUrl: "/assets/images/emergingtechnologies.png",
+    imageUrl: "src/assets/images/emergingtechnologies.png",
     imageAlt: "computer and phone icon",
-    title: "Emerging Technogies testing",
+    title: "Emerging Technogies",
     text: "DEVELOPMENT",
   },
   {
-    imageUrl: "/assets/images/mutilingualexpertise.png",
+    imageUrl: "src/assets/images/mutilingualexpertise.png",
     imageAlt: "chat icon",
     title: "Multilingual Expertise",
     text: "ENGLISH, SPANISH, FRENCH AND PORTUGUESE MARKET REACH",
