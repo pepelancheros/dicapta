@@ -39,7 +39,7 @@
       </TwoColumns>
     </section>
     <section>
-      <h2 class="caption__title caption__title--no-top-margin">Subtitles</h2>
+      <h2 class="caption__title caption__title--small-top-margin">Subtitles</h2>
       <TwoColumns>
         <template #left-column>
           <p>
@@ -116,7 +116,7 @@ const rowWithIconsArray = ref([
     margin-top: $size-96;
     padding: 0 $size-16;
 
-    &--no-top-margin {
+    &--small-top-margin {
       margin-top: $size-24;
     }
   }
@@ -140,6 +140,10 @@ const rowWithIconsArray = ref([
   .caption {
     &__title {
       margin-top: $size-192;
+
+      &--small-top-margin {
+        margin-top: $size-96;
+      }
     }
   }
 }
