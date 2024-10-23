@@ -6,18 +6,31 @@
         <a
           href="https://www.linkedin.com/company/dicapta"
           rel="noopener noreferrer"
+          target="_blank"
           ><img src="@/assets/images/linkedin-logo.png" alt="linkedin logo"
         /></a>
-        <a href="https://www.youtube.com/user/DICAPTA" rel="noopener noreferrer"
+        <a
+          href="https://www.youtube.com/user/DICAPTA"
+          rel="noopener noreferrer"
+          target="_blank"
           ><img src="@/assets/images/youtube-logo.png" alt="youtube logo"
         /></a>
-        <a href="https://www.facebook.com/Dicapta" rel="noopener noreferrer"
+        <a
+          href="https://www.facebook.com/Dicapta"
+          rel="noopener noreferrer"
+          target="_blank"
           ><img src="@/assets/images/facebook-logo.png" alt="facebook logo"
         /></a>
-        <a href="https://www.instagram.com/dicapta" rel="noopener noreferrer"
+        <a
+          href="https://www.instagram.com/dicapta"
+          rel="noopener noreferrer"
+          target="_blank"
           ><img src="@/assets/images/instagram-logo.png" alt="instagram logo"
         /></a>
-        <a href="https://x.com/Dicapta_tweets" rel="noopener noreferrer"
+        <a
+          href="https://x.com/Dicapta_tweets"
+          rel="noopener noreferrer"
+          target="_blank"
           ><img src="@/assets/images/x-logo.png" alt="X logo"
         /></a>
       </div>
@@ -62,8 +75,12 @@
         <li class="footer__list-element">About us</li>
         <li class="footer__list-element">Contact us</li>
         <li class="footer__list-element">Social responsibility</li>
-        <li class="footer__list-element">Privacy policy</li>
-        <li class="footer__list-element">Terms & conditions</li>
+        <li class="footer__list-element">
+          <a href="/privacy-policy">Privacy policy</a>
+        </li>
+        <li class="footer__list-element">
+          <a href="/terms-and-conditions">Terms & conditions</a>
+        </li>
       </ul>
     </section>
     <section class="footer__address-container">

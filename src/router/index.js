@@ -24,6 +24,8 @@ import InformationSheetsSpecificView from "@/views/InformationSheetsSpecificView
 import PressView from "@/views/PressView.vue";
 import ArticleCaseStudiesView from "@/views/ArticleCaseStudiesView.vue";
 import ArticleWhitePapersView from "@/views/ArticleWhitePapersView.vue";
+import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
+import TermsAndConditionsView from "@/views/TermsAndConditionsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -164,6 +166,16 @@ const router = createRouter({
           component: OurPartnersView,
         },
       ],
+    },
+    {
+      path: "/privacy-policy",
+      name: "privacy policy",
+      component: PrivacyPolicyView,
+    },
+    {
+      path: "/terms-and-conditions",
+      name: "terms and conditions",
+      component: TermsAndConditionsView,
     },
   ],
   scrollBehavior(to, from, savedPosition) {
