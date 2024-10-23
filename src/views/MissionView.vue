@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/mission-banner.jpg"
+        src="/assets/images/mission-banner.jpg"
         alt="A family watches TV and laughs"
       />
       <h1 class="banner__text">
@@ -14,7 +14,7 @@
       <TwoColumnTextAndImage
         title="Our mission"
         buttonText="Meet our team"
-        imageUrl="/src/assets/images/keyboard-accessibility.png"
+        imageUrl="/assets/images/keyboard-accessibility.png"
         imageAlt="A finger touches a keyboard key labeled Accessibility"
         imageText="Disabilities Collaborative organization bringing Access through the
             Power of Technology for All DICAPTA"
@@ -35,7 +35,7 @@
     <section class="latino">
       <TwoColumnTextAndImage
         title="Latino"
-        imageUrl="/src/assets/images/latino.png"
+        imageUrl="/assets/images/latino.png"
         imageAlt="A diverse group of young people pump their fists in joy"
         imageText="Latino is our native language"
         :imageFirst="true"
@@ -60,7 +60,7 @@
     <section class="technology">
       <TwoColumnTextAndImage
         title="Technology"
-        imageUrl="/src/assets/images/hands-connection.png"
+        imageUrl="/assets/images/hands-connection.png"
         imageAlt="Illustration. Two hands, made of bright blue lines, touch a sphere with the word connection.The sphere lights up at the points where the fingertips touch it."
         imageText="Technology is our strength"
       >
@@ -84,7 +84,7 @@
     <section class="accessibility">
       <TwoColumnTextAndImage
         title="Accessibility"
-        imageUrl="/src/assets/images/braile-computer.png"
+        imageUrl="/assets/images/braile-computer.png"
         imageAlt="A man uses a braille display next to a computer keyboard on a desk."
         imageText="Accessibility is our passion"
         :imageFirst="true"
@@ -107,7 +107,7 @@
     <section class="beneficiaries">
       <TwoColumnTextAndImage
         title="Our beneficiaries"
-        imageUrl="/src/assets/images/boy-headset.png"
+        imageUrl="/assets/images/boy-headset.png"
         imageAlt="A blind boy listens to something with headphones on."
         imageText="Students with sensory disabilities are the main beneficiaries of our efforts"
       >

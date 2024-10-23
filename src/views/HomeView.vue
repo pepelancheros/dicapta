@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/home-banner.jpg"
+        src="/assets/images/home-banner.jpg"
         alt="A family watches TV and laughs"
       />
       <div class="banner__text">
@@ -19,28 +19,28 @@
       <div class="services__buttons-container">
         <a href="/services/multilingual-dubbing" class="services__button">
           <img
-            src="@/assets/images/dubbing.png"
+            src="/assets/images/dubbing.png"
             alt="dubbing icon"
             class="services__button-img"
           /><span class="services__button-text">Dubbing</span>
         </a>
         <a href="/services/audio-description" class="services__button">
           <img
-            src="@/assets/images/audiodescription.png"
+            src="/assets/images/audiodescription.png"
             alt="audio description icon"
             class="services__button-img"
           /><span class="services__button-text">Audio Description</span>
         </a>
         <a href="/services/consulting" class="services__button">
           <img
-            src="@/assets/images/consulting.png"
+            src="/assets/images/consulting.png"
             alt="consulting icon"
             class="services__button-img"
           /><span class="services__button-text">Consulting</span>
         </a>
         <a href="/projects/previous-projects" class="services__button">
           <img
-            src="@/assets/images/liveevents.png"
+            src="/assets/images/liveevents.png"
             alt="live events icon"
             class="services__button-img"
           /><span class="services__button-text">Live Events Accessibility</span>
@@ -96,27 +96,27 @@
       <h2 class="our-partners__title">Our partners</h2>
       <div class="our-partners__content">
         <img
-          src="@/assets/images/logos/frp.png"
+          src="/assets/images/logos/frp.png"
           alt="fred rogers productions logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/logos/sesame-workshop.png"
+          src="/assets/images/logos/sesame-workshop.png"
           alt="sesame workshop logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/logos/pov.png"
+          src="/assets/images/logos/pov.png"
           alt="pov logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/logos/ptk.png"
+          src="/assets/images/logos/ptk.png"
           alt="passport to knowledge logo"
           class="our-partners__img"
         />
         <img
-          src="@/assets/images/logos/wb.png"
+          src="/assets/images/logos/wb.png"
           alt="water bear logo"
           class="our-partners__img"
         />
@@ -129,7 +129,7 @@
           <div class="why__element">
             <img
               class="why__quote-icon"
-              src="@/assets/images/quotes.svg"
+              src="/assets/images/quotes.svg"
               alt="quotation mark icon"
             />
             <p class="why__quote-text">{{ quote.text }}</p>
@@ -150,17 +150,17 @@
       <div class="whats-new__cards-section">
         <NewsCard
           title="Newsletters"
-          image="src/assets/images/newsletter-sept.jpg"
+          image="assets/images/newsletter-sept.jpg"
           text="September Newsletter"
         />
         <NewsCard
           title="Expert Insights"
-          image="src/assets/images/newsletter-sept.jpg"
+          image="assets/images/newsletter-sept.jpg"
           text="Embracing diversity in audio description"
         />
         <NewsCard
           title="Blog"
-          image="src/assets/images/newsletter-sept.jpg"
+          image="assets/images/newsletter-sept.jpg"
           text="Ushering in a new era of accessibility"
         />
       </div>
@@ -204,19 +204,19 @@ const quotes = ref([
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "src/assets/images/video.png",
+    imageUrl: "assets/images/video.png",
     imageAlt: "video icon",
     title: "4000+ Hours",
     text: "ACCESSIBILITY ASSETS PRODUCED",
   },
   {
-    imageUrl: "src/assets/images/emergingtechnologies.png",
+    imageUrl: "assets/images/emergingtechnologies.png",
     imageAlt: "computer and phone icon",
     title: "Emerging Technogies",
     text: "DEVELOPMENT",
   },
   {
-    imageUrl: "src/assets/images/mutilingualexpertise.png",
+    imageUrl: "assets/images/mutilingualexpertise.png",
     imageAlt: "chat icon",
     title: "Multilingual Expertise",
     text: "ENGLISH, SPANISH, FRENCH AND PORTUGUESE MARKET REACH",

@@ -3,7 +3,7 @@
     <div class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/our-team-banner.jpg"
+        src="/assets/images/our-team-banner.jpg"
         alt="On the blue water, 4 people row in sync in a long, thin boat."
       />
     </div>
@@ -83,7 +83,7 @@
           <div class="our-team__element">
             <img
               class="our-team__member-image"
-              src="/src/assets/images/team/avatar.png"
+              src="/assets/images/team/avatar.png"
               alt="picture of a team member"
             />
             <p class="our-team__member-name">Eric Carusso</p>

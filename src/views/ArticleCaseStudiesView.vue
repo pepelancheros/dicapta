@@ -20,7 +20,7 @@
           </p>
         </template>
         <template #right-column>
-          <img src="/src/assets/images/shutterstock.jpg" alt="" />
+          <img src="/assets/images/shutterstock.jpg" alt="" />
         </template>
       </TwoColumns>
     </section>

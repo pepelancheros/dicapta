@@ -2,19 +2,19 @@
   "team": [
     {
       "name": "María Victoria Diaz",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Carol Colmenares",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Amanda Cadena",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Olga Collazos",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     }
   ]
 }

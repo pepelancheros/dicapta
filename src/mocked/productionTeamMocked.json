@@ -2,55 +2,55 @@
   "team": [
     {
       "name": "Andrea Giménez",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Alejandra Venegas",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Catalina Arias",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Carlos Manrique",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Christian Quintero",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Javier Olarte",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Juliana Olarte",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Luz Helena Olarte",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Oscar Javier Cuesta",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Ruth Amparo Pena",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Sergio Carrasquilla",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Sonia Melo",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     },
     {
       "name": "Xiomara Huertas",
-      "photo": "/src/assets/images/team/avatar.png"
+      "photo": "/assets/images/team/avatar.png"
     }
   ]
 }

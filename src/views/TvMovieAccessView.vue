@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/tv-movie-access-banner.png"
+        src="/assets/images/tv-movie-access-banner.png"
         alt="A kid looks at a tablet with awe. "
       />
       <div class="banner__text">
@@ -22,21 +22,21 @@
           <div class="tv-movie-access__contents">
             <a href="#collaboration" class="tv-movie-access__contents-element">
               <img
-                src="@/assets/images/ico-collaboration.png"
+                src="/assets/images/ico-collaboration.png"
                 alt="collaboration icon, if clicked redirects to the collaboration section in this page."
               />
               <p>Collaboration</p>
             </a>
             <a href="#distribution" class="tv-movie-access__contents-element">
               <img
-                src="@/assets/images/ico-distribution.png"
+                src="/assets/images/ico-distribution.png"
                 alt="distribution icon, if clicked redirects to the dissemination and distribution section in this page."
               />
               <p>Dissemination & Distribution</p>
             </a>
             <a href="#production" class="tv-movie-access__contents-element">
               <img
-                src="@/assets/images/ico-production.png"
+                src="/assets/images/ico-production.png"
                 alt="production icon, if clicked redirects to the production section in this page."
               />
               <p>Production</p>
@@ -67,7 +67,7 @@
       <TwoColumns>
         <template #left-column>
           <blockquote>
-            <img src="@/assets/images/quotes.svg" alt="" />
+            <img src="/assets/images/quotes.svg" alt="" />
             <p>
               We invite Selected producers of TV/Films to review the general
               criteria for participating in our project
@@ -121,7 +121,7 @@
         </template>
         <template #right-column>
           <img
-            src="@/assets/images/film-festival-miami.png"
+            src="/assets/images/film-festival-miami.png"
             alt="Three women stand in front of an Iberoamerican Film Festival Miami mural. A guide dog sits in front of the woman on the left."
           />
         </template>
@@ -129,7 +129,7 @@
       <TwoColumns>
         <template #left-column>
           <img
-            src="@/assets/images/couple-watching-tv.png"
+            src="/assets/images/couple-watching-tv.png"
             alt="A couple watches TV. Both use the All4Access app. She uses it to listen to an audio description, and he uses it to watch ASL."
           />
         </template>

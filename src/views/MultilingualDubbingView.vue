@@ -61,13 +61,13 @@ import TwoColumns from "@/components/TwoColumns.vue";
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "/src/assets/images/dubbing-ai-cloning.png",
+    imageUrl: "/assets/images/dubbing-ai-cloning.png",
     alt: "",
     title: "Dubbing",
     text: "WITH LIP-SYNC",
   },
   {
-    imageUrl: "/src/assets/images/dubbing-ai.png",
+    imageUrl: "/assets/images/dubbing-ai.png",
     alt: "",
     title: "AI Powered",
     text: "USING NATURAL VOICES",

@@ -7,7 +7,7 @@
     </p>
     <RowWithIconsAndText :elements="rowWithIconsArray" />
     <TwoColumnTextAndImage
-      imageUrl="/src/assets/images/All4Voicingimage.png"
+      imageUrl="/assets/images/All4Voicingimage.png"
       imageAlt="A video editor where the description and audio of a video is being modified."
       class="all4voicing__info"
     >
@@ -36,19 +36,19 @@ import TwoColumnTextAndImage from "@/components/TwoColumnTextAndImage.vue";
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "/src/assets/images/icon1devoicing.png",
+    imageUrl: "/assets/images/icon1devoicing.png",
     alt: "",
     title: "One-stop shop",
     text: "THE ENTIRE PROCESS IS DONE IN ONE PLACE",
   },
   {
-    imageUrl: "/src/assets/images/icon2devoicing.png",
+    imageUrl: "/assets/images/icon2devoicing.png",
     alt: "",
     title: "Automatic detection",
     text: "AUTOMATIC DETECTION OF SPACES FOR DESCRIPTION",
   },
   {
-    imageUrl: "/src/assets/images/icon3devoicing.png",
+    imageUrl: "/assets/images/icon3devoicing.png",
     alt: "",
     title: "Smooth collaboration",
     text: "SEAMLESS TEAMWORK FOSTERS AGILE AND EFFICIENT COLLABORATION",

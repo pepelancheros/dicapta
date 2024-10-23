@@ -89,7 +89,7 @@
         </p>
       </template>
       <template #right-column>
-        <img src="@/assets/images/partners-in-accessibility.png" />
+        <img src="/assets/images/partners-in-accessibility.png" />
       </template>
     </TwoColumns>
     <section class="organization-partners">
@@ -129,36 +129,36 @@ import { Carousel, Navigation, Slide } from "vue3-carousel";
 import TwoColumns from "@/components/TwoColumns.vue";
 
 const televisionPartners = [
-  "/src/assets/images/logos/bare-feet.png",
-  "/src/assets/images/logos/canal22.png",
-  "/src/assets/images/logos/crawford.png",
-  "/src/assets/images/logos/docon.png",
-  "/src/assets/images/logos/frp.png",
-  "/src/assets/images/logos/hitn.png",
-  "/src/assets/images/logos/iampeace.png",
-  "/src/assets/images/logos/ket.png",
-  "/src/assets/images/logos/new-day-films.png",
-  "/src/assets/images/logos/pov.png",
-  "/src/assets/images/logos/pragda.png",
-  "/src/assets/images/logos/ptk.png",
-  "/src/assets/images/logos/semillitas.png",
-  "/src/assets/images/logos/sesame-workshop.png",
-  "/src/assets/images/logos/spf.png",
-  "/src/assets/images/logos/trece.png",
-  "/src/assets/images/logos/wb.png",
-  "/src/assets/images/logos/wipr.png",
-  "/src/assets/images/logos/wucf.png",
+  "/assets/images/logos/bare-feet.png",
+  "/assets/images/logos/canal22.png",
+  "/assets/images/logos/crawford.png",
+  "/assets/images/logos/docon.png",
+  "/assets/images/logos/frp.png",
+  "/assets/images/logos/hitn.png",
+  "/assets/images/logos/iampeace.png",
+  "/assets/images/logos/ket.png",
+  "/assets/images/logos/new-day-films.png",
+  "/assets/images/logos/pov.png",
+  "/assets/images/logos/pragda.png",
+  "/assets/images/logos/ptk.png",
+  "/assets/images/logos/semillitas.png",
+  "/assets/images/logos/sesame-workshop.png",
+  "/assets/images/logos/spf.png",
+  "/assets/images/logos/trece.png",
+  "/assets/images/logos/wb.png",
+  "/assets/images/logos/wipr.png",
+  "/assets/images/logos/wucf.png",
 ];
 const organizationPartners = [
-  "/src/assets/images/logos/aph.png",
-  "/src/assets/images/logos/acb.png",
-  "/src/assets/images/logos/dcmp.png",
-  "/src/assets/images/logos/deaf-blind.png",
-  "/src/assets/images/logos/frp.png",
-  "/src/assets/images/logos/fcc.png",
-  "/src/assets/images/logos/ncdb.png",
-  "/src/assets/images/logos/teach-access.png",
-  "/src/assets/images/logos/uc3m.png",
+  "/assets/images/logos/aph.png",
+  "/assets/images/logos/acb.png",
+  "/assets/images/logos/dcmp.png",
+  "/assets/images/logos/deaf-blind.png",
+  "/assets/images/logos/frp.png",
+  "/assets/images/logos/fcc.png",
+  "/assets/images/logos/ncdb.png",
+  "/assets/images/logos/teach-access.png",
+  "/assets/images/logos/uc3m.png",
 ];
 
 const settings = {

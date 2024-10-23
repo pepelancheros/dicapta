@@ -7,7 +7,7 @@
     <TwoColumns>
       <template #left-column>
         <img
-          src="/src/assets/images/media-production.jpg"
+          src="/assets/images/media-production.jpg"
           alt="A man holds a professional camera."
         />
         <button>Contact Us</button>

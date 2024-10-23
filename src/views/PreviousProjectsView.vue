@@ -32,7 +32,7 @@
         </template>
         <template #right-column>
           <img
-            src="/src/assets/images/meeting.jpg"
+            src="/assets/images/meeting.jpg"
             alt="Conference room. A large audience watches a group of panelists."
           />
         </template>
@@ -70,7 +70,7 @@
         <template #right-column>
           <div class="previous-projects__gocc4all-right-column">
             <img
-              src="@/assets/images/gocc4all-captions.png"
+              src="/assets/images/gocc4all-captions.png"
               alt="Illustration. The GoCC4All app runs captions on a mobile phone’s screen. Next to the phone appears a braille display and a phone with a speaker on top."
             />
             <div class="store-badges">
@@ -80,7 +80,7 @@
                 rel="noopener noreferrer"
                 ><img
                   class="apple-badge"
-                  src="@/assets/images/apple-store.png"
+                  src="/assets/images/apple-store.png"
                   alt="apple store badge"
               /></a>
               <a
@@ -89,7 +89,7 @@
                 rel="noopener noreferrer"
                 ><img
                   class="google-badge"
-                  src="@/assets/images/google-play-badge.png"
+                  src="/assets/images/google-play-badge.png"
                   alt="google play badge"
               /></a>
             </div>
@@ -119,7 +119,7 @@
         <template #left-column>
           <div>
             <img
-              src="@/assets/images/dicapta-workflow-control-platform.png"
+              src="/assets/images/dicapta-workflow-control-platform.png"
               alt="Screenshot of Dicapta’s administrative platform."
             />
           </div>
@@ -164,7 +164,7 @@
         </template>
         <template #right-column>
           <img
-            src="@/assets/images/cncc.png"
+            src="/assets/images/cncc.png"
             alt="C&CC logo. the letters C & C C inside a blue cloud."
           />
         </template>
@@ -172,7 +172,7 @@
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
           <img
-            src="@/assets/images/img2-tecno.png"
+            src="/assets/images/img2-tecno.png"
             alt="Screen with captions. To the left of the screen, three sheets show statistics for accuracy, integrity, synchronicity, and average speed."
           />
         </template>
@@ -211,7 +211,7 @@
         </template>
         <template #right-column>
           <img
-            src="@/assets/images/dad-technology.png"
+            src="/assets/images/dad-technology.png"
             alt="A girl with headphones. Over her image, a transparent background shows a yellow banner with the letters DAD."
           />
         </template>

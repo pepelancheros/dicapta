@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/consulting-banner.png"
+        src="/assets/images/consulting-banner.png"
         alt="Conference room. A woman holds a phone that shows the All4Access app."
       />
       <p class="banner__text title-global">
@@ -48,7 +48,7 @@
         </template>
         <template #right-column>
           <img
-            src="@/assets/images/consulting-workshops.png"
+            src="/assets/images/consulting-workshops.png"
             alt="reunion of multiple people of different ages in a workshop."
           />
         </template>
@@ -56,7 +56,7 @@
       <TwoColumns>
         <template #left-column>
           <img
-            src="@/assets/images/consulting-ada.png"
+            src="/assets/images/consulting-ada.png"
             alt="reunion of multiple people from the ADA (Americans with Disabilities)"
           />
         </template>
@@ -98,19 +98,19 @@ import TwoColumns from "@/components/TwoColumns.vue";
 
 const rowWithIconsArray = ref([
   {
-    imageUrl: "/src/assets/images/consulting-tailored-icon.png",
+    imageUrl: "/assets/images/consulting-tailored-icon.png",
     imageAlt: "an icon of a ruler and a pencil",
     title: "Tailor-Made",
     text: "Our programs are tailor-made to support your specific goals.",
   },
   {
-    imageUrl: "/src/assets/images/consulting-on-site-icon.png",
+    imageUrl: "/assets/images/consulting-on-site-icon.png",
     imageAlt: "icon of a person doing a presentation",
     title: "On-Site",
     text: "Your staff will receive on-site training to optimize their work time.",
   },
   {
-    imageUrl: "/src/assets/images/consulting-blind.png",
+    imageUrl: "/assets/images/consulting-blind.png",
     imageAlt: "icon of a blind person",
     title: "Team-Members with disabilities",
     text: "Improve your staff’s empathy by working face-to-face with team-members with disabilities.",

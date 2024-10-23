@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/all4access-banner.png"
+        src="/assets/images/all4access-banner.png"
         alt="Several colorful ropes bind together in a circle."
       />
       <p class="banner__text title-global">
@@ -108,7 +108,7 @@
         </template>
         <template #right-column>
           <img
-            src="@/assets/images/technology-illustration.png"
+            src="/assets/images/technology-illustration.png"
             alt="Illustration. Center: 4 connectors point down from a cloud, underneath, 3 hands hold phones with the All4Access logo. Sides: 4 people look at an electronic device."
           />
         </template>
@@ -116,7 +116,7 @@
       <TwoColumns>
         <template #left-column>
           <img
-            src="@/assets/images/access4all-feeling-through.png"
+            src="/assets/images/access4all-feeling-through.png"
             alt="A man puts on a hoodie. To the right, the All4access app runs on a phone."
           />
         </template>

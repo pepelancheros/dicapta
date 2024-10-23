@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Proper ettiquete for dining with someone with a visual disability",
-      "imgUrl": "/src/assets/images/articles/test1.png",
+      "imgUrl": "/assets/images/articles/test1.png",
       "imgAlt": "",
       "publishDate": "03 November 2023",
       "content": "<h2>Inclusive Dining: How to Share a Meal With a Person With A Visual Disability</h2><p>Dining with someone with a visual disability can be a unique opportunity to create an inclusive and considerate atmosphere. By following a few simple guidelines, you can ensure that everyone at the table enjoys their meal to the fullest.</p><p><strong>Announce and Specify Placement:</strong> When placing a glass or plate in front of an individual with a visual disability, kindly announce what you are doing and specify the placement. For example, you can say, \"Your water is at 11 o'clock.\" Using the clock face method, you can describe where various dishes are located on their plate. \"The meat is at 12, the rice at 3, and the vegetable at 9.\" These verbal cues help the individual locate their items with ease, eliminating the need for guesswork.</p><p><strong>Communication is Key:</strong> Always communicate when you're removing dishes or refilling a drink. This courtesy allows visually impaired diners to stay informed and participate in the dining experience confidently.</p><p><strong>Considerate Service:</strong> Be aware that the server may ask the guest if they prefer their meat to be pre-cut in the kitchen. This offers a practical solution that can make dining more convenient for those with visual disabilities, as it eliminates the challenge of cutting meat on the plate.</p><p><strong>Gentle Guidance:</strong> Instead of pulling out a chair, a respectful gesture is to place the guest's hand on the back of the chair, guiding them to their seat. This subtle act of assistance is appreciated and preserves their sense of independence.</p><p>By implementing these simple practices, we create a welcoming and inclusive dining environment that allows everyone to savor not only the food but also the joy of shared moments at the table.</p>"
@@ -11,21 +11,21 @@
     {
       "id": 2,
       "title": "Refine your documents with accessible hyperlinks",
-      "imgUrl": "/src/assets/images/articles/test2.png",
+      "imgUrl": "/assets/images/articles/test2.png",
       "imgAlt": "",
       "publishDate": "03 November 2023"
     },
     {
       "id": 3,
       "title": "Browser Accessibility plugins that are useful for everyone",
-      "imgUrl": "/src/assets/images/articles/test3.jpg",
+      "imgUrl": "/assets/images/articles/test3.jpg",
       "imgAlt": "",
       "publishDate": "01 November 2023"
     },
     {
       "id": 4,
       "title": "Why Should You Use Inclusive Language?",
-      "imgUrl": "/src/assets/images/articles/test4.png",
+      "imgUrl": "/assets/images/articles/test4.png",
       "imgAlt": "",
       "publishDate": "01 November 2023"
     }

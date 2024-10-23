@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="@/assets/images/resources-banner.jpeg"
+        src="/assets/images/resources-banner.jpeg"
         alt="A child looking through a fence."
       />
       <div class="banner__text">
@@ -53,7 +53,7 @@
       <h2 class="accessibility-tips-section__title">Case Studies</h2>
       <div class="accessibility-tips-section__container">
         <div class="mocked-card">
-          <img src="@/assets/images/shutterstock.jpg" alt="" />
+          <img src="/assets/images/shutterstock.jpg" alt="" />
           <h3>
             Empowering Accessibility: How All4Access Technology Transformed
             Access for a Blind Student at Johns Hopkins
@@ -73,7 +73,7 @@
       <h2 class="accessibility-tips-section__title">White Papers</h2>
       <div class="accessibility-tips-section__container">
         <div class="mocked-card">
-          <img src="@/assets/images/girl-and-boy-illustration.png" alt="" />
+          <img src="/assets/images/girl-and-boy-illustration.png" alt="" />
           <h3>
             Embracing Diversity in Audio Description: A Paradigm Shift for
             Inclusivity
