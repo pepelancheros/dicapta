@@ -460,7 +460,8 @@ main {
 
 :deep(.carousel__next),
 :deep(.carousel__prev) {
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--c-blue-500);
     background-color: transparent;
   }

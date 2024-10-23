@@ -14,6 +14,7 @@
       <TwoColumnTextAndImage
         title="Our mission"
         buttonText="Meet our team"
+        buttonUrl="/about/our-team"
         imageUrl="/assets/images/keyboard-accessibility.png"
         imageAlt="A finger touches a keyboard key labeled Accessibility"
         imageText="Disabilities Collaborative organization bringing Access through the

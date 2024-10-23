@@ -8,7 +8,9 @@
         {{ title }}
       </h2>
       <slot></slot>
-      <button v-if="buttonText">{{ buttonText }}</button>
+      <a class="button" v-if="buttonUrl && buttonText" :href="buttonUrl">{{
+        buttonText
+      }}</a>
     </div>
     <div class="two-columns-text-and-image__image-container">
       <img v-if="imageUrl" :src="imageUrl" :alt="imageAlt" />
@@ -26,6 +28,10 @@ const props = defineProps({
     default: "",
   },
   buttonText: {
+    type: String,
+    default: "",
+  },
+  buttonUrl: {
     type: String,
     default: "",
   },
