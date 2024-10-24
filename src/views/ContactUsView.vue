@@ -54,6 +54,38 @@
           <p>Call: 407-389-0712<br />Fax: 407-682-1997</p>
           <p>info@dicapta.com</p>
         </address>
+        <div class="contact__social-media-container">
+          <a
+            href="https://www.linkedin.com/company/dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/linkedin-logo.png" alt="linkedin logo"
+          /></a>
+          <a
+            href="https://www.youtube.com/user/DICAPTA"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/youtube-logo.png" alt="youtube logo"
+          /></a>
+          <a
+            href="https://www.facebook.com/Dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/facebook-logo.png" alt="facebook logo"
+          /></a>
+          <a
+            href="https://www.instagram.com/dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/instagram-logo.png" alt="instagram logo"
+          /></a>
+          <a
+            href="https://x.com/Dicapta_tweets"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/x-logo.png" alt="X logo"
+          /></a>
+        </div>
         <a href="mailto:info@dicapta.com" class="button contact__button"
           >Email us</a
         >
@@ -144,6 +176,17 @@
 
   &__button {
     padding: $size-8 $size-32;
+  }
+
+  &__social-media-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $size-24;
+    margin-bottom: $size-24;
+
+    img {
+      height: 40px;
+    }
   }
 }
 
