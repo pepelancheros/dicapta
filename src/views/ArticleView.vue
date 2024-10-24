@@ -7,8 +7,8 @@
       <h1 class="article__title">{{ currentArticle.title }}</h1>
       <img
         class="article__image"
-        :src="currentArticle.imgUrl"
-        :alt="currentArticle.imgAlt"
+        :src="currentArticle.internalImg || currentArticle.imgUrl"
+        :alt="currentArticle.internalImgAlt || currentArticle.imgAlt"
       />
       <div v-html="currentArticle.content"></div>
     </main>
@@ -46,6 +46,7 @@ const currentArticle = articles.filter(
     max-width: $size-1280;
     margin: auto;
     padding: $size-48 $size-24;
+    min-height: 80vh;
   }
 
   &__title {
@@ -58,6 +59,10 @@ const currentArticle = articles.filter(
     max-width: $size-640;
     float: left;
     margin-right: $size-24;
+  }
+
+  :deep(h2) {
+    font-size: $size-24;
   }
 }
 </style>
