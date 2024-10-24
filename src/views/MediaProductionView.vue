@@ -10,7 +10,7 @@
           src="/assets/images/media-production.jpg"
           alt="A man holds a professional camera."
         />
-        <button>Contact Us</button>
+        <a class="button" href="/about/contact-us">Contact Us</a>
       </template>
       <template #right-column>
         <h3>
@@ -140,6 +140,12 @@ import TwoColumns from "@/components/TwoColumns.vue";
     text-align: center;
     margin-bottom: $size-24;
     padding: 0 $size-16;
+  }
+
+  .button {
+    margin: auto;
+    display: flex;
+    width: fit-content;
   }
 }
 

@@ -86,7 +86,7 @@
           </ul>
         </template>
       </TwoColumns>
-      <button class="contact-button">Contact Us</button>
+      <a class="contact-button button" href="/about/contact-us">Contact Us</a>
     </section>
   </main>
 </template>
@@ -161,6 +161,7 @@ const rowWithIconsArray = ref([
   margin: auto;
   margin-bottom: $size-64;
   margin-top: $size-24;
+  width: fit-content;
 }
 
 // styles for tablet size (768px) and higher

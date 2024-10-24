@@ -119,7 +119,7 @@
       <p>
         If you have any questions about this Privacy Policy, the practices of
         this site, or your dealings with this site, please
-        <a href="">contact us</a>.
+        <a href="/about/contact-us">contact us</a>.
       </p>
       <p>This document was last updated on June 06, 2018</p>
     </div>

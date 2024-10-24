@@ -52,7 +52,7 @@
     </section>
     <section class="contact">
       <p class="contact__text">Let us help you reach new markets</p>
-      <button class="contact__button">Contact Us</button>
+      <a class="contact__button button" href="/about/contact-us">Contact Us</a>
     </section>
     <section class="our-work">
       <h2 class="our-work__title">Our exceptional work</h2>

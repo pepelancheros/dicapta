@@ -73,7 +73,9 @@
       <h2>Company</h2>
       <ul class="footer__list-container">
         <li class="footer__list-element">About us</li>
-        <li class="footer__list-element">Contact us</li>
+        <li class="footer__list-element">
+          <a href="/about/contact-us">Contact us</a>
+        </li>
         <li class="footer__list-element">Social responsibility</li>
         <li class="footer__list-element">
           <a href="/privacy-policy">Privacy policy</a>

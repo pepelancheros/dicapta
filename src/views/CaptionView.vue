@@ -34,7 +34,7 @@
             frameborder="0"
             allowfullscreen="allowfullscreen"
           ></iframe>
-          <button>Contact Us</button>
+          <a class="button" href="/about/contact-us">Contact Us</a>
         </template>
       </TwoColumns>
     </section>
@@ -67,7 +67,7 @@
               if the subtitles are needed in a different language).
             </li>
           </ul>
-          <button>Contact Us</button>
+          <a class="button" href="/about/contact-us">Contact Us</a>
         </template>
         <template #right-column>
           <iframe
@@ -131,8 +131,9 @@ const rowWithIconsArray = ref([
     margin-bottom: $size-48;
   }
 
-  button {
+  .button {
     margin-top: $size-24;
+    display: inline-block;
   }
 }
 

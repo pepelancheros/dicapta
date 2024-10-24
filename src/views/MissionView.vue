@@ -145,7 +145,9 @@
         </p>
       </TwoColumnTextAndImage>
     </section>
-    <button class="contact-us-button">Let's keep in touch. Contact Us!</button>
+    <a class="contact-us-button button" href="/about/contact-us"
+      >Let's keep in touch. Contact Us!</a
+    >
   </main>
 </template>
 
@@ -192,6 +194,7 @@ import TwoColumnTextAndImage from "@/components/TwoColumnTextAndImage.vue";
   width: 100%;
   border-radius: 0;
   padding: $size-24;
+  display: block;
 }
 
 // styles for tablet size (768px) and higher

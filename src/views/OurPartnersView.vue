@@ -70,7 +70,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="allowfullscreen"
           ></iframe>
-          <button>Contact Us</button>
+          <a class="button" href="/about/contact-us">Contact Us</a>
         </template>
       </TwoColumns>
     </div>
