@@ -92,6 +92,9 @@
             <li>
               <RouterLink to="/about/our-partners">Our Partners</RouterLink>
             </li>
+            <li>
+              <RouterLink to="/about/contact-us">Contact Us</RouterLink>
+            </li>
           </ul>
         </li>
       </ul>
@@ -266,6 +269,13 @@
                 to="/about/our-partners"
                 @click="handleMobileNavElementClick"
                 >Our Partners</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/about/contact-us"
+                @click="handleMobileNavElementClick"
+                >Contact Us</RouterLink
               >
             </li>
           </ul>

@@ -26,6 +26,7 @@ import ArticleCaseStudiesView from "@/views/ArticleCaseStudiesView.vue";
 import ArticleWhitePapersView from "@/views/ArticleWhitePapersView.vue";
 import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
 import TermsAndConditionsView from "@/views/TermsAndConditionsView.vue";
+import ContactUsView from "@/views/ContactUsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -137,6 +138,7 @@ const router = createRouter({
       path: "/news",
       name: "news",
       component: NewsView,
+      redirect: "/news/press",
       children: [
         {
           path: "/news/press",
@@ -149,6 +151,7 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: AboutView,
+      redirect: "/about/contact-us",
       children: [
         {
           path: "mission",
@@ -164,6 +167,11 @@ const router = createRouter({
           path: "our-partners",
           name: "our partners",
           component: OurPartnersView,
+        },
+        {
+          path: "contact-us",
+          name: "contact us",
+          component: ContactUsView,
         },
       ],
     },
