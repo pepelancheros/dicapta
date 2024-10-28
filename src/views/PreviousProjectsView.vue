@@ -1,11 +1,17 @@
 <template>
   <main class="previous-projects">
+    <section class="banner">
+      <img
+        class="banner__img"
+        src="/assets/images/projects-banner.jpg"
+        alt="A hand interacts with a digital interface displaying various icons, illustrating technology and user engagement."
+      />
+      <div class="banner__text">
+        <h1 class="banner__text-title">Previous projects</h1>
+      </div>
+    </section>
     <section>
-      <h2
-        class="previous-projects__title previous-projects__title--first-title"
-      >
-        Multilingual Events
-      </h2>
+      <h2 class="previous-projects__title">Multilingual Events</h2>
       <p class="previous-projects__subtitle">
         Remote digital technology that helps your message reach a multilingual
         audience
@@ -304,6 +310,28 @@ const rowWithIconsOther = ref([
 </script>
 
 <style scoped lang="scss">
+.banner {
+  position: relative;
+  height: 500px;
+  margin-bottom: $size-32;
+
+  &__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__text {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    color: var(--c-white-soft);
+    max-width: 800px;
+    text-shadow: #000000 1px 1px 2px;
+    font-size: $size-48;
+  }
+}
+
 .previous-projects {
   margin-bottom: $size-64;
 
@@ -316,16 +344,11 @@ const rowWithIconsOther = ref([
     font-weight: 500;
     text-align: center;
     margin-top: $size-64;
-
-    &--first-title {
-      margin-top: $size-96;
-      padding: 0 $size-16;
-    }
   }
 
   &__subtitle {
     text-align: center;
-    margin-bottom: $size-12;
+    margin-bottom: $size-32;
   }
 
   &__custom-two-columns {
@@ -357,13 +380,14 @@ const rowWithIconsOther = ref([
 
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
-  .previous-projects {
-    &__title {
-      &--first-title {
-        margin-top: $size-192;
-      }
+  .banner {
+    &__text {
+      top: 190px;
+      right: 100px;
+      left: unset;
     }
-
+  }
+  .previous-projects {
     &__container {
       max-width: $size-1024;
       padding: 0 $size-32;

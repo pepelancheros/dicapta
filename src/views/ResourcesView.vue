@@ -104,8 +104,6 @@ const sheets = jsonSheets.sheets;
 const accesibilityArticles = Accessibilityjson.articles;
 const route = useRoute();
 const isParent = computed(() => route.fullPath === "/resources");
-
-console.log("AAAAA", route.fullPath);
 </script>
 
 <style scoped lang="scss">
