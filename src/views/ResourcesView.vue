@@ -115,8 +115,7 @@ import jsonSheets from "@/mocked/informationSheetsMocked.json";
 import GenericCard from "@/components/GenericCard.vue";
 import ArticleCard from "@/components/ArticleCard.vue";
 import Accessibilityjson from "@/mocked/accessibilityTipsMocked.json";
-import { RouterView } from "vue-router";
-import { useRoute } from "vue-router";
+import { RouterView, useRoute } from "vue-router";
 import { computed, ref } from "vue";
 import { AddNewslettersSubscription } from "@/api/api.js";
 
@@ -287,6 +286,7 @@ async function subscribeEmailToNewsletter() {
   width: 1px;
   overflow: hidden;
 }
+
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
   .banner {

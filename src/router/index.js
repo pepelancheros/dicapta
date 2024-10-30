@@ -139,7 +139,6 @@ const router = createRouter({
       path: "/news",
       name: "news",
       component: NewsView,
-      redirect: "/news/press",
       children: [
         {
           path: "/news/press",
