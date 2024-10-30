@@ -80,6 +80,7 @@
             <li>
               <RouterLink to="/news/press">Press</RouterLink>
             </li>
+            <li><RouterLink to="/news/newsletters">Newsletters</RouterLink></li>
           </ul>
         </li>
         <li>
@@ -238,6 +239,13 @@
             <li>
               <RouterLink to="/news/press" @click="handleMobileNavElementClick"
                 >Press</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/news/newsletters"
+                @click="handleMobileNavElementClick"
+                >Newsletters</RouterLink
               >
             </li>
           </ul>

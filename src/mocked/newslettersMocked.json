@@ -1,0 +1,34 @@
+{
+  "newsletters": [
+    {
+      "id": 1,
+      "imgUrl": "/assets/images/newsletters/october-2024.jpg",
+      "pdfUrl": "/assets/pdf/newsletters/october-2024.pdf"
+    },
+    {
+      "id": 2,
+      "imgUrl": "/assets/images/newsletters/september-2024.jpg",
+      "pdfUrl": "/assets/pdf/newsletters/september-2024.pdf"
+    },
+    {
+      "id": 3,
+      "imgUrl": "/assets/images/newsletters/august-2024.jpg",
+      "pdfUrl": "/assets/pdf/newsletters/august-2024.pdf"
+    },
+    {
+      "id": 4,
+      "imgUrl": "/assets/images/newsletters/july-2024.png",
+      "pdfUrl": "/assets/pdf/newsletters/july-2024.pdf"
+    },
+    {
+      "id": 5,
+      "imgUrl": "/assets/images/newsletters/june-2024.jpg",
+      "pdfUrl": "/assets/pdf/newsletters/june-2024.pdf"
+    },
+    {
+      "id": 6,
+      "imgUrl": "/assets/images/newsletters/may-2024.jpg",
+      "pdfUrl": "/assets/pdf/newsletters/may-2024.pdf"
+    }
+  ]
+}

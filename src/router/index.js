@@ -27,6 +27,7 @@ import ArticleWhitePapersView from "@/views/ArticleWhitePapersView.vue";
 import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
 import TermsAndConditionsView from "@/views/TermsAndConditionsView.vue";
 import ContactUsView from "@/views/ContactUsView.vue";
+import NewslettersView from "@/views/newslettersView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -144,6 +145,11 @@ const router = createRouter({
           path: "/news/press",
           component: PressView,
           name: "press",
+        },
+        {
+          path: "/news/newsletters",
+          component: NewslettersView,
+          name: "newsletters",
         },
       ],
     },
