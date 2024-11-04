@@ -187,7 +187,7 @@ const rowWithIconsArray = ref([
     color: var(--c-white-soft);
     max-width: 700px;
     font-size: $size-48;
-    text-shadow: #000000 1px 1px 2px;
+    text-shadow: #000000 1px 2px 4px;
     font-weight: 500;
   }
 }

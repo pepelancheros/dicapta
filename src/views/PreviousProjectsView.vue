@@ -327,7 +327,7 @@ const rowWithIconsOther = ref([
     left: 50px;
     color: var(--c-white-soft);
     max-width: 800px;
-    text-shadow: #000000 1px 1px 2px;
+    text-shadow: #000000 1px 2px 4px;
     font-size: $size-48;
   }
 }

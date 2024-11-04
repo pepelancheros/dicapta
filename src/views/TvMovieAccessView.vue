@@ -198,7 +198,7 @@ const cards = cardsContent.cards;
     top: 90px;
     left: 50px;
     color: var(--c-white-soft);
-    max-width: 600px;
+    max-width: 700px;
   }
 
   &__text-title {
@@ -326,8 +326,12 @@ const cards = cardsContent.cards;
     }
 
     &__text {
-      top: 140px;
+      top: 120px;
       left: 140px;
+    }
+
+    &__text-title {
+      font-size: $size-64;
     }
   }
 

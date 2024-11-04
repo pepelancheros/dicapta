@@ -7,8 +7,8 @@
         alt="A family watches TV and laughs"
       />
       <div class="banner__text">
-        <h1 class="banner__text-title">DICAPTA</h1>
-        <p class="banner__text-subtitle">
+        <h1 class="banner__text-title title-global">DICAPTA</h1>
+        <p class="banner__text-subtitle title-global">
           Disabilities Collaborative Organization, bringing access through the
           power of technology for all.
         </p>
@@ -247,7 +247,7 @@ main {
     top: 60px;
     left: 50px;
     color: var(--c-white-soft);
-    max-width: 300px;
+    max-width: 600px;
   }
 
   &__text-title {
@@ -256,7 +256,7 @@ main {
   }
 
   &__text-subtitle {
-    font-size: $size-16;
+    font-size: $size-24;
     font-weight: 500;
   }
 }
@@ -476,6 +476,14 @@ main {
 
     &__text {
       left: 140px;
+    }
+
+    &__text-title {
+      font-size: $size-64;
+    }
+
+    &__text-subtitle {
+      font-size: $size-32;
     }
   }
 

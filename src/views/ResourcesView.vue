@@ -158,9 +158,10 @@ async function subscribeEmailToNewsletter() {
     top: 90px;
     left: 50px;
     color: var(--c-white-soft);
-    max-width: 800px;
+    max-width: 900px;
     text-shadow: #000000 1px 1px 2px;
     font-size: $size-48;
+    line-height: 1.2;
   }
 
   &__text-subtitle {
@@ -296,6 +297,11 @@ async function subscribeEmailToNewsletter() {
 
     &__text {
       left: 140px;
+      font-size: $size-64;
+    }
+
+    &__text-subtitle {
+      font-size: $size-32;
     }
   }
 

@@ -156,7 +156,7 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: AboutView,
-      redirect: "/about/contact-us",
+      redirect: "/about/mission",
       children: [
         {
           path: "mission",

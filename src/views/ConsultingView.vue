@@ -132,11 +132,13 @@ const rowWithIconsArray = ref([
 
   &__text {
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 30px;
     color: var(--c-white-soft);
     max-width: 700px;
     font-size: $size-48;
+    font-weight: 500;
+    line-height: 1.2;
   }
 }
 
