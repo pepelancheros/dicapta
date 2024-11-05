@@ -28,6 +28,12 @@ const currentArticle = articles.filter(
 
 <style scoped lang="scss">
 .article {
+  :deep(h2) {
+    font-size: $size-24;
+    margin-bottom: 0;
+    margin-top: $size-24;
+  }
+
   &__header {
     display: flex;
     justify-content: center;
@@ -59,10 +65,6 @@ const currentArticle = articles.filter(
     max-width: $size-640;
     float: left;
     margin-right: $size-24;
-  }
-
-  :deep(h2) {
-    font-size: $size-24;
   }
 }
 </style>
