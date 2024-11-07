@@ -564,7 +564,7 @@
   max-width: $size-1024;
   margin: auto;
   padding: 0 $size-24;
-  margin-top: 70px;
+  margin-top: 116px;
   overflow-wrap: break-word;
 
   &__date {
@@ -577,8 +577,8 @@
   }
 
   &__title {
-    font-size: $size-48;
-    line-height: 1.2;
+    font-size: $size-24;
+    line-height: 1.5;
     font-weight: 500;
   }
 
@@ -638,6 +638,11 @@
 @media all and (min-width: $size-768) {
   .white-paper {
     margin-top: 160px;
+
+    &__title {
+      font-size: $size-48;
+      line-height: 1.2;
+    }
   }
 }
 </style>

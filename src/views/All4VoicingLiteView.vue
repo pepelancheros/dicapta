@@ -1,6 +1,6 @@
 <template>
   <main class="all4voicing">
-    <h1 class="all4voicing__title">all4Voicing Lite</h1>
+    <h1 class="all4voicing__title">All4Voicing Lite</h1>
     <p class="all4voicing__subtitle">
       A one-stop shop for making videos accessible to people with visual
       disabilities.

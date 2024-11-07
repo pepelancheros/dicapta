@@ -1,15 +1,5 @@
 <template>
   <main>
-    <section class="banner">
-      <img
-        class="banner__img"
-        src="/assets/images/consulting-banner.png"
-        alt="Conference room. A woman holds a phone that shows the All4Access app."
-      />
-      <p class="banner__text title-global">
-        Creating more inclusive environments
-      </p>
-    </section>
     <section>
       <h1 class="title">Sensitivity Training and Workshops</h1>
       <p class="subtitle">
@@ -119,39 +109,18 @@ const rowWithIconsArray = ref([
 </script>
 
 <style scoped lang="scss">
-.banner {
-  position: relative;
-  height: 500px;
-  margin-bottom: $size-32;
-
-  &__img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
-
-  &__text {
-    position: absolute;
-    top: 120px;
-    left: 30px;
-    color: var(--c-white-soft);
-    max-width: 700px;
-    font-size: $size-48;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-}
-
 .title {
   font-size: $size-48;
+  font-weight: 500;
   text-align: center;
-  font-weight: 600;
+  margin-top: $size-96;
+  padding: 0 $size-16;
 }
 
 .subtitle {
   text-align: center;
-  font-size: $size-16;
-  margin-bottom: $size-48;
+  margin-bottom: $size-24;
+  padding: 0 $size-16;
 }
 
 .row-element {
@@ -168,11 +137,8 @@ const rowWithIconsArray = ref([
 
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
-  .banner {
-    &__text {
-      left: 140px;
-      font-size: $size-64;
-    }
+  .title {
+    margin-top: $size-192;
   }
 }
 </style>

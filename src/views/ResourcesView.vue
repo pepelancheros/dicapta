@@ -87,25 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="newsletters">
-      <h2 class="newsletters__title">Subscribe to our newsletter</h2>
-      <form @submit.prevent="subscribeEmailToNewsletter">
-        <label class="label-hidden" for="email">Email</label>
-        <input
-          class="newsletters__input"
-          v-model="email"
-          aria-label="Email"
-          type="text"
-          id="email"
-          placeholder="Email"
-        />
-        <input
-          class="button newsletters__button"
-          type="submit"
-          value="Subscribe"
-        />
-      </form>
-    </section>
+    <NewslettersSubscription />
   </main>
   <RouterView v-else />
 </template>
@@ -114,31 +96,15 @@
 import jsonSheets from "@/mocked/informationSheetsMocked.json";
 import GenericCard from "@/components/GenericCard.vue";
 import ArticleCard from "@/components/ArticleCard.vue";
+import NewslettersSubscription from "@/components/NewslettersSubscription.vue";
 import Accessibilityjson from "@/mocked/accessibilityTipsMocked.json";
 import { RouterView, useRoute } from "vue-router";
-import { computed, ref } from "vue";
-import { AddNewslettersSubscription } from "@/api/api.js";
+import { computed } from "vue";
 
 const sheets = jsonSheets.sheets;
 const accesibilityArticles = Accessibilityjson.articles;
 const route = useRoute();
 const isParent = computed(() => route.fullPath === "/resources");
-const email = ref("");
-
-async function subscribeEmailToNewsletter() {
-  try {
-    await AddNewslettersSubscription(email.value);
-    window.alert(email.value + " Subscribed!");
-  } catch (error) {
-    window.alert(
-      "Error subscribing: " +
-        email.value +
-        " please make sure you entered a valid email address."
-    );
-  } finally {
-    email.value = "";
-  }
-}
 </script>
 
 <style scoped lang="scss">
@@ -250,44 +216,6 @@ async function subscribeEmailToNewsletter() {
   }
 }
 
-.newsletters {
-  background-color: var(--c-gray-300);
-  padding: $size-48 0;
-
-  &__title {
-    font-size: $size-32;
-    text-align: center;
-    margin-bottom: $size-16;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__input {
-    padding: $size-12 $size-16;
-    border: none;
-    border-radius: $size-16;
-    margin-bottom: $size-24;
-    margin: 0 $size-12 $size-24;
-  }
-
-  &__button {
-    margin: 0 $size-12;
-  }
-}
-
-.label-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
   .banner {
@@ -324,16 +252,6 @@ async function subscribeEmailToNewsletter() {
     &__card {
       margin-left: 0;
       margin-right: 0;
-    }
-  }
-
-  .newsletters {
-    form {
-      flex-direction: row;
-    }
-    &__input {
-      margin-bottom: 0;
-      min-width: 300px;
     }
   }
 }

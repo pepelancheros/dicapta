@@ -52,31 +52,41 @@
       <h2>Explore</h2>
       <ul class="footer__list-container">
         <li class="footer__list-element">
-          Accessibility & Localization Services
+          <a href="/services">Services</a>
         </li>
-        <li class="footer__list-element">Technology</li>
-        <li class="footer__list-element">Resources</li>
-        <li class="footer__list-element">New accessibility releases</li>
+        <li class="footer__list-element">
+          <a href="/projects">Projects</a>
+        </li>
+        <li class="footer__list-element">
+          <a href="/resources">Resources</a>
+        </li>
       </ul>
     </section>
     <section class="footer__section">
       <h2>Info</h2>
       <ul class="footer__list-container">
-        <li class="footer__list-element">TV & movie access</li>
-        <li class="footer__list-element">Join us</li>
-        <li class="footer__list-element">All4Access</li>
-        <li class="footer__list-element">Press kit</li>
-        <li class="footer__list-element">Newsletters</li>
+        <li class="footer__list-element">
+          <a href="/news/newsletters">Newsletters</a>
+        </li>
+        <li class="footer__list-element">Blog</li>
+        <li class="footer__list-element">New Releases</li>
+        <li class="footer__list-element">
+          <a href="/news/press">Press kit</a>
+        </li>
       </ul>
     </section>
     <section class="footer__section">
       <h2>Company</h2>
       <ul class="footer__list-container">
-        <li class="footer__list-element">About us</li>
+        <li class="footer__list-element"><a href="/about">About us</a></li>
         <li class="footer__list-element">
-          <a href="/about/contact-us">Contact us</a>
+          <a
+            href="https://dicaptafoundation.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Social responsibility</a
+          >
         </li>
-        <li class="footer__list-element">Social responsibility</li>
         <li class="footer__list-element">
           <a href="/privacy-policy">Privacy policy</a>
         </li>
@@ -87,12 +97,15 @@
     </section>
     <section class="footer__address-container">
       <h2>Get in touch</h2>
+      <li class="footer__list-element">
+        <a href="/about/contact-us">Contact us</a>
+      </li>
       <address>
         <p>
           1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL
           32708
         </p>
-        <p>Call: 407-389-0712<br />Fax: 407-682-1997</p>
+        <p>Call: 407-389-0712</p>
         <p>info@dicapta.com</p>
       </address>
     </section>
@@ -124,6 +137,16 @@
 
   &__list-element {
     font-size: $size-12;
+
+    a {
+      color: var(--c-gray-700);
+
+      &:hover,
+      &:focus {
+        color: var(--c-blue-500);
+        text-decoration: underline;
+      }
+    }
   }
 
   &__address-container {

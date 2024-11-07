@@ -109,13 +109,47 @@
           showNavModal ? "close" : "menu"
         }}</span>
       </button>
-      <RouterLink to="/" class="logo"
-        ><img src="@/assets/logo.png" alt="Dicapta logo"
-      /></RouterLink>
+      <div class="navbar__mobile-logo-container">
+        <RouterLink to="/" class="logo"
+          ><img src="@/assets/logo.png" alt="Dicapta logo"
+        /></RouterLink>
+        <div class="social-media-container">
+          <a
+            href="https://www.linkedin.com/company/dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/linkedin-logo.png" alt="linkedin logo"
+          /></a>
+          <a
+            href="https://www.youtube.com/user/DICAPTA"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/youtube-logo.png" alt="youtube logo"
+          /></a>
+          <a
+            href="https://www.facebook.com/Dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/facebook-logo.png" alt="facebook logo"
+          /></a>
+          <a
+            href="https://www.instagram.com/dicapta"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/instagram-logo.png" alt="instagram logo"
+          /></a>
+          <a
+            href="https://x.com/Dicapta_tweets"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><img src="/assets/images/x-logo.png" alt="X logo"
+          /></a>
+        </div>
+      </div>
       <div></div>
     </div>
     <div v-if="showNavModal" class="navbar__modal links">
-      <ul class="navbar__elements">
+      <ul class="navbar__elements navbar__modal-elements">
         <li>
           <RouterLink
             class="navbar__main-link"
@@ -327,10 +361,6 @@ function handleMobileNavElementClick() {
 
   &__mobile {
     display: flex;
-
-    .logo {
-      margin-right: $size-32;
-    }
   }
 
   &__hamburger {
@@ -348,10 +378,10 @@ function handleMobileNavElementClick() {
   &__modal {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 85px;
     padding: $size-16 $size-24;
     padding-left: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     background: white;
@@ -362,6 +392,11 @@ function handleMobileNavElementClick() {
     ul {
       list-style-type: none;
     }
+  }
+
+  &__modal-elements {
+    max-height: 80vh;
+    overflow: auto;
   }
 
   &__main-link {
@@ -421,6 +456,27 @@ function handleMobileNavElementClick() {
 
     a.router-link-exact-active {
       border: none;
+    }
+  }
+
+  &__mobile-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-container {
+    display: flex;
+
+    a {
+      margin: 0 $size-12;
+      padding: 0;
+      border-left: none;
+    }
+
+    img {
+      max-height: 17px;
+      margin: 0;
     }
   }
 }

@@ -107,7 +107,7 @@ import TwoColumns from "@/components/TwoColumns.vue";
 .case-study {
   max-width: $size-1024;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 116px;
   padding: 0 $size-24;
 
   &__date {
@@ -120,8 +120,8 @@ import TwoColumns from "@/components/TwoColumns.vue";
   }
 
   &__title {
-    font-size: $size-48;
-    line-height: 1.2;
+    font-size: $size-24;
+    line-height: 1.5;
     font-weight: 500;
   }
 
@@ -149,6 +149,11 @@ import TwoColumns from "@/components/TwoColumns.vue";
 @media all and (min-width: $size-768) {
   .case-study {
     margin-top: 160px;
+
+    &__title {
+      font-size: $size-48;
+      line-height: 1.2;
+    }
   }
 }
 </style>

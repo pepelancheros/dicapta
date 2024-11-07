@@ -16,7 +16,7 @@ import Footer from "@/components/Footer.vue";
 
 <style scoped lang="scss">
 .content {
-  margin-top: 70px;
+  margin-top: 96px;
 }
 
 // styles for tablet size (768px) and higher
