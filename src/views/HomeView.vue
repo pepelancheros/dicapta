@@ -22,7 +22,7 @@
             src="/assets/images/dubbing.png"
             alt="dubbing icon"
             class="services__button-img"
-          /><span class="services__button-text">Dubbing</span>
+          /><span class="services__button-text">Multilingual Dubbing</span>
         </a>
         <a href="/services/audio-description" class="services__button">
           <img
@@ -31,12 +31,26 @@
             class="services__button-img"
           /><span class="services__button-text">Audio Description</span>
         </a>
+        <a href="/services/captioning" class="services__button">
+          <img
+            src="/assets/images/captioning.png"
+            alt="captioning icon"
+            class="services__button-img"
+          /><span class="services__button-text">Captioning</span>
+        </a>
         <a href="/services/consulting" class="services__button">
           <img
             src="/assets/images/consulting.png"
             alt="consulting icon"
             class="services__button-img"
           /><span class="services__button-text">Consulting</span>
+        </a>
+        <a href="/services/media-production" class="services__button">
+          <img
+            src="/assets/images/media-production.png"
+            alt="media production icon"
+            class="services__button-img"
+          /><span class="services__button-text">Media Production</span>
         </a>
         <a href="/projects/previous-projects" class="services__button">
           <img
@@ -284,7 +298,7 @@ main {
     border: none;
     display: flex;
     align-items: center;
-    flex: 0 50%;
+    flex-basis: 30%;
     margin-bottom: $size-32;
     color: var(--c-black);
 
@@ -293,19 +307,19 @@ main {
       color: var(--c-blue-500);
 
       img {
-        width: 110px;
+        transform: scale(1.05);
       }
     }
   }
 
   &__button-img {
-    width: 100px;
+    width: 80px;
     transition: 1s;
   }
 
   &__button-text {
     margin-left: $size-16;
-    font-size: $size-24;
+    font-size: $size-16;
     text-align: left;
     color: inherit;
     font-weight: inherit;
@@ -504,8 +518,13 @@ main {
     &__buttons-container {
       flex-direction: row;
       flex-flow: wrap;
-      width: 700px;
+      max-width: $size-1024;
       margin: auto;
+      justify-content: space-between;
+    }
+
+    &__button-img {
+      width: 100px;
     }
 
     &__button-text {

@@ -159,6 +159,7 @@
       <div class="production__cards-container">
         <TvAndMovieAccessCard
           v-for="card in cards"
+          class="production__card"
           :key="card.id"
           :title="card.title"
           :text="card.text"
@@ -166,6 +167,7 @@
           :videoLink="card.videoLink"
           :videoTitle="card.videoTitle"
           :playlistLink="card.playlistLink"
+          :enterpriseLink="card.enterpriseLink"
         />
       </div>
     </section>
@@ -307,7 +309,7 @@ const cards = cardsContent.cards;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      max-width: $size-1024;
+      max-width: $size-1280;
       margin: auto;
       padding: $size-48 $size-32;
     }
@@ -348,6 +350,11 @@ const cards = cardsContent.cards;
       p {
         font-size: $size-16;
       }
+    }
+  }
+  .production {
+    &__card {
+      max-width: 47%;
     }
   }
 }

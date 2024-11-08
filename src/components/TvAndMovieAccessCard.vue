@@ -3,7 +3,21 @@
     <h3 class="tv-and-movie-card__title">{{ title }}</h3>
     <div class="tv-and-movie-card__content">
       <div class="tv-and-movie-card__left-column">
+        <a
+          v-if="enterpriseLink"
+          class="tv-and-movie-card__logo-container"
+          :href="enterpriseLink"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="tv-and-movie-card__logo"
+            :src="imgUrl"
+            :alt="'logo of ' + title"
+          />
+        </a>
         <img
+          v-else
           class="tv-and-movie-card__logo"
           :src="imgUrl"
           :alt="'logo of ' + title"
@@ -57,12 +71,15 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  enterpriseLink: {
+    type: String,
+    default: "",
+  },
 });
 </script>
 
 <style scoped lang="scss">
 .tv-and-movie-card {
-  width: 310px;
   border-top: $size-4 solid var(--c-blue-500);
   padding: $size-12 $size-24 $size-24;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
@@ -72,12 +89,12 @@ const props = defineProps({
     text-align: center;
     font-size: $size-24;
     font-weight: 500;
+    margin-top: $size-16;
   }
 
   &__content {
     display: flex;
     padding-top: $size-12;
-    height: 90%;
   }
 
   &__left-column {
@@ -88,9 +105,18 @@ const props = defineProps({
     padding-right: $size-16;
   }
 
+  &__logo-container {
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
   &__logo {
     max-width: 150px;
     margin-bottom: $size-24;
+    transition: all 0.3s ease;
   }
 
   &__right-column {
@@ -110,13 +136,6 @@ const props = defineProps({
     font-size: $size-16;
     font-weight: 500;
     align-self: center;
-  }
-}
-
-// styles for tablet size (768px) and higher
-@media all and (min-width: $size-768) {
-  .tv-and-movie-card {
-    width: 450px;
   }
 }
 </style>
