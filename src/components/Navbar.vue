@@ -21,7 +21,9 @@
                 >Audio Description</RouterLink
               >
             </li>
-            <li><RouterLink to="/services/caption">Caption</RouterLink></li>
+            <li>
+              <RouterLink to="/services/captioning">Captioning</RouterLink>
+            </li>
             <li>
               <RouterLink to="/services/consulting">Consulting</RouterLink>
             </li>
@@ -182,9 +184,9 @@
             </li>
             <li>
               <RouterLink
-                to="/services/caption"
+                to="/services/captioning"
                 @click="handleMobileNavElementClick"
-                >Caption</RouterLink
+                >Captioning</RouterLink
               >
             </li>
             <li>

@@ -54,9 +54,9 @@ const router = createRouter({
           name: "audio description",
         },
         {
-          path: "caption",
+          path: "captioning",
           component: CaptionView,
-          name: "caption",
+          name: "captioning",
         },
         {
           path: "consulting",

@@ -1,7 +1,7 @@
 <template>
   <main class="caption">
     <section>
-      <h1 class="caption__title">Caption</h1>
+      <h1 class="caption__title">Captioning</h1>
       <p class="caption__subtitle">
         Turning audio from any media into an accessible text format
       </p>
