@@ -6,7 +6,7 @@
     <section>
       <img
         class="contact__main-img"
-        src="/assets/images/contact-us.jpg"
+        src="/assets/images/contact-us.webp"
         alt="Cartoon: Two people brainstorm an idea using technology."
       />
       <p class="contact__top-text">
@@ -41,7 +41,7 @@
         height="450"
         class="contact__map"
         style="border: 0"
-        allowfullscreen=""
+        allowfullscreen="false"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>

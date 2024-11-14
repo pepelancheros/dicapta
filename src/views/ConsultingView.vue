@@ -38,7 +38,7 @@
         </template>
         <template #right-column>
           <img
-            src="/assets/images/consulting-workshops.png"
+            src="/assets/images/consulting-workshops.webp"
             alt="reunion of multiple people of different ages in a workshop."
           />
         </template>
@@ -46,8 +46,9 @@
       <TwoColumns>
         <template #left-column>
           <img
-            src="/assets/images/consulting-ada.png"
+            src="/assets/images/consulting-ada.webp"
             alt="reunion of multiple people from the ADA (Americans with Disabilities)"
+            loading="lazy"
           />
         </template>
         <template #right-column>

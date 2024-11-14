@@ -1,11 +1,30 @@
 <template>
   <main>
     <section class="banner">
-      <img
-        class="banner__img"
-        src="/assets/images/home-banner.jpg"
-        alt="A family watches TV and laughs"
-      />
+      <picture>
+        <!-- Desktop Image -->
+        <source
+          class="banner__img"
+          media="(min-width: 768px)"
+          srcset="/assets/images/home-banner.webp"
+          alt="A family watches TV and laughs"
+        />
+        <!-- Mobile Image -->
+        <source
+          class="banner__img"
+          media="(max-width: 767px)"
+          srcset="/assets/images/home-banner-m.webp"
+          alt="A family watches TV and laughs"
+        />
+        <!-- Fallback Image -->
+        <img
+          class="banner__img"
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/home-banner.webp"
+          alt="A family watches TV and laughs"
+        />
+      </picture>
       <div class="banner__text">
         <h1 class="banner__text-title title-global">DICAPTA</h1>
         <p class="banner__text-subtitle title-global">
@@ -33,7 +52,7 @@
         </a>
         <a href="/services/captioning" class="services__button">
           <img
-            src="/assets/images/captioning.png"
+            src="/assets/images/captioning.webp"
             alt="captioning icon"
             class="services__button-img"
           /><span class="services__button-text">Captioning</span>
@@ -75,10 +94,11 @@
           <iframe
             width="300"
             height="200"
+            class="our-work__iframe"
             title="Dicapta accessibility"
             src="https://www.youtube.com/embed/giFtMHZSrjg?si=c2GVQYeq_17-fUWR&amp;wmode=transparent"
             frameborder="0"
-            class="our-work__iframe"
+            loading="lazy"
           ></iframe>
           <p class="our-work__text">Accessibility</p>
         </div>
@@ -86,10 +106,11 @@
           <iframe
             width="300"
             height="200"
+            class="our-work__iframe"
             title="Dicapta technology"
             src="https://www.youtube.com/embed/yz7WlHlS_Fw?si=5ycJWgXqlMgdgRwM&amp;amp;wmode=transparent"
             frameborder="0"
-            class="our-work__iframe"
+            loading="lazy"
           ></iframe>
           <p class="our-work__text">Technology</p>
         </div>
@@ -97,10 +118,11 @@
           <iframe
             width="300"
             height="200"
+            class="our-work__iframe"
             title="Dicapta media services"
             src="https://www.youtube.com/embed/RaGw21RNca8?si=jaD5mXXYEh5sx09w&amp;amp;wmode=transparent"
             frameborder="0"
-            class="our-work__iframe"
+            loading="lazy"
           ></iframe>
           <p class="our-work__text">Media services</p>
         </div>
@@ -113,26 +135,31 @@
           src="/assets/images/logos/frp.png"
           alt="fred rogers productions logo"
           class="our-partners__img"
+          loading="lazy"
         />
         <img
           src="/assets/images/logos/sesame-workshop.png"
           alt="sesame workshop logo"
           class="our-partners__img"
+          loading="lazy"
         />
         <img
           src="/assets/images/logos/pov.png"
           alt="pov logo"
           class="our-partners__img"
+          loading="lazy"
         />
         <img
           src="/assets/images/logos/ptk.png"
           alt="passport to knowledge logo"
           class="our-partners__img"
+          loading="lazy"
         />
         <img
           src="/assets/images/logos/wb.png"
           alt="water bear logo"
           class="our-partners__img"
+          loading="lazy"
         />
       </div>
     </section>

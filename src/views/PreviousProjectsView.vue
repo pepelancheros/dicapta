@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="/assets/images/projects-banner.jpg"
+        src="/assets/images/projects-banner.webp"
         alt="A hand interacts with a digital interface displaying various icons, illustrating technology and user engagement."
       />
       <div class="banner__text">
@@ -40,6 +40,7 @@
           <img
             src="/assets/images/meeting.jpg"
             alt="Conference room. A large audience watches a group of panelists."
+            loading="lazy"
           />
         </template>
       </TwoColumns>
@@ -76,8 +77,9 @@
         <template #right-column>
           <div class="previous-projects__gocc4all-right-column">
             <img
-              src="/assets/images/gocc4all-captions.png"
+              src="/assets/images/gocc4all-captions.webp"
               alt="Illustration. The GoCC4All app runs captions on a mobile phone’s screen. Next to the phone appears a braille display and a phone with a speaker on top."
+              loading="lazy"
             />
             <div class="store-badges">
               <a
@@ -88,6 +90,7 @@
                   class="apple-badge"
                   src="/assets/images/apple-store.png"
                   alt="apple store badge"
+                  loading="lazy"
               /></a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.dicaptafoundation.gocc4all2"
@@ -97,6 +100,7 @@
                   class="google-badge"
                   src="/assets/images/google-play-badge.png"
                   alt="google play badge"
+                  loading="lazy"
               /></a>
             </div>
           </div>
@@ -125,8 +129,9 @@
         <template #left-column>
           <div>
             <img
-              src="/assets/images/dicapta-workflow-control-platform.png"
+              src="/assets/images/dicapta-workflow-control-platform.webp"
               alt="Screenshot of Dicapta’s administrative platform."
+              loading="lazy"
             />
           </div>
         </template>
@@ -170,16 +175,18 @@
         </template>
         <template #right-column>
           <img
-            src="/assets/images/cncc.png"
+            src="/assets/images/cncc.webp"
             alt="C&CC logo. the letters C & C C inside a blue cloud."
+            loading="lazy"
           />
         </template>
       </TwoColumns>
       <TwoColumns class="previous-projects__custom-two-columns">
         <template #left-column>
           <img
-            src="/assets/images/img2-tecno.png"
+            src="/assets/images/img2-tecno.webp"
             alt="Screen with captions. To the left of the screen, three sheets show statistics for accuracy, integrity, synchronicity, and average speed."
+            loading="lazy"
           />
         </template>
         <template #right-column>
@@ -217,8 +224,9 @@
         </template>
         <template #right-column>
           <img
-            src="/assets/images/dad-technology.png"
+            src="/assets/images/dad-technology.webp"
             alt="A girl with headphones. Over her image, a transparent background shows a yellow banner with the letters DAD."
+            loading="lazy"
           />
         </template>
       </TwoColumns>

@@ -7,7 +7,7 @@
     <TwoColumns>
       <template #left-column>
         <img
-          src="/assets/images/media-production.jpg"
+          src="/assets/images/media-production.webp"
           alt="A man holds a professional camera."
         />
         <a class="button" href="/about/contact-us">Contact Us</a>
@@ -72,6 +72,7 @@
               src="https://www.youtube.com/embed/AZvdGSr7roA?wmode=transparent"
               frameborder="0"
               allowfullscreen="allowfullscreen"
+              loading="lazy"
             ></iframe>
             <h2>Lección de Descripción</h2>
             <p>SPANISH</p>
@@ -84,6 +85,7 @@
               src="https://www.youtube.com/embed/kckxSsCiaB4?wmode=transparent"
               frameborder="0"
               allowfullscreen="allowfullscreen"
+              loading="lazy"
             ></iframe>
             <h2>Description Tutorial</h2>
             <p>ENGLISH</p>
@@ -100,6 +102,7 @@
               src="https://www.youtube.com/embed/wTkPkB8VzVw?wmode=transparent"
               frameborder="0"
               allowfullscreen="allowfullscreen"
+              loading="lazy"
             ></iframe>
             <h2>PSA "Activa el CC"</h2>
             <p>SPANISH</p>
@@ -112,6 +115,7 @@
               src="https://www.youtube.com/embed/KTN2Jpr_LUE?wmode=transparent"
               frameborder="0"
               allowfullscreen="allowfullscreen"
+              loading="lazy"
             ></iframe>
             <h2>PSA "Describe so that we all can see"</h2>
             <p>ENGLISH</p>

@@ -76,6 +76,7 @@
             src="https://www.youtube.com/embed/Dbwvayo8NUk?wmode=transparent"
             frameborder="0"
             allowfullscreen="allowfullscreen"
+            loading="lazy"
           ></iframe>
         </template>
       </TwoColumns>

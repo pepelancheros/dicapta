@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner__img"
-        src="/assets/images/resources-banner.jpeg"
+        src="/assets/images/resources-banner.webp"
         alt="A child looking through a fence."
       />
       <div class="banner__text">
@@ -53,7 +53,7 @@
       <h2 class="accessibility-tips-section__title">Case Studies</h2>
       <div class="accessibility-tips-section__container">
         <div class="mocked-card">
-          <img src="/assets/images/shutterstock.jpg" alt="" />
+          <img src="/assets/images/shutterstock.webp" alt="" loading="lazy" />
           <h3>
             Empowering Accessibility: How All4Access Technology Transformed
             Access for a Blind Student at Johns Hopkins
@@ -73,7 +73,11 @@
       <h2 class="accessibility-tips-section__title">White Papers</h2>
       <div class="accessibility-tips-section__container">
         <div class="mocked-card">
-          <img src="/assets/images/girl-and-boy-illustration.png" alt="" />
+          <img
+            src="/assets/images/girl-and-boy-illustration.webp"
+            alt="Two illustrations in one image: Image on the left. A young girl with light brown skin and long, dark, curly hair sits at a desk, reading a large book. She wears a bright yellow dress adorned with a sunflower pattern. Her eyes sparkle. The room is warmly illuminated, featuring a globe, a telescope, and posters in the background. Image on the right. A boy with dark brown skin and short, tightly coiled hair operates a toy car outside. He sports a red hoodie paired with blue jeans. He smiles. In the background are other children. A playground is in the distance."
+            loading="lazy"
+          />
           <h3>
             Embracing Diversity in Audio Description: A Paradigm Shift for
             Inclusivity

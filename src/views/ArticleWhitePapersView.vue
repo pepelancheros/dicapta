@@ -112,7 +112,7 @@
       <h2>The Paradigm Shift: Importance of Including Race and Ethnicity</h2>
       <img
         class="white-paper__image-left"
-        src="/assets/images/girl-and-boy-illustration.png"
+        src="/assets/images/girl-and-boy-illustration.webp"
         alt="Two illustrations in one image: Image on the left. A young girl with light brown skin and long, dark, curly hair sits at a desk, reading a large book. She wears a bright yellow dress adorned with a sunflower pattern. Her eyes sparkle. The room is warmly illuminated, featuring a globe, a telescope, and posters in the background. Image on the right. A boy with dark brown skin and short, tightly coiled hair operates a toy car outside. He sports a red hoodie paired with blue jeans. He smiles. In the background are other children. A playground is in the distance."
       />
       <p>
@@ -218,7 +218,7 @@
       <h4>- Social interaction</h4>
       <img
         class="white-paper__image-right"
-        src="/assets/images/african-american-boy.png"
+        src="/assets/images/african-american-boy.webp"
         alt="Indoors. An African American boy with black curly hair is assembling a robot from a science kit. He is wearing a light blue t-shirt with a cartoon rocket ship design. The boy is seated at a wooden table. He has a focused expression and looks at the robot pieces on the table while he lifts a white and long piece from the table. The wall behind him is adorned with posters and a bookshelf with books."
       />
       <p>

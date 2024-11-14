@@ -13,7 +13,7 @@
       }}</a>
     </div>
     <div class="two-columns-text-and-image__image-container">
-      <img v-if="imageUrl" :src="imageUrl" :alt="imageAlt" />
+      <img v-if="imageUrl" :src="imageUrl" :alt="imageAlt" loading="lazy" />
       <p v-if="imageText">
         {{ imageText }}
       </p>

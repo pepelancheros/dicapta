@@ -1,11 +1,30 @@
 <template>
   <main class="tv-movie-access">
     <section class="banner">
-      <img
-        class="banner__img"
-        src="/assets/images/tv-movie-access-banner.png"
-        alt="A kid looks at a tablet with awe. "
-      />
+      <picture>
+        <!-- Desktop Image -->
+        <source
+          class="banner__img"
+          media="(min-width: 768px)"
+          srcset="/assets/images/tv-movie-access-banner.webp"
+          alt="A kid looks at a tablet with awe. "
+        />
+        <!-- Mobile Image -->
+        <source
+          class="banner__img"
+          media="(max-width: 767px)"
+          srcset="/assets/images/tv-movie-access-banner-m.webp"
+          alt="A kid looks at a tablet with awe. "
+        />
+        <!-- Fallback Image -->
+        <img
+          class="banner__img"
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/tv-movie-access-banner.webp"
+          alt="A kid looks at a tablet with awe. "
+        />
+      </picture>
       <div class="banner__text">
         <h1 class="banner__text-title">
           <strong>Accessible Educational Media</strong> is our main contribution
@@ -22,21 +41,21 @@
           <div class="tv-movie-access__contents">
             <a href="#collaboration" class="tv-movie-access__contents-element">
               <img
-                src="/assets/images/ico-collaboration.png"
+                src="/assets/images/ico-collaboration.webp"
                 alt="collaboration icon, if clicked redirects to the collaboration section in this page."
               />
               <p>Collaboration</p>
             </a>
             <a href="#distribution" class="tv-movie-access__contents-element">
               <img
-                src="/assets/images/ico-distribution.png"
+                src="/assets/images/ico-distribution.webp"
                 alt="distribution icon, if clicked redirects to the dissemination and distribution section in this page."
               />
               <p>Dissemination & Distribution</p>
             </a>
             <a href="#production" class="tv-movie-access__contents-element">
               <img
-                src="/assets/images/ico-production.png"
+                src="/assets/images/ico-production.webp"
                 alt="production icon, if clicked redirects to the production section in this page."
               />
               <p>Production</p>
@@ -97,6 +116,7 @@
             src="https://www.youtube.com/embed/gd1u42TcQnA?rel=0&amp;amp;wmode=transparent"
             frameborder="0"
             allowfullscreen="allowfullscreen"
+            loading="lazy"
           ></iframe>
         </template>
       </TwoColumns>
@@ -121,16 +141,18 @@
         </template>
         <template #right-column>
           <img
-            src="/assets/images/film-festival-miami.png"
+            src="/assets/images/film-festival-miami.webp"
             alt="Three women stand in front of an Iberoamerican Film Festival Miami mural. A guide dog sits in front of the woman on the left."
+            loading="lazy"
           />
         </template>
       </TwoColumns>
       <TwoColumns>
         <template #left-column>
           <img
-            src="/assets/images/couple-watching-tv.png"
+            src="/assets/images/couple-watching-tv.webp"
             alt="A couple watches TV. Both use the All4Access app. She uses it to listen to an audio description, and he uses it to watch ASL."
+            loading="lazy"
           />
         </template>
         <template #right-column>

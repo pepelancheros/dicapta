@@ -7,7 +7,7 @@
     </p>
     <RowWithIconsAndText :elements="rowWithIconsArray" />
     <TwoColumnTextAndImage
-      imageUrl="/assets/images/All4Voicingimage.png"
+      imageUrl="/assets/images/All4Voicingimage.webp"
       imageAlt="A video editor where the description and audio of a video is being modified."
       class="all4voicing__info"
     >

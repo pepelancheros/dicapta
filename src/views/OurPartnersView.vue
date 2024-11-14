@@ -89,7 +89,11 @@
         </p>
       </template>
       <template #right-column>
-        <img src="/assets/images/partners-in-accessibility.png" />
+        <img
+          src="/assets/images/partners-in-accessibility.webp"
+          alt=""
+          loading="lazy"
+        />
       </template>
     </TwoColumns>
     <section class="organization-partners">
@@ -113,7 +117,7 @@
           :key="element"
         >
           <div class="carousel__item">
-            <img :src="element" alt="" />
+            <img :src="element" alt="bussiness logo" loading="lazy" />
           </div>
         </Slide>
         <template #addons>

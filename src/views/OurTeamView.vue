@@ -1,11 +1,30 @@
 <template>
   <main class="our-team">
     <div class="banner">
-      <img
-        class="banner__img"
-        src="/assets/images/our-team-banner.jpg"
-        alt="On the blue water, 4 people row in sync in a long, thin boat."
-      />
+      <picture>
+        <!-- Desktop Image -->
+        <source
+          class="banner__img"
+          media="(min-width: 768px)"
+          srcset="/assets/images/our-team-banner.webp"
+          alt="On the blue water, 4 people row in sync in a long, thin boat."
+        />
+        <!-- Mobile Image -->
+        <source
+          class="banner__img"
+          media="(max-width: 767px)"
+          srcset="/assets/images/our-team-banner-m.webp"
+          alt="On the blue water, 4 people row in sync in a long, thin boat."
+        />
+        <!-- Fallback Image -->
+        <img
+          class="banner__img"
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/our-team-banner.webp"
+          alt="On the blue water, 4 people row in sync in a long, thin boat."
+        />
+      </picture>
     </div>
     <div class="our-team__content">
       <section class="our-team__section">

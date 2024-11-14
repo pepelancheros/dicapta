@@ -14,6 +14,7 @@
             class="tv-and-movie-card__logo"
             :src="imgUrl"
             :alt="'logo of ' + title"
+            loading="lazy"
           />
         </a>
         <img
@@ -21,6 +22,7 @@
           class="tv-and-movie-card__logo"
           :src="imgUrl"
           :alt="'logo of ' + title"
+          loading="lazy"
         />
         <div>
           <p>{{ videoTitle }}</p>
@@ -29,6 +31,7 @@
             :src="videoLink"
             frameborder="0"
             allowfullscreen="allowfullscreen"
+            loading="lazy"
           ></iframe>
         </div>
       </div>
