@@ -8,6 +8,8 @@
           media="(min-width: 768px)"
           srcset="/assets/images/mission-banner.webp"
           alt="Two people watching TV. The same image from the TV appears on a tablet. Next to the AD icon on the tablet."
+          width="2500"
+          heigth="1667"
         />
         <!-- Mobile Image -->
         <source
@@ -15,6 +17,8 @@
           media="(max-width: 767px)"
           srcset="/assets/images/mission-banner-m.webp"
           alt="Two people watching TV. The same image from the TV appears on a tablet. Next to the AD icon on the tablet."
+          width="1400"
+          heigth="934"
         />
         <!-- Fallback Image -->
         <img
@@ -23,6 +27,8 @@
           decoding="async"
           src="/assets/images/mission-banner.webp"
           alt="Two people watching TV. The same image from the TV appears on a tablet. Next to the AD icon on the tablet."
+          width="2500"
+          heigth="1667"
         />
       </picture>
       <h1 class="banner__text">

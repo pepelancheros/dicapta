@@ -40,6 +40,8 @@
           <img
             src="/assets/images/consulting-workshops.webp"
             alt="reunion of multiple people of different ages in a workshop."
+            width="900"
+            height="600"
           />
         </template>
       </TwoColumns>
@@ -49,6 +51,8 @@
             src="/assets/images/consulting-ada.webp"
             alt="reunion of multiple people from the ADA (Americans with Disabilities)"
             loading="lazy"
+            width="900"
+            height="600"
           />
         </template>
         <template #right-column>

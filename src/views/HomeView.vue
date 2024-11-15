@@ -8,6 +8,8 @@
           media="(min-width: 768px)"
           srcset="/assets/images/home-banner.webp"
           alt="A family watches TV and laughs"
+          width="2500"
+          height="1477"
         />
         <!-- Mobile Image -->
         <source
@@ -15,6 +17,8 @@
           media="(max-width: 767px)"
           srcset="/assets/images/home-banner-m.webp"
           alt="A family watches TV and laughs"
+          width="1400"
+          height="827"
         />
         <!-- Fallback Image -->
         <img
@@ -23,6 +27,8 @@
           decoding="async"
           src="/assets/images/home-banner.webp"
           alt="A family watches TV and laughs"
+          width="2500"
+          height="1477"
         />
       </picture>
       <div class="banner__text">
@@ -38,16 +44,20 @@
       <div class="services__buttons-container">
         <a href="/services/multilingual-dubbing" class="services__button">
           <img
-            src="/assets/images/dubbing.png"
+            src="/assets/images/dubbing.webp"
             alt="dubbing icon"
             class="services__button-img"
+            width="153"
+            height="153"
           /><span class="services__button-text">Multilingual Dubbing</span>
         </a>
         <a href="/services/audio-description" class="services__button">
           <img
-            src="/assets/images/audiodescription.png"
+            src="/assets/images/audiodescription.webp"
             alt="audio description icon"
             class="services__button-img"
+            width="153"
+            height="153"
           /><span class="services__button-text">Audio Description</span>
         </a>
         <a href="/services/captioning" class="services__button">
@@ -55,13 +65,17 @@
             src="/assets/images/captioning.webp"
             alt="captioning icon"
             class="services__button-img"
+            width="200"
+            height="200"
           /><span class="services__button-text">Captioning</span>
         </a>
         <a href="/services/consulting" class="services__button">
           <img
-            src="/assets/images/consulting.png"
+            src="/assets/images/consulting.webp"
             alt="consulting icon"
             class="services__button-img"
+            width="153"
+            height="153"
           /><span class="services__button-text">Consulting</span>
         </a>
         <a href="/services/media-production" class="services__button">
@@ -69,13 +83,17 @@
             src="/assets/images/media-production-icon.webp"
             alt="media production icon"
             class="services__button-img"
+            width="250"
+            height="250"
           /><span class="services__button-text">Media Production</span>
         </a>
         <a href="/projects/previous-projects" class="services__button">
           <img
-            src="/assets/images/liveevents.png"
+            src="/assets/images/liveevents.webp"
             alt="live events icon"
             class="services__button-img"
+            width="154"
+            height="153"
           /><span class="services__button-text">Live Events Accessibility</span>
         </a>
       </div>
@@ -136,30 +154,40 @@
           alt="fred rogers productions logo"
           class="our-partners__img"
           loading="lazy"
+          width="160"
+          height="160"
         />
         <img
           src="/assets/images/logos/sesame-workshop.webp"
           alt="sesame workshop logo"
           class="our-partners__img"
           loading="lazy"
+          width="160"
+          height="160"
         />
         <img
           src="/assets/images/logos/pov.webp"
           alt="pov logo"
           class="our-partners__img"
           loading="lazy"
+          width="160"
+          height="160"
         />
         <img
           src="/assets/images/logos/ptk.webp"
           alt="passport to knowledge logo"
           class="our-partners__img"
           loading="lazy"
+          width="160"
+          height="160"
         />
         <img
-          src="/assets/images/logos/wb.png"
+          src="/assets/images/logos/wb.webp"
           alt="water bear logo"
           class="our-partners__img"
           loading="lazy"
+          width="164"
+          height="164"
         />
       </div>
     </section>

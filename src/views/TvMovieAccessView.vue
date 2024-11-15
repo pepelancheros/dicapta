@@ -7,14 +7,18 @@
           class="banner__img"
           media="(min-width: 768px)"
           srcset="/assets/images/tv-movie-access-banner.webp"
-          alt="A kid looks at a tablet with awe. "
+          alt="A kid looks at a tablet with awe."
+          width="2330"
+          height="982"
         />
         <!-- Mobile Image -->
         <source
           class="banner__img"
           media="(max-width: 767px)"
           srcset="/assets/images/tv-movie-access-banner-m.webp"
-          alt="A kid looks at a tablet with awe. "
+          alt="A kid looks at a tablet with awe."
+          width="1400"
+          height="590"
         />
         <!-- Fallback Image -->
         <img
@@ -22,7 +26,9 @@
           aria-hidden="true"
           decoding="async"
           src="/assets/images/tv-movie-access-banner.webp"
-          alt="A kid looks at a tablet with awe. "
+          alt="A kid looks at a tablet with awe."
+          width="2330"
+          height="982"
         />
       </picture>
       <div class="banner__text">
@@ -43,6 +49,8 @@
               <img
                 src="/assets/images/ico-collaboration.webp"
                 alt="collaboration icon, if clicked redirects to the collaboration section in this page."
+                width="200"
+                height="244"
               />
               <p>Collaboration</p>
             </a>
@@ -50,6 +58,8 @@
               <img
                 src="/assets/images/ico-distribution.webp"
                 alt="distribution icon, if clicked redirects to the dissemination and distribution section in this page."
+                width="200"
+                height="244"
               />
               <p>Dissemination & Distribution</p>
             </a>
@@ -57,6 +67,8 @@
               <img
                 src="/assets/images/ico-production.webp"
                 alt="production icon, if clicked redirects to the production section in this page."
+                width="200"
+                height="244"
               />
               <p>Production</p>
             </a>
@@ -144,6 +156,8 @@
             src="/assets/images/film-festival-miami.webp"
             alt="Three women stand in front of an Iberoamerican Film Festival Miami mural. A guide dog sits in front of the woman on the left."
             loading="lazy"
+            width="600"
+            height="450"
           />
         </template>
       </TwoColumns>
@@ -153,6 +167,8 @@
             src="/assets/images/couple-watching-tv.webp"
             alt="A couple watches TV. Both use the All4Access app. She uses it to listen to an audio description, and he uses it to watch ASL."
             loading="lazy"
+            width="900"
+            height="459"
           />
         </template>
         <template #right-column>

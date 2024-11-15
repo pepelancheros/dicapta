@@ -5,6 +5,8 @@
         class="banner__img"
         src="/assets/images/all4access-banner.webp"
         alt="Several colorful ropes bind together in a circle."
+        width="1919"
+        height="600"
       />
       <p class="banner__text title-global">
         All4Access is our vehicle to make the difference
@@ -111,6 +113,8 @@
             src="/assets/images/technology-illustration.webp"
             alt="Illustration. Center: 4 connectors point down from a cloud, underneath, 3 hands hold phones with the All4Access logo. Sides: 4 people look at an electronic device."
             loading="lazy"
+            width="696"
+            height="382"
           />
         </template>
       </TwoColumns>
@@ -120,6 +124,8 @@
             src="/assets/images/access4all-feeling-through.webp"
             alt="A man puts on a hoodie. To the right, the All4access app runs on a phone."
             loading="lazy"
+            width="771"
+            height="422"
           />
         </template>
         <template #right-column>

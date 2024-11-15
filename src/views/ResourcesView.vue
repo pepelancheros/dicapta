@@ -5,6 +5,8 @@
         class="banner__img"
         src="/assets/images/resources-banner.webp"
         alt="A child looking through a fence."
+        width="1024"
+        height="768"
       />
       <div class="banner__text">
         <h1 class="banner__text-title">DICAPTA Resources</h1>
@@ -53,7 +55,13 @@
       <h2 class="accessibility-tips-section__title">Case Studies</h2>
       <div class="accessibility-tips-section__container">
         <div class="mocked-card">
-          <img src="/assets/images/shutterstock.webp" alt="" loading="lazy" />
+          <img
+            src="/assets/images/shutterstock.webp"
+            alt=""
+            loading="lazy"
+            width="800"
+            height="534"
+          />
           <h3>
             Empowering Accessibility: How All4Access Technology Transformed
             Access for a Blind Student at Johns Hopkins
@@ -77,6 +85,8 @@
             src="/assets/images/girl-and-boy-illustration.webp"
             alt="Two illustrations in one image: Image on the left. A young girl with light brown skin and long, dark, curly hair sits at a desk, reading a large book. She wears a bright yellow dress adorned with a sunflower pattern. Her eyes sparkle. The room is warmly illuminated, featuring a globe, a telescope, and posters in the background. Image on the right. A boy with dark brown skin and short, tightly coiled hair operates a toy car outside. He sports a red hoodie paired with blue jeans. He smiles. In the background are other children. A playground is in the distance."
             loading="lazy"
+            width="468"
+            height="468"
           />
           <h3>
             Embracing Diversity in Audio Description: A Paradigm Shift for

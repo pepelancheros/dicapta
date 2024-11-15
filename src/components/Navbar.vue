@@ -2,7 +2,11 @@
   <nav class="navbar">
     <div class="navbar__content navbar__desktop">
       <RouterLink to="/" class="logo"
-        ><img src="@/assets/logo.webp" alt="Dicapta logo"
+        ><img
+          src="@/assets/logo.webp"
+          alt="Dicapta logo"
+          width="600"
+          height="220"
       /></RouterLink>
       <ul class="navbar__elements">
         <li><RouterLink class="navbar__main-link" to="/">Home</RouterLink></li>
@@ -113,38 +117,62 @@
       </button>
       <div class="navbar__mobile-logo-container">
         <RouterLink to="/" class="logo"
-          ><img src="@/assets/logo.webp" alt="Dicapta logo"
+          ><img
+            src="@/assets/logo.webp"
+            alt="Dicapta logo"
+            width="600"
+            height="220"
         /></RouterLink>
         <div class="social-media-container">
           <a
             href="https://www.linkedin.com/company/dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/linkedin-logo.png" alt="linkedin logo"
+            ><img
+              src="/assets/images/linkedin-logo.webp"
+              alt="linkedin logo"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://www.youtube.com/user/DICAPTA"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/youtube-logo.png" alt="youtube logo"
+            ><img
+              src="/assets/images/youtube-logo.webp"
+              alt="youtube logo"
+              width="143"
+              height="100"
           /></a>
           <a
             href="https://www.facebook.com/Dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/facebook-logo.webp" alt="facebook logo"
+            ><img
+              src="/assets/images/facebook-logo.webp"
+              alt="facebook logo"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://www.instagram.com/dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/instagram-logo.png" alt="instagram logo"
+            ><img
+              src="/assets/images/instagram-logo.webp"
+              alt="instagram logo"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://x.com/Dicapta_tweets"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/x-logo.webp" alt="X logo"
+            ><img
+              src="/assets/images/x-logo.webp"
+              alt="X logo"
+              width="100"
+              height="90"
           /></a>
         </div>
       </div>

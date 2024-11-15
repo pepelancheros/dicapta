@@ -8,6 +8,8 @@
           media="(min-width: 768px)"
           srcset="/assets/images/our-team-banner.webp"
           alt="On the blue water, 4 people row in sync in a long, thin boat."
+          width="2500"
+          height="703"
         />
         <!-- Mobile Image -->
         <source
@@ -15,6 +17,8 @@
           media="(max-width: 767px)"
           srcset="/assets/images/our-team-banner-m.webp"
           alt="On the blue water, 4 people row in sync in a long, thin boat."
+          width="1400"
+          height="394"
         />
         <!-- Fallback Image -->
         <img
@@ -23,6 +27,8 @@
           decoding="async"
           src="/assets/images/our-team-banner.webp"
           alt="On the blue water, 4 people row in sync in a long, thin boat."
+          width="2500"
+          height="703"
         />
       </picture>
     </div>

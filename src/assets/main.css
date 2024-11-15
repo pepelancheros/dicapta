@@ -73,3 +73,8 @@ strong {
   width: 1px;
   overflow: hidden;
 }
+
+img {
+  height: auto;
+  width: auto;
+}

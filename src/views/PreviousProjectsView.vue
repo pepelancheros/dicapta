@@ -5,6 +5,8 @@
         class="banner__img"
         src="/assets/images/projects-banner.webp"
         alt="A hand interacts with a digital interface displaying various icons, illustrating technology and user engagement."
+        width="1920"
+        height="1080"
       />
       <div class="banner__text">
         <h1 class="banner__text-title">Previous projects</h1>
@@ -41,6 +43,8 @@
             src="/assets/images/meeting.jpg"
             alt="Conference room. A large audience watches a group of panelists."
             loading="lazy"
+            width="287"
+            height="176"
           />
         </template>
       </TwoColumns>
@@ -80,6 +84,8 @@
               src="/assets/images/gocc4all-captions.webp"
               alt="Illustration. The GoCC4All app runs captions on a mobile phone’s screen. Next to the phone appears a braille display and a phone with a speaker on top."
               loading="lazy"
+              width="771"
+              height="422"
             />
             <div class="store-badges">
               <a
@@ -91,6 +97,8 @@
                   src="/assets/images/apple-store.png"
                   alt="apple store badge"
                   loading="lazy"
+                  width="120"
+                  heigth="40"
               /></a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.dicaptafoundation.gocc4all2"
@@ -101,6 +109,8 @@
                   src="/assets/images/google-play-badge.png"
                   alt="google play badge"
                   loading="lazy"
+                  width="566"
+                  heigth="166"
               /></a>
             </div>
           </div>
@@ -132,6 +142,8 @@
               src="/assets/images/dicapta-workflow-control-platform.webp"
               alt="Screenshot of Dicapta’s administrative platform."
               loading="lazy"
+              width="900"
+              height="448"
             />
           </div>
         </template>
@@ -178,6 +190,8 @@
             src="/assets/images/cncc.webp"
             alt="C&CC logo. the letters C & C C inside a blue cloud."
             loading="lazy"
+            width="696"
+            height="382"
           />
         </template>
       </TwoColumns>
@@ -187,6 +201,8 @@
             src="/assets/images/img2-tecno.webp"
             alt="Screen with captions. To the left of the screen, three sheets show statistics for accuracy, integrity, synchronicity, and average speed."
             loading="lazy"
+            width="696"
+            height="331"
           />
         </template>
         <template #right-column>
@@ -227,6 +243,8 @@
             src="/assets/images/dad-technology.webp"
             alt="A girl with headphones. Over her image, a transparent background shows a yellow banner with the letters DAD."
             loading="lazy"
+            width="771"
+            height="422"
           />
         </template>
       </TwoColumns>

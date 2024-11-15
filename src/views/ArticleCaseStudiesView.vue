@@ -20,7 +20,12 @@
           </p>
         </template>
         <template #right-column>
-          <img src="/assets/images/shutterstock.webp" alt="" />
+          <img
+            src="/assets/images/shutterstock.webp"
+            alt=""
+            width="800"
+            height="534"
+          />
         </template>
       </TwoColumns>
     </section>

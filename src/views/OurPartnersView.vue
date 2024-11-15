@@ -93,6 +93,8 @@
           src="/assets/images/partners-in-accessibility.webp"
           alt=""
           loading="lazy"
+          width="900"
+          height="600"
         />
       </template>
     </TwoColumns>
@@ -149,7 +151,7 @@ const televisionPartners = [
   "/assets/images/logos/sesame-workshop.webp",
   "/assets/images/logos/spf.png",
   "/assets/images/logos/trece.png",
-  "/assets/images/logos/wb.png",
+  "/assets/images/logos/wb.webp",
   "/assets/images/logos/wipr.png",
   "/assets/images/logos/wucf.png",
 ];

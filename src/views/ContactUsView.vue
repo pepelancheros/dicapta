@@ -8,6 +8,8 @@
         class="contact__main-img"
         src="/assets/images/contact-us.webp"
         alt="Cartoon: Two people brainstorm an idea using technology."
+        width="900"
+        height="480"
       />
       <p class="contact__top-text">
         Opening an audiovisual production to the world of individuals who are
@@ -59,31 +61,56 @@
             href="https://www.linkedin.com/company/dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/linkedin-logo.png" alt="linkedin logo"
+            ><img
+              src="/assets/images/linkedin-logo.webp"
+              alt="linkedin logo"
+              loading="lazy"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://www.youtube.com/user/DICAPTA"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/youtube-logo.png" alt="youtube logo"
+            ><img
+              src="/assets/images/youtube-logo.webp"
+              alt="youtube logo"
+              loading="lazy"
+              width="143"
+              height="100"
           /></a>
           <a
             href="https://www.facebook.com/Dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/facebook-logo.webp" alt="facebook logo"
+            ><img
+              src="/assets/images/facebook-logo.webp"
+              alt="facebook logo"
+              loading="lazy"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://www.instagram.com/dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/instagram-logo.png" alt="instagram logo"
+            ><img
+              src="/assets/images/instagram-logo.webp"
+              alt="instagram logo"
+              loading="lazy"
+              width="100"
+              height="100"
           /></a>
           <a
             href="https://x.com/Dicapta_tweets"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/x-logo.webp" alt="X logo"
+            ><img
+              src="/assets/images/x-logo.webp"
+              alt="X logo"
+              loading="lazy"
+              width="100"
+              height="90"
           /></a>
         </div>
         <a href="mailto:info@dicapta.com" class="button contact__button"

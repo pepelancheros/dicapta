@@ -9,6 +9,8 @@
         <img
           src="/assets/images/media-production.webp"
           alt="A man holds a professional camera."
+          width="250"
+          height="250"
         />
         <a class="button" href="/about/contact-us">Contact Us</a>
       </template>
