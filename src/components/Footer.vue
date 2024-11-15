@@ -132,9 +132,11 @@
     </section>
     <section class="footer__address-container">
       <h2>Get in touch</h2>
-      <li class="footer__list-element">
-        <a href="/about/contact-us">Contact us</a>
-      </li>
+      <ul>
+        <li class="footer__list-element">
+          <a href="/about/contact-us">Contact us</a>
+        </li>
+      </ul>
       <address>
         <p>
           1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL

@@ -26,12 +26,20 @@
     </section>
     <section class="contact__cards-section">
       <div class="contact__card">
-        <span class="contact__card-icon material-symbols-rounded"> call </span>
+        <img
+          class="contact__card-icon"
+          src="/assets/images/material-icons/call.svg"
+          alt="phone icon"
+        />
         <p>call us at</p>
         <a href="tel:4073890712">407-389-0712</a>
       </div>
       <div class="contact__card">
-        <span class="contact__card-icon material-symbols-rounded"> mail </span>
+        <img
+          class="contact__card-icon"
+          src="/assets/images/material-icons/mail.svg"
+          alt="mail icon"
+        />
         <p>Reach us by mail</p>
         <a href="mailto:info@dicapta.com">info@dicapta.com</a>
       </div>
@@ -178,8 +186,7 @@
   }
 
   &__card-icon {
-    font-size: $size-96;
-    color: var(--c-blue-500);
+    width: $size-96;
   }
 
   &__map-section {

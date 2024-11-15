@@ -111,9 +111,15 @@
         className="navbar__hamburger"
         @click="handleMobileNavElementClick"
       >
-        <span className="material-symbols-rounded">{{
-          showNavModal ? "close" : "menu"
-        }}</span>
+        <img
+          class="contact__card-icon"
+          :src="
+            showNavModal
+              ? '/assets/images/material-icons/close.svg'
+              : '/assets/images/material-icons/menu.svg'
+          "
+          :alt="showNavModal ? 'close icon' : 'menu icon'"
+        />
       </button>
       <div class="navbar__mobile-logo-container">
         <RouterLink to="/" class="logo"
