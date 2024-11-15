@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="social-media">
-      <img class="logo" src="@/assets/logo.png" alt="Dicapta logo" />
+      <img class="logo" src="@/assets/logo.webp" alt="Dicapta logo" />
       <div class="social-media__container">
         <a
           href="https://www.linkedin.com/company/dicapta"

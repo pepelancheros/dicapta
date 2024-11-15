@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="navbar__content navbar__desktop">
       <RouterLink to="/" class="logo"
-        ><img src="@/assets/logo.png" alt="Dicapta logo"
+        ><img src="@/assets/logo.webp" alt="Dicapta logo"
       /></RouterLink>
       <ul class="navbar__elements">
         <li><RouterLink class="navbar__main-link" to="/">Home</RouterLink></li>
@@ -113,7 +113,7 @@
       </button>
       <div class="navbar__mobile-logo-container">
         <RouterLink to="/" class="logo"
-          ><img src="@/assets/logo.png" alt="Dicapta logo"
+          ><img src="@/assets/logo.webp" alt="Dicapta logo"
         /></RouterLink>
         <div class="social-media-container">
           <a
