@@ -71,7 +71,7 @@
             href="https://www.facebook.com/Dicapta"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/facebook-logo.png" alt="facebook logo"
+            ><img src="/assets/images/facebook-logo.webp" alt="facebook logo"
           /></a>
           <a
             href="https://www.instagram.com/dicapta"
@@ -83,7 +83,7 @@
             href="https://x.com/Dicapta_tweets"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="/assets/images/x-logo.png" alt="X logo"
+            ><img src="/assets/images/x-logo.webp" alt="X logo"
           /></a>
         </div>
         <a href="mailto:info@dicapta.com" class="button contact__button"

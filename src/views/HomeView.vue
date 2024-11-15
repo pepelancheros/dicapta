@@ -66,7 +66,7 @@
         </a>
         <a href="/services/media-production" class="services__button">
           <img
-            src="/assets/images/media-production.png"
+            src="/assets/images/media-production-icon.webp"
             alt="media production icon"
             class="services__button-img"
           /><span class="services__button-text">Media Production</span>
@@ -132,25 +132,25 @@
       <h2 class="our-partners__title">Our partners</h2>
       <div class="our-partners__content">
         <img
-          src="/assets/images/logos/frp.png"
+          src="/assets/images/logos/frp.webp"
           alt="fred rogers productions logo"
           class="our-partners__img"
           loading="lazy"
         />
         <img
-          src="/assets/images/logos/sesame-workshop.png"
+          src="/assets/images/logos/sesame-workshop.webp"
           alt="sesame workshop logo"
           class="our-partners__img"
           loading="lazy"
         />
         <img
-          src="/assets/images/logos/pov.png"
+          src="/assets/images/logos/pov.webp"
           alt="pov logo"
           class="our-partners__img"
           loading="lazy"
         />
         <img
-          src="/assets/images/logos/ptk.png"
+          src="/assets/images/logos/ptk.webp"
           alt="passport to knowledge logo"
           class="our-partners__img"
           loading="lazy"

@@ -22,6 +22,14 @@
 </template>
 
 <script setup>
+import { onMounted } from "vue";
+import loadLinearIconsStylesheet from "@/utils/loadStylesheet";
+
+onMounted(() => {
+  if (props.elements.find((element) => !element.imageUrl)) {
+    loadLinearIconsStylesheet();
+  }
+});
 const props = defineProps({
   elements: {
     type: Array,
