@@ -220,17 +220,26 @@
         <NewsCard
           title="Newsletters"
           image="assets/images/newsletter-sept.jpg"
-          text="September Newsletter"
+          text="November Newsletter"
+          primary-color="#257CED"
+          secondary-color="#006CAC"
+          test="/news/newsletters"
         />
         <NewsCard
           title="Expert Insights"
-          image="assets/images/newsletter-sept.jpg"
+          image="assets/images/girl-and-boy-illustration.webp"
           text="Embracing diversity in audio description"
+          primary-color="#006CAA"
+          secondary-color="#0D5384"
+          test="/resources"
         />
         <NewsCard
           title="Blog"
           image="assets/images/newsletter-sept.jpg"
-          text="Ushering in a new era of accessibility"
+          text="2024 ACB Audio Description Awards Gala Available in Spanish Again"
+          primary-color="#0D5384"
+          secondary-color="#0B3862"
+          test="/blog"
         />
       </div>
     </section>

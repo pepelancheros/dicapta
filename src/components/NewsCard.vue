@@ -1,13 +1,30 @@
 <template>
-  <div class="news-card">
-    <h2 class="news-card__title">{{ title }}</h2>
+  <div class="news-card" :style="{ backgroundColor: primaryColor }">
+    <h2 class="news-card__title" :style="{ backgroundColor: secondaryColor }">
+      {{ title }}
+    </h2>
     <img class="news-card__img" :src="image" alt="" />
-    <p class="news-card__text">{{ text }}</p>
+    <p class="news-card__text">
+      {{ text }}
+    </p>
+    <a
+      :href="test"
+      :style="{ backgroundColor: secondaryColor }"
+      class="news-card__button"
+      >More articles...</a
+    >
   </div>
 </template>
 
 <script setup>
-const props = defineProps(["title", "image", "text"]);
+const props = defineProps([
+  "title",
+  "image",
+  "text",
+  "primary-color",
+  "secondary-color",
+  "test",
+]);
 </script>
 
 <style lang="scss">
@@ -28,7 +45,7 @@ const props = defineProps(["title", "image", "text"]);
     border-radius: 10px;
     width: 100%;
     max-width: 225px;
-    padding: $size-12 0;
+    padding: $size-8 0;
     font-size: $size-24;
     transform: translateY(-50%);
     box-shadow: 2px 4px 4px 1px #0000002e;
@@ -48,7 +65,16 @@ const props = defineProps(["title", "image", "text"]);
     font-size: $size-16;
     font-weight: 600;
     margin-bottom: $size-24;
-    text-align: center;
+    text-align: left;
+    max-width: 200px;
+  }
+
+  &__button {
+    color: white;
+    font-size: $size-16;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-bottom: $size-32;
   }
 }
 </style>
