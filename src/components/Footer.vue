@@ -132,7 +132,7 @@
     </section>
     <section class="footer__address-container">
       <h2>Get in touch</h2>
-      <ul>
+      <ul class="footer__contact-us-container">
         <li class="footer__list-element">
           <a href="/about/contact-us">Contact us</a>
         </li>
@@ -177,6 +177,8 @@
 
     a {
       color: var(--c-gray-700);
+      padding: $size-4 0;
+      display: block;
 
       &:hover,
       &:focus {
@@ -197,6 +199,10 @@
     address {
       font-size: $size-12;
     }
+  }
+
+  &__contact-us-container {
+    padding-left: $size-12;
   }
 }
 
@@ -220,7 +226,7 @@
 }
 
 .disclaimer {
-  margin: 0 $size-32;
+  margin: 0 $size-12;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,7 +239,6 @@
 h2 {
   font-size: $size-16;
   font-weight: 600;
-  margin-bottom: $size-12;
   margin-left: $size-4;
 }
 </style>

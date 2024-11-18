@@ -538,6 +538,10 @@ main {
   }
 }
 
+:deep(.carousel__pagination-button) {
+  padding: $size-8;
+}
+
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
   .banner {
