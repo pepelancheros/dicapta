@@ -5,7 +5,7 @@
     </div>
     <div class="accessibility-tips__content">
       <ArticleCard
-        v-for="article in articles"
+        v-for="article in currentArticles"
         :key="article.id"
         :title="article.title"
         :imgUrl="article.imgUrl"
@@ -14,14 +14,31 @@
         :link="`/resources/accessibility-tips/${article.id}`"
       ></ArticleCard>
     </div>
+    <div class="accessibility-tips__paginator-container">
+      <Paginator
+        :total-elements="articles.length"
+        :elements-per-page="9"
+        @page-changed="handlePageChange"
+      />
+    </div>
   </main>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import ArticleCard from "@/components/ArticleCard.vue";
 import json from "@/mocked/accessibilityTipsMocked.json";
+import Paginator from "@/components/Paginator.vue";
 
 const articles = json.articles;
+
+const currentArticles = ref(articles.slice(0, 9));
+
+const handlePageChange = (page) => {
+  const startIndex = (page - 1) * 9;
+  const endIndex = startIndex + 9;
+  currentArticles.value = articles.slice(startIndex, endIndex);
+};
 </script>
 
 <style scoped lang="scss">
@@ -49,6 +66,13 @@ const articles = json.articles;
     max-width: $size-1024;
     margin: auto;
     padding: $size-48 $size-16;
+    padding-bottom: 0;
+  }
+
+  &__paginator-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $size-48;
   }
 }
 
