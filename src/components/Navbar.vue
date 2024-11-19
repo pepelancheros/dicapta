@@ -84,6 +84,9 @@
           <RouterLink class="navbar__main-link" to="/news">News</RouterLink>
           <ul class="navbar__submenu">
             <li>
+              <RouterLink to="/news/blog">Blog</RouterLink>
+            </li>
+            <li>
               <RouterLink to="/news/press">Press</RouterLink>
             </li>
             <li><RouterLink to="/news/newsletters">Newsletters</RouterLink></li>
@@ -306,6 +309,11 @@
             >News</RouterLink
           >
           <ul class="navbar__submenu">
+            <li>
+              <RouterLink to="/news/blog" @click="handleMobileNavElementClick"
+                >Blog</RouterLink
+              >
+            </li>
             <li>
               <RouterLink to="/news/press" @click="handleMobileNavElementClick"
                 >Press</RouterLink
