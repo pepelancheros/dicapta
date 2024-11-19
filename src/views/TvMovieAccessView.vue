@@ -196,7 +196,7 @@
       <h2 class="production__title">New Accessible Programming</h2>
       <div class="production__cards-container">
         <TvAndMovieAccessCard
-          v-for="card in cards"
+          v-for="card in currentCards"
           class="production__card"
           :key="card.id"
           :title="card.title"
@@ -208,16 +208,30 @@
           :enterpriseLink="card.enterpriseLink"
         />
       </div>
+      <div
+        v-if="displaySeeMoreButton"
+        class="production__see-more-button-container"
+      >
+        <button @click="handleSeeMoreCards">See more</button>
+      </div>
     </section>
   </main>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import TwoColumns from "@/components/TwoColumns.vue";
 import TvAndMovieAccessCard from "@/components/TvAndMovieAccessCard.vue";
 import cardsContent from "@/mocked/tvMovieAccessCardsMocked.json";
 
 const cards = cardsContent.cards;
+const currentCards = ref(cards.slice(0, 10));
+const displaySeeMoreButton = ref(true);
+
+function handleSeeMoreCards() {
+  currentCards.value = cards;
+  displaySeeMoreButton.value = false;
+}
 </script>
 
 <style scoped lang="scss">
@@ -350,6 +364,11 @@ const cards = cardsContent.cards;
       max-width: $size-1280;
       margin: auto;
       padding: $size-48 $size-32;
+    }
+
+    &__see-more-button-container {
+      display: flex;
+      justify-content: center;
     }
   }
 
