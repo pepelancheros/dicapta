@@ -30,8 +30,13 @@ const currentArticle = articles.filter(
 .article {
   :deep(h2) {
     font-size: $size-24;
-    margin-bottom: 0;
+    margin-bottom: $size-12;
     margin-top: $size-24;
+    line-height: 2.2rem;
+  }
+
+  :deep(p) {
+    margin-bottom: $size-12;
   }
 
   &__header {
@@ -45,6 +50,7 @@ const currentArticle = articles.filter(
       font-size: $size-48;
       font-weight: 600;
       margin-right: $size-24;
+      margin-bottom: 0;
     }
   }
 
