@@ -37,6 +37,7 @@ const props = defineProps([
   margin-top: 80px;
   position: relative;
   box-shadow: 7px 7px 10px 2px #0000002e;
+  justify-content: space-between;
 
   &__title {
     color: var(--c-white-soft);
@@ -64,7 +65,8 @@ const props = defineProps([
     color: var(--c-white-soft);
     font-size: $size-16;
     font-weight: 600;
-    margin-bottom: $size-24;
+    margin: auto;
+    margin-bottom: $size-12;
     text-align: left;
     max-width: 200px;
   }
@@ -75,6 +77,8 @@ const props = defineProps([
     padding: 10px 30px;
     border-radius: 15px;
     margin-bottom: $size-32;
+    font-weight: 500;
+    margin-top: auto;
   }
 }
 </style>

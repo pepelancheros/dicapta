@@ -664,7 +664,7 @@ main {
 
     &__cards-section {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: stretch;
     }
   }
 }
