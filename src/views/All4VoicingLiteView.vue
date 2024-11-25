@@ -12,18 +12,23 @@
       class="all4voicing__info"
     >
       <p>
-        All4Voicing is a way for the entire process to happen seamlessly in one
-        place, including identifying spaces and adding descriptions to mixing AD
-        narration with the original audio. By consolidating all AD tasks into a
-        single platform, All4Voicing eliminates the need for multiple software
-        and tools, streamlining coordination efforts and reducing time-consuming
-        revisions.
+        All4Voicing is a way for the entire
+        <strong>audio description (AD)</strong> process to happen seamlessly in
+        one place, including identifying spaces and adding descriptions to
+        mixing AD narration with the original audio. By consolidating all AD
+        tasks into a single platform, All4Voicing eliminates the need for
+        multiple software and tools, streamlining coordination efforts and
+        reducing time-consuming revisions.
       </p>
       <p>
         We have experienced how this streamlined and intuitive approach allows
         users to focus on crafting high-quality AD content, cutting creation
         time from days to hours and increasing the availability of accessible
         educational content.
+      </p>
+      <p>
+        Learn more at
+        <a href="http://lite.all4voicing.com">All4Voicing Lite</a>.
       </p>
     </TwoColumnTextAndImage>
   </main>

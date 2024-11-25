@@ -7,28 +7,67 @@
     <RowWithIconsAndText :elements="rowWithIconsArray" />
     <TwoColumns>
       <template #left-column>
-        <h3>
-          Audio description provides people who are blind or have low vision
-          with access to video content.
-        </h3>
         <p>
-          Audio description, also known as video description or descriptive
-          service, is the narration of key visual elements of a program so that
-          people with visual disabilities can have access to television
-          programs, movies, videos or any other kind of audiovisual material.
-          For television programs, this narration is available through an
-          alternate audio channel-SAP that the viewer must activate.
+          Audio description brings key visual elements to life through
+          narration,
+          <strong
+            >enabling people with visual disabilities to enjoy video
+            content</strong
+          >
+          with greater richness and immersion. Available on broadcast TV via the
+          SAP, on streaming platforms via an alternate audio channel, or via the
+          <a href="https://all4access.com/how-to-use">All4Access app</a>, audio
+          description empowers viewers to engage fully with their favorite
+          content.
+        </p>
+        <p>
+          With over <strong>20 years of experience</strong>, Dicapta is
+          dedicated to crafting high-quality audio descriptions in English and
+          Spanish. Audio description is more than a service—it’s our passion. We
+          meticulously
+          <strong
+            >match language and narration style to the original work</strong
+          >, ensuring each piece feels natural and enhances the viewer’s
+          experience.
+        </p>
+        <p>
+          Our projects span a wide range of genres, from children’s programming
+          to nature, science, and social issues. We’re proud to collaborate with
+          esteemed clients such as Fred Rogers Productions, WaterBear, Sesame
+          Workshop, Passport to Knowledge, POV, Pragda, Semillitas, Superfest,
+          and Johns Hopkins University.
+        </p>
+        <p>
+          Dicapta has also developed
+          <strong>proprietary technology</strong> that streamlines the audio
+          description process, allowing us to deliver faster, higher-quality
+          results. In addition, our
+          <a href="https://all4access.com/All_4_Access/"
+            >All4Access Clearinghouse</a
+          >
+          and app make it easier than ever for users to access audio
+          descriptions and other accessible features anytime, anywhere.
+        </p>
+        <p>
+          When you work with Dicapta, you choose an unparalleled dedication to
+          accessibility and excellence. We guarantee a product that meets the
+          highest standards, crafted with care and expertise to elevate your
+          content for all audiences.
         </p>
       </template>
       <template #right-column>
         <iframe
           width="100%"
           height="360"
-          src="https://www.youtube.com/embed/XuwIY-qR8JM?rel=0&amp;amp;wmode=transparent"
+          src="https://www.youtube.com/embed/uo3Eu_EmW9o?si=uTrJf7tr-rpyUJrv&amp;amp;wmode=transparent"
           frameborder="0"
           allowfullscreen="allowfullscreen"
         ></iframe>
-        <a class="button" href="/about/contact-us">Contact Us</a>
+        <a
+          class="button audio-description__contact-button"
+          href="/about/contact-us"
+          >Contact Us</a
+        >
       </template>
     </TwoColumns>
   </main>
@@ -72,6 +111,13 @@ const rowWithIconsArray = ref([
     text-align: center;
     margin-bottom: $size-24;
     padding: 0 $size-16;
+  }
+
+  &__contact-button {
+    display: block;
+    width: 220px;
+    margin: auto;
+    margin-top: $size-24;
   }
 }
 

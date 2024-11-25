@@ -101,10 +101,6 @@
           access to education, culture, and information for people with sensory
           disabilities.
         </p>
-        <p>
-          To <a href="/ver2022/technology">learn more</a> visit our Technology
-          section.
-        </p>
       </TwoColumnTextAndImage>
     </section>
     <section class="accessibility">
@@ -144,24 +140,35 @@
         <p>
           Some facts about the community we serve are available following the
           links:
-          <a href="/ver2022/images/docs/Blindnes_in_the_USA_05112022.pdf"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/assets/pdf/blindnes-in-the-usa-2022.pdf"
             >Visual disabilities in the U.S</a
           >.,
-          <a href="/ver2022/images/docs/Deafness_in_the_USA_05112022.pdf"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/assets/pdf/deafness-in-the-usa-2022.pdf"
             >Hearing disabilities in the US</a
           >,
           <a
-            href="/ver2022/images/docs/Sensory_disabilities_in_the_USA_05112022.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/assets/pdf/sensory-disabilities-in-the-usa-2022.pdf"
             >Students with sensory disabilities in the U.S</a
           >.,&nbsp;and
-          <a href="/ver2022/images/docs/DeafBlindness_in_the_USA_04292022.pdf"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/assets/pdf/deaf-blindness-in-the-usa-2022.pdf"
             >DeafBlindness in the U.S</a
           >.
         </p>
         <p>
           For information about Latinos with disabilities,
           <a
-            href="/ver2022/images/site/mission/Latinos_with_disabilities_in_the_US.pdf"
+            href="/assets/pdf/latinos-with-disablities-in-the-usa.pdf"
             target="_blank"
             rel="noopener noreferrer"
             title="Latinos with disabilities in the US"

@@ -8,43 +8,47 @@
     <TwoColumns>
       <template #left-column>
         <p>
-          We are innovating our language customization services by integrating
-          AI into our dubbing process. This integration allow us to better serve
-          your turnaround, quality, and exclusive &amp; diverse casting needs.
-          Using real natural voices, talented actors, and cutting-edge
-          technology, we adapt your content to your new audience language while
-          keeping the essence of your original productions.
+          We’re transforming language customization by integrating advanced AI
+          into our dubbing services, delivering quicker turnarounds, premium
+          quality, and exclusive, diverse casting. By
+          <strong
+            >combining real, natural voices with cutting-edge technology</strong
+          >, we seamlessly adapt your content to resonate in a new language—all
+          while preserving the unique essence of your original production.
         </p>
         <p>
-          Because high quality requires a team of human experts in the nuances
-          of the language, knowledge of the culture, and research on the target
-          audience, we specialize in Spanish, English, French &amp; Portuguese.
+          To ensure exceptional quality, we rely on a dedicated team of language
+          experts with deep cultural insights and thorough knowledge of target
+          audiences. Our specialization includes
+          <strong>Spanish, English, French, and Portuguese</strong>,
+          guaranteeing authentic connections with your viewers.
         </p>
         <p>
-          We are experts in <strong>music &amp; song adaptation</strong> that
-          create a smooth, natural, and powerful soundtrack in the dubbed
-          language that maintains the essence of the original production.
+          Our expertise extends to <strong>music and song adaptation</strong>,
+          crafting smooth, powerful soundtracks that feel natural in the dubbed
+          language, yet fully capture the spirit of the original.
         </p>
         <p>
-          <strong>Exclusive voices and casting choices</strong> are available
-          through our process. Reach out to learn more.
+          With exclusive voice and casting options available, you’ll find the
+          perfect match for your project. Contact us to explore how we can
+          elevate your content.
         </p>
         <p>
-          Do you need Real-Time Dubbing? Call us for detailed information about
-          our exclusive service.
+          <strong>Need Real-Time Dubbing?</strong> Get in touch to learn more
+          about this unique service.
         </p>
         <p>
-          Our customers include Fred Rogers Productions, HARPO, Passport to
-          Knowledge, Sesame Workshop, The National Captioning Institute-NCI,
-          Vitac, the American Council of the Blind-ACB, PBS New Hours, Kern
-          Burns, HITN, Univision, among others.
+          <strong>Our Clients Include:</strong> Fred Rogers Productions, HARPO,
+          Passport to Knowledge, Sesame Workshop, the National Captioning
+          Institute (NCI), VITAC, the American Council of the Blind (ACB), PBS
+          NewsHour, Ken Burns, HITN, Univision, and more.
         </p>
       </template>
       <template #right-column>
         <iframe
           width="100%"
           height="360"
-          src="https://www.youtube.com/embed/lOC2UB6Cxk4?rel=0&amp;amp;wmode=transparent"
+          src="https://www.youtube.com/embed/xVbU4Y3l0Lo?si=6vsCqRxX10dSdVR2&amp;amp;wmode=transparent"
           frameborder="0"
           allowfullscreen="allowfullscreen"
         ></iframe>

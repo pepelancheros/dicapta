@@ -13,43 +13,6 @@
       </div>
     </section>
     <section>
-      <h2 class="previous-projects__title">Multilingual Events</h2>
-      <p class="previous-projects__subtitle">
-        Remote digital technology that helps your message reach a multilingual
-        audience
-      </p>
-      <RowWithIconsAndText
-        class="row-element"
-        :elements="rowWithIconsMultilingualEvents"
-      />
-      <TwoColumns class="previous-projects__custom-two-columns">
-        <template #left-column>
-          <h3>
-            Reach a wider audience and provide them with a better experience
-          </h3>
-          <p>
-            Dicapta has offered interpretation and captioning services across
-            the U.S., Canada, Spain, and South America. No matter where you hold
-            a conference, meeting, or live show, Dicapta can make it a success
-            regardless of language, nationality, number of attendees, discussion
-            topics, meeting location or settings.
-          </p>
-          <p>
-            <strong>Dicapta creates communication that makes sense.</strong>
-          </p>
-        </template>
-        <template #right-column>
-          <img
-            src="/assets/images/meeting.jpg"
-            alt="Conference room. A large audience watches a group of panelists."
-            loading="lazy"
-            width="287"
-            height="176"
-          />
-        </template>
-      </TwoColumns>
-    </section>
-    <section>
       <h3 class="previous-projects__title">GoCC4All</h3>
       <p class="previous-projects__subtitle">
         Delivering emergency alerts and TV captions in an accessible way
@@ -262,24 +225,6 @@ import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumns from "@/components/TwoColumns.vue";
 
-const rowWithIconsMultilingualEvents = ref([
-  {
-    icon: "lnr-bubble",
-    title: "Interpretation",
-    text: "ENGLISH, SPANISH, PORTUGUESE",
-  },
-  {
-    icon: "lnr-laptop-phone",
-    title: "Remote interpretation",
-    text: "OVER MOBILE, INTERNET OR PHONE",
-  },
-  {
-    icon: "lnr-camera-video",
-    title: "Live Streaming Captions",
-    text: "IN SPANISH OR ENGLISH",
-  },
-]);
-
 const rowWithIconsGocc4all = ref([
   {
     icon: "lnr-alarm",
@@ -409,8 +354,7 @@ const rowWithIconsOther = ref([
   .banner {
     &__text {
       top: 190px;
-      right: 100px;
-      left: unset;
+      left: 140px;
     }
   }
   .previous-projects {

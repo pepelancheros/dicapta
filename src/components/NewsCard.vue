@@ -11,7 +11,7 @@
       :href="test"
       :style="{ backgroundColor: secondaryColor }"
       class="news-card__button"
-      >More articles...</a
+      >{{ buttonText || "More articles..." }}</a
     >
   </div>
 </template>
@@ -21,6 +21,7 @@ const props = defineProps([
   "title",
   "image",
   "text",
+  "buttonText",
   "primary-color",
   "secondary-color",
   "test",

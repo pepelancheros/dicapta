@@ -87,15 +87,6 @@
             height="250"
           /><span class="services__button-text">Media Production</span>
         </a>
-        <a href="/projects/previous-projects" class="services__button">
-          <img
-            src="/assets/images/liveevents.webp"
-            alt="live events icon"
-            class="services__button-img"
-            width="154"
-            height="153"
-          /><span class="services__button-text">Live Events Accessibility</span>
-        </a>
       </div>
     </section>
     <section>
@@ -221,6 +212,7 @@
           title="Newsletters"
           image="assets/images/newsletter-sept.jpg"
           text="November Newsletter"
+          button-text="More Newsletters..."
           primary-color="#257CED"
           secondary-color="#006CAC"
           test="/news/newsletters"
@@ -588,7 +580,7 @@ main {
       flex-flow: wrap;
       max-width: $size-1024;
       margin: auto;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     &__button-img {
