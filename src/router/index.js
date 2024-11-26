@@ -42,7 +42,7 @@ const router = createRouter({
       path: "/services",
       name: "services",
       component: ServicesView,
-      redirect: "/#services",
+      redirect: "/services/multilingual-dubbing",
       children: [
         {
           path: "multilingual-dubbing",
@@ -103,6 +103,7 @@ const router = createRouter({
       path: "/resources",
       name: "resources",
       component: ResourcesView,
+      redirect: "/resources/accessibility-tips",
       children: [
         {
           path: "/resources/accessibility-tips",
@@ -140,6 +141,7 @@ const router = createRouter({
       path: "/news",
       name: "news",
       component: NewsView,
+      redirect: "/news/press",
       children: [
         {
           path: "/news/blog",

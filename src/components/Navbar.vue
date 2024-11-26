@@ -11,10 +11,22 @@
       <ul class="navbar__elements">
         <li><RouterLink class="navbar__main-link" to="/">Home</RouterLink></li>
         <li>
-          <RouterLink class="navbar__main-link" to="/services"
-            >Services</RouterLink
+          <a
+            href="#"
+            :class="{ 'router-link-active': routePath.includes('services') }"
+            id="services-navbar"
+            aria-haspopup="true"
+            role="button"
+            :aria-expanded="activeDropdown === 'services'"
+            @click="handleDropdownClick"
+            v-click-outside="closeDropdown"
+            >Services</a
           >
-          <ul class="navbar__submenu">
+          <ul
+            class="navbar__submenu"
+            v-show="activeDropdown === 'services'"
+            aria-labelledby="services-navbar"
+          >
             <li>
               <RouterLink to="/services/multilingual-dubbing"
                 >Multilingual Dubbing</RouterLink
@@ -39,10 +51,22 @@
           </ul>
         </li>
         <li>
-          <RouterLink class="navbar__main-link" to="/projects"
-            >Projects</RouterLink
+          <a
+            href="#"
+            :class="{ 'router-link-active': routePath.includes('projects') }"
+            id="projects-navbar"
+            aria-haspopup="true"
+            role="button"
+            :aria-expanded="activeDropdown === 'projects'"
+            @click="handleDropdownClick"
+            v-click-outside="closeDropdown"
+            >Projects</a
           >
-          <ul class="navbar__submenu">
+          <ul
+            class="navbar__submenu"
+            v-show="activeDropdown === 'projects'"
+            aria-labelledby="projects-navbar"
+          >
             <li>
               <RouterLink to="/projects/tv-movie-access"
                 >TV & Movie Access</RouterLink
@@ -64,10 +88,22 @@
           </ul>
         </li>
         <li>
-          <RouterLink class="navbar__main-link" to="/resources"
-            >Resources</RouterLink
+          <a
+            href="#"
+            :class="{ 'router-link-active': routePath.includes('resources') }"
+            id="resources-navbar"
+            aria-haspopup="true"
+            role="button"
+            :aria-expanded="activeDropdown === 'resources'"
+            @click="handleDropdownClick"
+            v-click-outside="closeDropdown"
+            >Resources</a
           >
-          <ul class="navbar__submenu">
+          <ul
+            class="navbar__submenu"
+            v-show="activeDropdown === 'resources'"
+            aria-labelledby="resources-navbar"
+          >
             <li>
               <RouterLink to="/resources/accessibility-tips"
                 >Accessibility Tips</RouterLink
@@ -81,8 +117,22 @@
           </ul>
         </li>
         <li>
-          <RouterLink class="navbar__main-link" to="/news">News</RouterLink>
-          <ul class="navbar__submenu">
+          <a
+            href="#"
+            :class="{ 'router-link-active': routePath.includes('news') }"
+            id="news-navbar"
+            aria-haspopup="true"
+            role="button"
+            :aria-expanded="activeDropdown === 'news'"
+            @click="handleDropdownClick"
+            v-click-outside="closeDropdown"
+            >News</a
+          >
+          <ul
+            class="navbar__submenu"
+            v-show="activeDropdown === 'news'"
+            aria-labelledby="news-navbar"
+          >
             <li>
               <RouterLink to="/news/blog">Blog</RouterLink>
             </li>
@@ -93,10 +143,22 @@
           </ul>
         </li>
         <li>
-          <RouterLink class="navbar__main-link" to="/about"
-            >About Dicapta</RouterLink
+          <a
+            href="#"
+            :class="{ 'router-link-active': routePath.includes('about') }"
+            id="about-navbar"
+            aria-haspopup="true"
+            role="button"
+            :aria-expanded="activeDropdown === 'about dicapta'"
+            @click="handleDropdownClick"
+            v-click-outside="closeDropdown"
+            >About Dicapta</a
           >
-          <ul class="navbar__submenu">
+          <ul
+            class="navbar__submenu"
+            v-show="activeDropdown === 'about dicapta'"
+            aria-labelledby="about-navbar"
+          >
             <li><RouterLink to="/about/mission">Mission</RouterLink></li>
             <li><RouterLink to="/about/our-team">Our Team</RouterLink></li>
             <li>
@@ -198,12 +260,12 @@
           >
         </li>
         <li>
-          <RouterLink
-            class="navbar__main-link"
-            to="/services"
-            @click="handleMobileNavElementClick"
-            >Services</RouterLink
+          <p
+            class="navbar__main-link navbar__text"
+            :class="{ 'router-link-active': routePath.includes('services') }"
           >
+            Services
+          </p>
           <ul class="navbar__submenu">
             <li>
               <RouterLink
@@ -243,12 +305,12 @@
           </ul>
         </li>
         <li>
-          <RouterLink
-            class="navbar__main-link"
-            to="/projects"
-            @click="handleMobileNavElementClick"
-            >Projects</RouterLink
+          <p
+            class="navbar__main-link navbar__text"
+            :class="{ 'router-link-active': routePath.includes('projects') }"
           >
+            Projects
+          </p>
           <ul class="navbar__submenu">
             <li>
               <RouterLink
@@ -281,12 +343,12 @@
           </ul>
         </li>
         <li>
-          <RouterLink
-            class="navbar__main-link"
-            to="/resources"
-            @click="handleMobileNavElementClick"
-            >Resources</RouterLink
+          <p
+            class="navbar__main-link navbar__text"
+            :class="{ 'router-link-active': routePath.includes('resources') }"
           >
+            Resources
+          </p>
           <ul class="navbar__submenu">
             <li>
               <RouterLink
@@ -305,9 +367,12 @@
           </ul>
         </li>
         <li>
-          <RouterLink to="/news" @click="handleMobileNavElementClick"
-            >News</RouterLink
+          <p
+            class="navbar__main-link navbar__text"
+            :class="{ 'router-link-active': routePath.includes('news') }"
           >
+            News
+          </p>
           <ul class="navbar__submenu">
             <li>
               <RouterLink to="/news/blog" @click="handleMobileNavElementClick"
@@ -329,12 +394,12 @@
           </ul>
         </li>
         <li>
-          <RouterLink
-            class="navbar__main-link"
-            to="/about"
-            @click="handleMobileNavElementClick"
-            >About Dicapta</RouterLink
+          <p
+            class="navbar__main-link navbar__text"
+            :class="{ 'router-link-active': routePath.includes('about') }"
           >
+            About Dicapta
+          </p>
           <ul class="navbar__submenu">
             <li>
               <RouterLink
@@ -372,14 +437,41 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import { ref } from "vue";
+import { RouterLink, useRoute } from "vue-router";
+import { ref, computed } from "vue";
 
+const route = useRoute();
+const routePath = computed(() => route.fullPath);
 const showNavModal = ref(false);
+const activeDropdown = ref("");
+const navbarCategories = [
+  "Home",
+  "Services",
+  "Projects",
+  "Resources",
+  "News",
+  "About Dicapta",
+];
 
 function handleMobileNavElementClick() {
   showNavModal.value = !showNavModal.value;
   document.body.style.overflow = showNavModal.value ? "hidden" : "auto";
+}
+
+function handleDropdownClick(event) {
+  if (activeDropdown.value === event.target.text.toLowerCase()) {
+    activeDropdown.value = "";
+    return;
+  }
+  activeDropdown.value = event.target.text.toLowerCase();
+}
+
+function closeDropdown(event) {
+  if (navbarCategories.includes(event.target.text)) {
+    activeDropdown.value = event.target.text.toLowerCase();
+    return;
+  }
+  activeDropdown.value = "";
 }
 </script>
 
@@ -446,9 +538,12 @@ function handleMobileNavElementClick() {
   &__main-link {
     position: relative;
     z-index: 100;
+    display: inline;
+    margin-top: $size-8;
   }
 
-  a {
+  a,
+  &__text {
     margin: 0 1rem;
     padding-bottom: $size-8;
     transition: 0;
@@ -482,6 +577,12 @@ function handleMobileNavElementClick() {
     }
   }
 
+  &__text {
+    margin-top: $size-12;
+    display: block;
+    width: fit-content;
+  }
+
   .logo {
     padding: 0;
 
@@ -496,8 +597,6 @@ function handleMobileNavElementClick() {
   }
 
   &__submenu {
-    padding-top: 8px;
-
     a.router-link-exact-active {
       border: none;
     }
@@ -545,7 +644,13 @@ function handleMobileNavElementClick() {
     }
 
     &__submenu {
+      padding-top: $size-8;
+      margin-top: $size-12;
       box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &__main-link {
+      margin-top: 0;
     }
 
     .logo {
@@ -560,7 +665,6 @@ function handleMobileNavElementClick() {
     }
 
     ul ul {
-      display: none;
       padding-left: 16px;
       width: max-content;
       position: absolute;
@@ -575,10 +679,6 @@ function handleMobileNavElementClick() {
 
     li {
       position: relative;
-    }
-
-    li:hover ul {
-      display: block;
     }
   }
 }
