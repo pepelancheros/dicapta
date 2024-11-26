@@ -115,6 +115,12 @@
                 >Information Sheets</RouterLink
               >
             </li>
+            <li>
+              <RouterLink to="/resources/white-papers">White Papers</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/resources/case-studies">Case Studies</RouterLink>
+            </li>
           </ul>
         </li>
         <li>
@@ -363,6 +369,20 @@
                 to="/resources/information-sheets"
                 @click="handleMobileNavElementClick"
                 >Information Sheets</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/resources/white-papers"
+                @click="handleMobileNavElementClick"
+                >White Papers</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/resources/case-studies"
+                @click="handleMobileNavElementClick"
+                >Case Studies</RouterLink
               >
             </li>
           </ul>

@@ -73,7 +73,7 @@
             necessary tools to access the material and be on equal footing with
             her classmates.
           </p>
-          <a href="/resources/case-study">Read More</a>
+          <a href="/resources/case-study-article">Read More</a>
         </div>
       </div>
     </section>
@@ -97,7 +97,7 @@
             description, emphasizing including racial and ethnic characteristics
             when describing individuals/people in media.
           </p>
-          <a href="/resources/white-paper">Read More</a>
+          <a href="/resources/white-paper-article">Read More</a>
         </div>
       </div>
     </section>

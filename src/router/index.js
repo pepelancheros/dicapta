@@ -29,6 +29,8 @@ import TermsAndConditionsView from "@/views/TermsAndConditionsView.vue";
 import ContactUsView from "@/views/ContactUsView.vue";
 import NewslettersView from "@/views/newslettersView.vue";
 import BlogView from "@/views/BlogView.vue";
+import WhitePapersView from "@/views/WhitePapersView.vue";
+import CaseStudiesView from "@/views/CaseStudiesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -126,14 +128,24 @@ const router = createRouter({
           name: "information sheets specific view",
         },
         {
-          path: "/resources/case-study",
-          component: ArticleCaseStudiesView,
-          name: "case study",
+          path: "/resources/case-studies",
+          component: CaseStudiesView,
+          name: "case studies",
         },
         {
-          path: "/resources/white-paper",
-          component: ArticleWhitePapersView,
+          path: "/resources/case-study-article",
+          component: ArticleCaseStudiesView,
+          name: "case study aricle",
+        },
+        {
+          path: "/resources/white-papers",
+          component: WhitePapersView,
           name: "white paper",
+        },
+        {
+          path: "/resources/white-paper-article",
+          component: ArticleWhitePapersView,
+          name: "white paper article",
         },
       ],
     },
