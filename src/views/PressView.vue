@@ -1,5 +1,5 @@
 <template>
-  <main class="press">
+  <main id="main" class="press">
     <div class="press__header">
       <h1>Press Kit</h1>
     </div>

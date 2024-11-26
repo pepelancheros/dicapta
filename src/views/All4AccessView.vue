@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="main">
     <section class="banner">
       <img
         class="banner__img"

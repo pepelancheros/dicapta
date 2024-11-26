@@ -1,5 +1,5 @@
 <template>
-  <main class="white-paper">
+  <main id="main" class="white-paper">
     <p class="white-paper__date blue-background">12 MAY 2024</p>
     <section class="blue-background white-paper__first-section">
       <h1 class="white-paper__title">

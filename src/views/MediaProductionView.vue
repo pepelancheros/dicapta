@@ -1,5 +1,5 @@
 <template>
-  <main class="media-production">
+  <main id="main" class="media-production">
     <h1 class="media-production__title">Media production</h1>
     <p class="media-production__subtitle">
       Services and Resources for People with Disabilities

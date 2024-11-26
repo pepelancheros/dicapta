@@ -3,7 +3,7 @@
     <div class="article__header">
       <h2>Dicapta Accessibility Tips</h2>
     </div>
-    <main class="article__content">
+    <main id="main" class="article__content">
       <h1 class="article__title">{{ currentArticle.title }}</h1>
       <img
         class="article__image"

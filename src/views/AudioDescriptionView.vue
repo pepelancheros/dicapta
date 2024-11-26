@@ -1,5 +1,5 @@
 <template>
-  <main class="audio-description">
+  <main id="main" class="audio-description">
     <h1 class="audio-description__title">Audio description</h1>
     <p class="audio-description__subtitle">
       Services that bring images, videos, movies or any other visual to everyone

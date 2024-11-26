@@ -1,5 +1,5 @@
 <template>
-  <main class="tv-movie-access">
+  <main id="main" class="tv-movie-access">
     <section class="banner">
       <picture>
         <!-- Desktop Image -->

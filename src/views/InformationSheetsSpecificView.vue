@@ -1,5 +1,5 @@
 <template>
-  <main class="information-sheet">
+  <main id="main" class="information-sheet">
     <h1 class="information-sheet__title">{{ currentSheet.title }}</h1>
     <div class="information-sheet__pdf-container">
       <iframe

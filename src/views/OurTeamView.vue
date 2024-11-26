@@ -1,5 +1,5 @@
 <template>
-  <main class="our-team">
+  <main id="main" class="our-team">
     <div class="banner">
       <picture>
         <!-- Desktop Image -->

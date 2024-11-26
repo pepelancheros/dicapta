@@ -1,5 +1,5 @@
 <template>
-  <main class="accessibility-tips">
+  <main id="main" class="accessibility-tips">
     <div class="accessibility-tips__header">
       <h1>Dicapta Accessibility Tips</h1>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <main class="case-study">
+  <main id="main" class="case-study">
     <p class="case-study__date blue-background">12 MAY 2024</p>
     <section class="blue-background case-study__first-section">
       <h1 class="case-study__title">

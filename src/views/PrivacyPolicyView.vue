@@ -1,5 +1,5 @@
 <template>
-  <main class="privacy-policy">
+  <main id="main" class="privacy-policy">
     <div class="privacy-policy__header">
       <h1>Privacy Policy</h1>
     </div>

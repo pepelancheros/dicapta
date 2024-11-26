@@ -1,5 +1,5 @@
 <template>
-  <main class="contact">
+  <main id="main" class="contact">
     <h1 class="contact__title">
       Bring your audiovisual productions to new audiences
     </h1>

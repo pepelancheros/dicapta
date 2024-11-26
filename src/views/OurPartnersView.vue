@@ -1,5 +1,5 @@
 <template>
-  <main class="partners">
+  <main id="main" class="partners">
     <h1 class="partners__title">Television Partners</h1>
     <p class="partners__content">
       We are fortunate to have partnerships with organizations firmly committed

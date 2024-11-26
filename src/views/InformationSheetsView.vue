@@ -1,5 +1,5 @@
 <template>
-  <main class="information-sheets">
+  <main id="main" class="information-sheets">
     <div class="information-sheets__header">
       <h1>Information Sheets</h1>
     </div>

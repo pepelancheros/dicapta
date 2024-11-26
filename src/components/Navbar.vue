@@ -1,6 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar__content navbar__desktop">
+      <a class="skip-to-content-link" href="#main">Skip to content</a>
       <RouterLink to="/" class="logo"
         ><img
           src="@/assets/logo.webp"
@@ -477,6 +478,22 @@ function closeDropdown(event) {
 
 <style scoped lang="scss">
 .navbar {
+  .skip-to-content-link {
+    background-color: var(--c-blue-500);
+    color: var(--c-white);
+    left: 0;
+    top: 117px;
+    padding: $size-16;
+    position: absolute;
+    transform: translateX(-150%);
+    transition: transform 0.3s;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .skip-to-content-link:focus {
+    transform: translateX(0%);
+  }
   &__content {
     justify-content: space-between;
     align-items: center;
@@ -585,6 +602,7 @@ function closeDropdown(event) {
 
   .logo {
     padding: 0;
+    border: none;
 
     img {
       max-width: $size-128;

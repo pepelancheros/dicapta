@@ -1,5 +1,5 @@
 <template>
-  <main class="caption">
+  <main id="main" class="caption">
     <section>
       <h1 class="caption__title">Captioning</h1>
       <p class="caption__subtitle">

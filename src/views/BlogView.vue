@@ -1,3 +1,3 @@
 <template>
-  <main>Here will go the blog content</main>
+  <main id="main">Here will go the blog content</main>
 </template>

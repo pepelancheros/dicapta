@@ -1,5 +1,5 @@
 <template>
-  <main class="news" v-if="isParent">
+  <main id="main" class="news" v-if="isParent">
     <section class="news-section">
       <h2 class="news-section__title">Newsletters</h2>
       <div class="news-section__container">

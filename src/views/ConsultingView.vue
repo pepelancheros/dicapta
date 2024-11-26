@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="main">
     <section>
       <h1 class="title">Consulting</h1>
       <p class="subtitle">

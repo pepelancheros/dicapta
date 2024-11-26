@@ -1,5 +1,5 @@
 <template>
-  <main class="newsletters">
+  <main id="main" class="newsletters">
     <div class="newsletters__header">
       <h1>Newsletters</h1>
     </div>

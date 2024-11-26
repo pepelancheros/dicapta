@@ -1,5 +1,5 @@
 <template>
-  <main v-if="isParent">
+  <main id="main" v-if="isParent">
     <section class="banner">
       <img
         class="banner__img"

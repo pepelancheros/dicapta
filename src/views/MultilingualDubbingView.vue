@@ -1,5 +1,5 @@
 <template>
-  <main class="dubbing">
+  <main id="main" class="dubbing">
     <h1 class="dubbing__title">Multilingual dubbing</h1>
     <p class="dubbing__subtitle">
       Helps your production reach a greater and diverse audience
