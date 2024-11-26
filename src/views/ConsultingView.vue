@@ -1,7 +1,7 @@
 <template>
   <main>
     <section>
-      <h1 class="title">Sensitivity Training and Workshops</h1>
+      <h1 class="title">Consulting</h1>
       <p class="subtitle">
         Empowering organizations to foster a more inclusive environment for
         individuals with sensory disabilities.

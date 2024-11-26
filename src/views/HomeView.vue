@@ -210,7 +210,7 @@
       <div class="whats-new__cards-section">
         <NewsCard
           title="Newsletters"
-          image="assets/images/newsletter-sept.jpg"
+          image="assets/images/newsletters/november-2024-cover.webp"
           text="November Newsletter"
           button-text="More Newsletters..."
           primary-color="#257CED"
@@ -227,7 +227,7 @@
         />
         <NewsCard
           title="Blog"
-          image="assets/images/newsletter-sept.jpg"
+          image="assets/images/newsletters/november-2024-cover.webp"
           text="2024 ACB Audio Description Awards Gala Available in Spanish Again"
           primary-color="#0D5384"
           secondary-color="#0B3862"

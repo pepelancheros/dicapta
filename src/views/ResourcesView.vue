@@ -144,8 +144,14 @@ const isParent = computed(() => route.fullPath === "/resources");
     line-height: 1.2;
   }
 
+  &__text-title {
+    font-size: $size-48;
+    font-weight: 500;
+  }
+
   &__text-subtitle {
     font-size: $size-24;
+    font-weight: 500;
   }
 }
 
@@ -239,6 +245,10 @@ const isParent = computed(() => route.fullPath === "/resources");
 
     &__text {
       left: 140px;
+      font-size: $size-64;
+    }
+
+    &__text-title {
       font-size: $size-64;
     }
 

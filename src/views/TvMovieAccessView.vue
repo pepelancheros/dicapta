@@ -153,8 +153,8 @@
         </template>
         <template #right-column>
           <img
-            src="/assets/images/film-festival-miami.webp"
-            alt="Three women stand in front of an Iberoamerican Film Festival Miami mural. A guide dog sits in front of the woman on the left."
+            src="/assets/images/lets-all-see-workshop.webp"
+            alt="Let's All See Workshop' flyer. Led by Dicapta, invites participants to explore how blind individuals enjoy audiovisual content. Gain new perspectives."
             loading="lazy"
             width="600"
             height="450"

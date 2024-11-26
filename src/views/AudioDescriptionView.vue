@@ -57,6 +57,15 @@
       </template>
       <template #right-column>
         <iframe
+          class="audio-description__video"
+          width="100%"
+          height="360"
+          src="https://www.youtube.com/embed/ZIcVVLV2aso?si=F1uhoTcGInhAhQR_&amp;amp;wmode=transparent"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+        <iframe
+          class="audio-description__video"
           width="100%"
           height="360"
           src="https://www.youtube.com/embed/uo3Eu_EmW9o?si=uTrJf7tr-rpyUJrv&amp;amp;wmode=transparent"
@@ -117,7 +126,10 @@ const rowWithIconsArray = ref([
     display: block;
     width: 220px;
     margin: auto;
-    margin-top: $size-24;
+  }
+
+  &__video {
+    margin-bottom: $size-24;
   }
 }
 
