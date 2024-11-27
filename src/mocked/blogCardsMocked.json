@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "2024 ACB Audio Description Awards Gala Available in Spanish Again",
+      "imgUrl": "/assets/images/articles/blog-mocked-1.webp",
+      "imgAlt": "Audio Description icon displayed in green colors. Text: 2024 Audio Description Awards Gala, november 14 at 7:30pm ET",
+      "publishDate": "04 November 2024",
+      "text": "Join us in celebrating accessibility at the 2024 ACB Audio Description Awards Gala, where Dicapta is proud to provide Spanish dubbing and audio description once again. This event, airing on November 14, highlights exceptional achievements in accessible media, featuring renowned guests and a wide range of inclusive features."
+    },
+    {
+      "id": 2,
+      "title": "When Audiodescription Meets Dubbing- A House Made of Splinters’s example",
+      "imgUrl": "/assets/images/articles/blog-mocked-2.webp",
+      "imgAlt": "Two young children sit close together, one looking off to the side with a concerned expression, and the other looking down thoughtfully. The title 'A House Made of Splinters' appears above them.",
+      "publishDate": "01 November 2024",
+      "text": "A House Made of Splinters follows three children in Eastern Ukraine, protected by caring social workers. To make this story accessible, Dicapta used AI-driven procedures for dubbing and audio description, offering an immersive experience for English-speaking viewers and visually impaired audiences alike. This innovative approach saved time, cut costs, and set a new standard for accessible media."
+    },
+    {
+      "id": 3,
+      "title": "New Accessible Releases - November 2024",
+      "imgUrl": "/assets/images/articles/blog-mocked-3.webp",
+      "imgAlt": "An African American man in formal attire stands looking to the side, with an Afro hairstyle. The blurred United States flag is visible in the background.",
+      "publishDate": "01 November 2024",
+      "text": "We’re excited to announce this month’s new releases, all featuring accessible options! Dive into these powerful films and series designed for everyone."
+    }
+  ]
+}
