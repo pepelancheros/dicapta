@@ -1,5 +1,47 @@
 <template>
   <main id="main" class="all4voicing">
+    <section class="banner">
+      <picture>
+        <!-- Desktop Image -->
+        <source
+          class="banner__img"
+          media="(min-width: 768px)"
+          srcset="/assets/images/all4voicing-banner.webp"
+          alt="An abstract wave pattern featuring vibrant shades of purple and blue, creating a dynamic and fluid visual effect."
+          width="2000"
+          height="844"
+        />
+        <!-- Mobile Image -->
+        <source
+          class="banner__img"
+          media="(max-width: 767px)"
+          srcset="/assets/images/all4voicing-banner-m.webp"
+          alt="An abstract wave pattern featuring vibrant shades of purple and blue, creating a dynamic and fluid visual effect."
+          width="800"
+          height="533"
+        />
+        <!-- Fallback Image -->
+        <img
+          class="banner__img"
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/all4voicing-banner.webp"
+          alt="An abstract wave pattern featuring vibrant shades of purple and blue, creating a dynamic and fluid visual effect."
+          width="2000"
+          height="844"
+        />
+      </picture>
+      <img
+        class="banner__logo"
+        src="/assets/images/all4voicing-logo.webp"
+        alt="logo with the text All4Voicing Lite"
+      />
+      <img
+        class="banner__icons"
+        src="/assets/images/all4voicing-icons.webp"
+        alt="3 icons featuring the words 'record', 'write' and 'mix audio' representing the features that the platform offers."
+      />
+    </section>
     <h1 class="all4voicing__title">All4Voicing Lite</h1>
     <p class="all4voicing__subtitle">
       A one-stop shop for making videos accessible to people with visual
@@ -63,11 +105,38 @@ const rowWithIconsArray = ref([
 
 <style scoped lang="scss">
 .all4voicing {
+  .banner {
+    position: relative;
+    height: 500px;
+    margin-bottom: $size-32;
+
+    &__img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    &__logo {
+      position: absolute;
+      width: 300px;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__icons {
+      position: absolute;
+      top: 390px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 360px;
+    }
+  }
+
   &__title {
     font-size: $size-48;
     font-weight: 500;
     text-align: center;
-    margin-top: $size-96;
     padding: 0 $size-16;
   }
 
@@ -85,8 +154,19 @@ const rowWithIconsArray = ref([
 // styles for tablet size (768px) and higher
 @media all and (min-width: $size-768) {
   .all4voicing {
-    &__title {
-      margin-top: $size-192;
+    .banner {
+      &__logo {
+        left: 15%;
+        transform: none;
+        width: 320px;
+      }
+
+      &__icons {
+        position: absolute;
+        right: 50px;
+        left: unset;
+        transform: none;
+      }
     }
   }
 }
