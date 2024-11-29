@@ -3,25 +3,67 @@
     <div class="newsletters__header">
       <h1>Newsletters</h1>
     </div>
+
     <div class="newsletters__content">
+      <loading
+        class="loading"
+        :active="isLoading"
+        :is-full-page="true"
+        color="#0f52ba"
+        :width="100"
+        :height="100"
+      />
       <a
         class="newsletters__card"
         v-for="newsletter in newsletters"
         :key="newsletter.id"
-        :href="newsletter.pdfUrl"
+        :href="newsletter.file[0]?.url"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img :src="newsletter.imgUrl" alt="newsletter image" />
+        <img
+          :src="newsletter.image.url"
+          :alt="
+            newsletter.image?.alternativeText
+              ? newsletter.image.alternativeText
+              : 'newsletter image'
+          "
+        />
       </a>
     </div>
   </main>
 </template>
 
 <script setup>
-import json from "@/mocked/newslettersMocked.json";
+import { onMounted, ref } from "vue";
+// TODO: Delete this after client approves and sets the Cloduinary account
+// import json from "@/mocked/newslettersMocked.json";
+import { getNewsletters } from "@/api/strapi.js";
+import Loading from "vue-loading-overlay";
 
-const newsletters = json.newsletters;
+// TODO: Delete this after client approves and sets the Cloduinary account
+// const newsletters = json.newsletters;
+const isLoading = ref(false);
+const newsletters = ref([]);
+
+async function fetchNewsletters() {
+  isLoading.value = true;
+  try {
+    const newslettersResponse = await getNewsletters();
+    newsletters.value = newslettersResponse.data;
+    newsletters.value.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB - dateA;
+    });
+  } catch (error) {
+    console.error("Error fetching newsletters:", error);
+  } finally {
+    isLoading.value = false;
+  }
+}
+
+onMounted(fetchNewsletters);
 </script>
 
 <style scoped lang="scss">
@@ -44,6 +86,7 @@ const newsletters = json.newsletters;
     max-width: $size-1024;
     margin: auto;
     padding: $size-48 $size-16;
+    min-height: $size-384;
   }
 
   &__card {
@@ -65,6 +108,10 @@ const newsletters = json.newsletters;
         transform: scale(1.05);
       }
     }
+  }
+
+  .loading {
+    margin: 0 auto;
   }
 }
 

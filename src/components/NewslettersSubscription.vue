@@ -22,7 +22,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { AddNewslettersSubscription } from "@/api/api.js";
+import { AddNewslettersSubscription } from "@/api/strapi.js";
 
 const email = ref("");
 

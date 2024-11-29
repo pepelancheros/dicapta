@@ -8,7 +8,7 @@
       {{ text }}
     </p>
     <a
-      :href="test"
+      :href="pageLink"
       :style="{ backgroundColor: secondaryColor }"
       class="news-card__button"
       >{{ buttonText || "More articles..." }}</a
@@ -24,7 +24,7 @@ const props = defineProps([
   "buttonText",
   "primary-color",
   "secondary-color",
-  "test",
+  "page-link",
 ]);
 </script>
 

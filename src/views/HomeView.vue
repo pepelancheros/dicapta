@@ -184,7 +184,7 @@
     </section>
     <section class="why">
       <h2 class="why__title">Why choose Dicapta?</h2>
-      <Carousel class="why__carousel" :autoplay="15000" :wrap-around="true">
+      <Carousel class="why__carousel" :autoplay="30000" :wrap-around="true">
         <Slide v-for="quote in quotes" :key="quote.person">
           <div class="why__element">
             <img
@@ -215,7 +215,7 @@
           button-text="More Newsletters..."
           primary-color="#257CED"
           secondary-color="#006CAC"
-          test="/news/newsletters"
+          page-link="/news/newsletters"
         />
         <NewsCard
           title="Expert Insights"
@@ -223,7 +223,7 @@
           text="Embracing diversity in audio description"
           primary-color="#006CAA"
           secondary-color="#0D5384"
-          test="/resources"
+          page-link="/resources/white-papers"
         />
         <NewsCard
           title="Blog"
@@ -231,7 +231,7 @@
           text="2024 ACB Audio Description Awards Gala Available in Spanish Again"
           primary-color="#0D5384"
           secondary-color="#0B3862"
-          test="/blog"
+          page-link="/news/blog"
         />
       </div>
     </section>
