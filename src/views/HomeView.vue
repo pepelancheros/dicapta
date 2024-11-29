@@ -227,7 +227,7 @@
         />
         <NewsCard
           title="Blog"
-          image="assets/images/newsletters/november-2024-cover.webp"
+          image="/assets/images/articles/ACB-Awards-Gala-2024-2.jpeg"
           text="2024 ACB Audio Description Awards Gala Available in Spanish Again"
           primary-color="#0D5384"
           secondary-color="#0B3862"
