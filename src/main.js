@@ -4,7 +4,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import VueScrollTo from "vue-scrollto";
-import ClickOutsideDirective from "./utils/ClickOutsideDirective";
+import ClickOutsideDirective from "@/utils/ClickOutsideDirective";
 
 const app = createApp(App);
 
