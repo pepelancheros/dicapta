@@ -49,8 +49,9 @@ const currentArticle = articles.filter(
     h2 {
       font-size: $size-48;
       font-weight: 600;
-      margin-right: $size-24;
       margin-bottom: 0;
+      line-height: unset;
+      margin-top: 0;
     }
   }
 

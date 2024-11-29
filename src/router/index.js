@@ -31,6 +31,7 @@ import NewslettersView from "@/views/newslettersView.vue";
 import BlogView from "@/views/BlogView.vue";
 import WhitePapersView from "@/views/WhitePapersView.vue";
 import CaseStudiesView from "@/views/CaseStudiesView.vue";
+import BlogArticleView from "@/views/BlogArticleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -159,6 +160,11 @@ const router = createRouter({
           path: "/news/blog",
           component: BlogView,
           name: "blog",
+        },
+        {
+          path: "/news/blog/:id",
+          component: BlogArticleView,
+          name: "blog article",
         },
         {
           path: "/news/press",

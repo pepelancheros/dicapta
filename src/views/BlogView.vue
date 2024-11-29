@@ -13,6 +13,7 @@
         :imgAlt="article.imgAlt"
         :publishDate="article.publishDate"
         :text="article.text"
+        :link="`/news/blog/${article.id}`"
       ></ArticleCard>
     </div>
   </main>
