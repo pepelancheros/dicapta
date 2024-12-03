@@ -27,11 +27,12 @@ import ArticleWhitePapersView from "@/views/ArticleWhitePapersView.vue";
 import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
 import TermsAndConditionsView from "@/views/TermsAndConditionsView.vue";
 import ContactUsView from "@/views/ContactUsView.vue";
-import NewslettersView from "@/views/newslettersView.vue";
+import NewslettersView from "@/views/NewslettersView.vue";
 import BlogView from "@/views/BlogView.vue";
 import WhitePapersView from "@/views/WhitePapersView.vue";
 import CaseStudiesView from "@/views/CaseStudiesView.vue";
 import BlogArticleView from "@/views/BlogArticleView.vue";
+import NewReleasesView from "@/views/NewReleasesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -167,14 +168,20 @@ const router = createRouter({
           name: "blog article",
         },
         {
-          path: "/news/press",
-          component: PressView,
-          name: "press",
-        },
-        {
           path: "/news/newsletters",
           component: NewslettersView,
           name: "newsletters",
+        },
+        {
+          path: "/news/new-releases",
+          component: NewReleasesView,
+          name: "new releases",
+        },
+        {
+          path: "/news/press",
+
+          component: PressView,
+          name: "press",
         },
       ],
     },

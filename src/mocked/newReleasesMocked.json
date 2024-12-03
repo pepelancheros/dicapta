@@ -1,0 +1,55 @@
+{
+  "releases": [
+    {
+      "id": 1,
+      "title": "Hero Steps",
+      "releaseYear": 2024,
+      "description": "This feature debut from Colombian writer-director Henry Rincón centers on Eduardo, a ten-year-old boy who has more than his share of harrowing challenges: he is poor, a victim of Colombia’s armed conflict, and is missing a leg from a landmine accident. Yet, with the help of his music teacher and some valiant friends, Eduardo is determined to follow through with his passion: to form a team with other children with disabilities and participate in a children’s soccer tournament.",
+      "series": false,
+      "language": "ES",
+      "CC": false,
+      "AD": true,
+      "ASL": false,
+      "provider": "Pragda",
+      "watchIn": "Pragda Stream",
+      "watchInLink": "https://pragda.docuseek2.com/",
+      "imgUrl": "/assets/images/articles/at_2023_0630.webp",
+      "imgAltText": "A man with a group of children outdoors. They all wear similar shirts.",
+      "all4access": true
+    },
+    {
+      "id": 2,
+      "title": "Tesoros",
+      "releaseYear": 2024,
+      "description": "Siblings Dylan and Andrea set off with their new friends on a marvelous journey of discovery in search of long lost pirate loot.",
+      "series": false,
+      "language": "ES",
+      "CC": false,
+      "AD": true,
+      "ASL": false,
+      "provider": "Pragda",
+      "watchIn": "Pragda Stream",
+      "watchInLink": "https://pragda.docuseek2.com/",
+      "imgUrl": "/assets/images/articles/at_2023_0630.webp",
+      "imgAltText": "A man with a group of children outdoors. They all wear similar shirts.",
+      "all4access": true
+    },
+    {
+      "id": 3,
+      "title": "Inseparable",
+      "releaseYear": 2024,
+      "description": "Immerse yourself in the captivating journey of three extraordinary Indigenous women who not only excel in their chosen sport, but also become beacons of hope, cultural preservation, and Indigenous rights advocacy. Witness the transformative power of sport as it intertwines with ancestral heritage, reminding us of the beauty and strength that lies within our diverse cultures. These are stories that will leave you inspired, uplifted, and deeply connected to the profound bond between humanity, culture, and the land we call home.",
+      "series": true,
+      "language": "EN",
+      "CC": true,
+      "AD": true,
+      "ASL": false,
+      "provider": "WaterBear",
+      "watchIn": "WaterBear free, interactive streaming platform. ",
+      "watchInLink": "https://www.waterbear.com/watch/myia",
+      "imgUrl": "/assets/images/articles/at_2023_0630.webp",
+      "imgAltText": "A man with a group of children outdoors. They all wear similar shirts.",
+      "all4access": true
+    }
+  ]
+}

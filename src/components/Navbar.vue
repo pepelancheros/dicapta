@@ -143,10 +143,13 @@
             <li>
               <RouterLink to="/news/blog">Blog</RouterLink>
             </li>
+            <li><RouterLink to="/news/newsletters">Newsletters</RouterLink></li>
+            <li>
+              <RouterLink to="/news/new-releases">New Releases</RouterLink>
+            </li>
             <li>
               <RouterLink to="/news/press">Press</RouterLink>
             </li>
-            <li><RouterLink to="/news/newsletters">Newsletters</RouterLink></li>
           </ul>
         </li>
         <li>
@@ -401,15 +404,22 @@
               >
             </li>
             <li>
-              <RouterLink to="/news/press" @click="handleMobileNavElementClick"
-                >Press</RouterLink
-              >
-            </li>
-            <li>
               <RouterLink
                 to="/news/newsletters"
                 @click="handleMobileNavElementClick"
                 >Newsletters</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/news/new-releases"
+                @click="handleMobileNavElementClick"
+                >News Releases</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/news/press" @click="handleMobileNavElementClick"
+                >Press</RouterLink
               >
             </li>
           </ul>
