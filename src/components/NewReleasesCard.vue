@@ -1,5 +1,5 @@
 <template>
-  <div class="release-card">
+  <a class="release-card" :href="`/news/new-releases/${release.id}`">
     <p class="release-card__date">
       {{ release.month + " " + release.releaseYear }}
     </p>
@@ -26,7 +26,7 @@
       </p>
       <p class="release-card__description">{{ release.description }}</p>
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup>
@@ -43,6 +43,16 @@ const props = defineProps({
   background-color: var(--c-blue-600);
   border-radius: 15px;
   color: var(--c-white);
+  padding: 0;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 16px 24px 8px rgba(0, 0, 0, 0.12);
+
+    img {
+      transform: scale(1.05);
+    }
+  }
 
   &__date {
     font-size: $size-24;
@@ -52,6 +62,7 @@ const props = defineProps({
 
   &__img {
     max-width: 100%;
+    transition: transform 0.3s ease-in-out;
   }
 
   &__info-container {
