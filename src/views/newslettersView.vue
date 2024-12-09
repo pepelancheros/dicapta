@@ -17,17 +17,13 @@
         class="newsletters__card"
         v-for="newsletter in newsletters"
         :key="newsletter.id"
-        :href="newsletter.file[0]?.url"
+        :href="newsletter.pdfUrl"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          :src="newsletter.image.url"
-          :alt="
-            newsletter.image?.alternativeText
-              ? newsletter.image.alternativeText
-              : 'newsletter image'
-          "
+          :src="newsletter.imageUrl"
+          :alt="'newsletter of ' + getNewslettersMonth(newsletter)"
         />
       </a>
     </div>
@@ -45,6 +41,25 @@ import Loading from "vue-loading-overlay";
 // const newsletters = json.newsletters;
 const isLoading = ref(false);
 const newsletters = ref([]);
+const monthsArray = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+function getNewslettersMonth(newsletter) {
+  const date = new Date(newsletter.date);
+  return monthsArray[date.getMonth()];
+}
 
 async function fetchNewsletters() {
   isLoading.value = true;

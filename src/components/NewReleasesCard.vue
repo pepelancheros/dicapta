@@ -9,6 +9,32 @@
       :alt="release.imgAltText"
     />
     <div class="release-card__info-container">
+      <div class="release-card__accessibility-logos-container">
+        <img
+          v-if="release.AD"
+          class="release-card__accessibility-logos"
+          src="/assets/images/ad-white.webp"
+          alt="audio description logo"
+        />
+        <img
+          v-if="release.CC"
+          class="release-card__accessibility-logos release-card__accessibility-logos--closed-captions"
+          src="/assets/images/cc-white.webp"
+          alt="closed caption logo"
+        />
+        <img
+          v-if="release.ASL"
+          class="release-card__accessibility-logos"
+          src="/assets/images/asl-white.webp"
+          alt="american sign language logo"
+        />
+        <img
+          v-if="release.all4access"
+          class="release-card__accessibility-logos"
+          src="/assets/images/a4a-white.webp"
+          alt="all4access logo"
+        />
+      </div>
       <h2 class="release-card__title">{{ release.title }}</h2>
       <p><strong>language: </strong> {{ release.language }}</p>
       <p>
@@ -22,7 +48,7 @@
         >
       </p>
       <p>
-        <strong>{{ release.series ? "Series" : "Movie" }}</strong>
+        <strong>{{ release.series ? "Series" : "Film" }}</strong>
       </p>
       <p class="release-card__description">{{ release.description }}</p>
     </div>
@@ -44,12 +70,14 @@ const props = defineProps({
   border-radius: 15px;
   color: var(--c-white);
   padding: 0;
+  padding-bottom: $size-12;
   overflow: hidden;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 16px 24px 8px rgba(0, 0, 0, 0.12);
 
-    img {
+    .release-card__img {
       transform: scale(1.05);
     }
   }
@@ -67,6 +95,21 @@ const props = defineProps({
 
   &__info-container {
     padding: $size-8 $size-16;
+  }
+
+  &__accessibility-logos-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: $size-8;
+  }
+
+  &__accessibility-logos {
+    max-width: 50px;
+    margin-right: $size-16;
+
+    &--closed-captions {
+      max-width: 35px;
+    }
   }
 
   &__title {
