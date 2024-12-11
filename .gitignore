@@ -1,4 +1,15 @@
+# Node modules
 node_modules/
+
+# Build output
+.nuxt/
 dist/
+
+# npm logs
 npm-debug.log
+
+# macOS system files
 .DS_Store
+
+# Nuxt 3 build cache
+.cache/

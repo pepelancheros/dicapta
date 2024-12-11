@@ -1,0 +1,3 @@
+[build]
+  command = "npm run generate"  # Use 'nuxt generate' for static site generation
+  publish = "dist"  # The folder where the built static files are generated

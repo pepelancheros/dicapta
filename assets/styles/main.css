@@ -1,0 +1,78 @@
+#__nuxt {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+  color: var(--c-blue-500);
+}
+
+button,
+.button {
+  border: none;
+  background-color: var(--c-blue-500);
+  border-radius: 50px;
+  color: var(--c-white-soft);
+  font-size: 24px;
+  padding: 8px 24px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  background-color: var(--c-blue-300);
+  cursor: pointer;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.title-global,
+h3,
+h2,
+h1 {
+  font-family: "Hind", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 2rem;
+}
+
+h2 {
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.blue-title {
+  color: var(--c-blue-500);
+}
+
+.label-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+img {
+  height: auto;
+  width: auto;
+}
