@@ -55,7 +55,7 @@
               in the school system through The Described and Captioned Media
               Program (DCMP) and storing your accessibility assets in the
               Clearinghouse "All4Access." See our
-              <a href="/ver2022/en/tv-movie-access-2">TV &amp; Movie Access</a>
+              <a href="/projects/tv-movie-access">TV &amp; Movie Access</a>
               section for additional information.
             </li>
           </ul>
