@@ -63,8 +63,13 @@ function getNewslettersMonth(newsletter) {
 async function fetchNewsletters() {
   isLoading.value = true;
   try {
-    const newslettersResponse = await $fetch("/api/newsletters");
-    newsletters.value = newslettersResponse.data;
+    const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api"
+    const url = new URL(`${API_URL}/newsletters`);
+    url.searchParams.append("populate", "*");
+    const response = await fetch(url.toString());
+    const responseJson = await response.json();
+
+    newsletters.value = responseJson.data;
     newsletters.value.sort((a, b) => {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
