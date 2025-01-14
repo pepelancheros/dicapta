@@ -60,21 +60,11 @@ function getNewslettersMonth(newsletter) {
   return monthsArray[date.getMonth()];
 }
 
-async function fetchNewsletters() {
+async function setNewsletters() {
   isLoading.value = true;
   try {
-    const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api"
-    const url = new URL(`${API_URL}/newsletters`);
-    url.searchParams.append("populate", "*");
-    const response = await fetch(url.toString());
-    const responseJson = await response.json();
-
-    newsletters.value = responseJson.data;
-    newsletters.value.sort((a, b) => {
-      const dateA = new Date(a.date);
-      const dateB = new Date(b.date);
-      return dateB - dateA;
-    });
+    const newslettersData = await fetchNewslettersData();
+    newsletters.value = sortNewslettersByDate(newslettersData);
   } catch (error) {
     console.error("Error fetching newsletters:", error);
   } finally {
@@ -82,7 +72,24 @@ async function fetchNewsletters() {
   }
 }
 
-onMounted(fetchNewsletters);
+async function fetchNewslettersData() {
+  const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
+  const url = new URL(`${API_URL}/newsletters`);
+  url.searchParams.append("populate", "*");
+  const response = await fetch(url.toString());
+  const responseJson = await response.json();
+  return responseJson.data;
+}
+
+function sortNewslettersByDate(newsletters) {
+  return newsletters.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB - dateA;
+  });
+}
+
+onMounted(setNewsletters);
 </script>
 
 <style scoped lang="scss">
