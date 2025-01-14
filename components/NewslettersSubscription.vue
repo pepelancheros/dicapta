@@ -27,15 +27,11 @@ const email = ref("");
 
 const subscribeEmailToNewsletter = async () => {
   try {
-    await $fetch("/api/newsletter-subscription", {
-      method: "POST",
-      body: {
+    await postNewsletterSubscription({
         data: {
           email: email.value,
         },
-      },
-    });
-
+    })
     window.alert(email.value + " subscribed successfully!");
   } catch (error) {
     window.alert(
@@ -47,6 +43,25 @@ const subscribeEmailToNewsletter = async () => {
     email.value = "";
   }
 };
+
+async function postNewsletterSubscription(body) {
+  try {
+    const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
+    const url = new URL(`${API_URL}/newsletter-subscriptions`);
+  
+    const response = await $fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      return response;
+  } catch (error) {
+    console.error("Error fetching newsletters subscription:", error);
+    throw error;
+  }
+}
 </script>
 
 <style scoped lang="scss">
