@@ -1,12 +1,12 @@
 <template>
   <a class="release-card" :href="`/news/new-releases/${release.id}`">
     <p class="release-card__date">
-      {{ release.month + " " + release.releaseYear }}
+      {{ release.month + " " + release.accessibilityReleaseYear }}
     </p>
     <img
       class="release-card__img"
-      :src="release.imgUrl"
-      :alt="release.imgAltText"
+      :src="release.imageUrl"
+      :alt="release.altText"
     />
     <div class="release-card__info-container">
       <div class="release-card__accessibility-logos-container">
@@ -29,7 +29,7 @@
           alt="american sign language logo"
         />
         <img
-          v-if="release.all4access"
+          v-if="release.includedInAll4Access"
           class="release-card__accessibility-logos"
           src="/assets/images/a4a-white.webp"
           alt="all4access logo"
@@ -41,10 +41,10 @@
         <strong> Content Provider: </strong>
         <a
           class="release-card__content-provider-link"
-          :href="release.watchInLink"
+          :href="release.whereToWatchLink"
           rel="noopener noreferrer"
           target="_blank"
-          >{{ release.watchIn }}</a
+          >{{ release.provider }}</a
         >
       </p>
       <p>
@@ -89,6 +89,7 @@ const props = defineProps({
   }
 
   &__img {
+    width: 100%;
     max-width: 100%;
     transition: transform 0.3s ease-in-out;
   }
