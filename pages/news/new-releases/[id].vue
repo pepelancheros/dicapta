@@ -7,8 +7,8 @@
       <h1 class="new-release__title">{{ currentRelease.title }}</h1>
       <img
         class="new-release__img"
-        :src="currentRelease.imgUrl"
-        :alt="currentRelease.imgAltText"
+        :src="currentRelease.imageUrl"
+        :alt="currentRelease.altText"
       />
       <div class="new-release__info">
         <div class="new-release__accessibility-logos-container">
@@ -31,7 +31,7 @@
             alt="american sign language logo"
           />
           <img
-            v-if="currentRelease.all4access"
+            v-if="currentRelease.includedInAll4Access"
             class="new-release__accessibility-logos"
             src="/assets/images/a4a-black.webp"
             alt="all4access logo"
@@ -45,24 +45,24 @@
         <p>
           <strong>Where to watch: </strong>
           <a
-            :href="currentRelease.watchInLink"
+            :href="currentRelease.whereToWatchLink"
             rel="noopener noreferrer"
             target="_blank"
-            >{{ currentRelease.watchIn }}</a
+            >{{ currentRelease.whereToWatch }}</a
           >
         </p>
-        <p v-if="currentRelease.all4access">
+        <p v-if="currentRelease.includedInAll4Access">
           <strong>Accessibility available in: </strong
           ><a href="https://all4access.com/">All4Access</a>
         </p>
         <p>
           <strong>Date: </strong
-          >{{ currentRelease.month + " " + currentRelease.releaseYear }}
+          >{{ currentRelease.month + " " + currentRelease.accessibilityReleaseYear }}
         </p>
         <p class="new-release__description">{{ currentRelease.description }}</p>
         <a
           class="new-release__play-icon-container"
-          :href="currentRelease.watchInLink"
+          :href="currentRelease.whereToWatchLink"
           rel="noopener noreferrer"
           target="_blank"
           ><img
@@ -83,15 +83,32 @@
 </template>
 
 <script setup>
-import json from "~/assets/mocked/newReleasesMocked.json";
+import { onMounted, ref, computed } from "vue";
 import { useRoute } from "nuxt/app";
-import { computed } from "vue";
 
 const route = useRoute();
-const releases = json.releases;
-const currentRelease = releases.filter(
-  (release) => release.id === Number(route.params.id)
-)[0];
+const currentRelease = ref({});
+
+async function setCurrentRelease() {
+  try {
+    const newReleaseData = await fetchCurrentReleaseData();
+    currentRelease.value = newReleaseData;
+  } catch (error) {
+    console.error("Error fetching new releases:", error);
+  }
+}
+
+async function fetchCurrentReleaseData() {
+  const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
+  const url = new URL(`${API_URL}/new-releases/${route.params.id}`);
+  url.searchParams.append("populate", "*");
+  const response = await fetch(url.toString());
+  const responseJson = await response.json();
+  return responseJson.data;
+}
+
+onMounted(setCurrentRelease);
+
 const accessibilityOptions = computed(() => {
   const options = [
     currentRelease.AD && "Audio Description",

@@ -1,5 +1,5 @@
 <template>
-  <a class="release-card" :href="`/news/new-releases/${release.id}`">
+  <a class="release-card" :href="`/news/new-releases/${release.documentId}`">
     <p class="release-card__date">
       {{ release.month + " " + release.accessibilityReleaseYear }}
     </p>
@@ -36,7 +36,7 @@
         />
       </div>
       <h2 class="release-card__title">{{ release.title }}</h2>
-      <p><strong>language: </strong> {{ release.language }}</p>
+      <p><strong>language: </strong> {{ release.language === "EN" ? "English" : "Spanish" }}</p>
       <p>
         <strong> Content Provider: </strong>
         <a
