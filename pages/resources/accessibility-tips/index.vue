@@ -29,6 +29,18 @@ import { ref } from "vue";
 import ArticleCard from "@/components/ArticleCard.vue";
 import json from "~/assets/mocked/accessibilityTipsMocked.json";
 import Paginator from "@/components/Paginator.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Accessibility Tips | Inclusive Practices by Dicapta",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Discover Dicapta’s Accessibility Tips! Learn proper etiquette, create accessible documents, and explore tools like browser plugins to promote inclusivity. Start now!",
+    },
+  ],
+})
 
 const articles = json.articles;
 

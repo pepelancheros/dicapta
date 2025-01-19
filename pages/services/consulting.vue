@@ -90,6 +90,18 @@
 import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Expert Accessibility Consulting Services",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Navigate media accessibility standards with Dicapta’s expert consulting. From strategy to compliance, we make inclusion simple. Get professional guidance today!",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

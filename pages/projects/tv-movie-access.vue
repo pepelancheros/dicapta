@@ -223,6 +223,18 @@ import { ref } from "vue";
 import TwoColumns from "@/components/TwoColumns.vue";
 import TvAndMovieAccessCard from "@/components/TvAndMovieAccessCard.vue";
 import cardsContent from "~/assets/mocked/tvMovieAccessCardsMocked.json";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Expanding Accessibility for TV & Movie Content",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Supported by the US Department of Education, Dicapta partners with providers to grow accessible TV and movies through innovative inclusive media initiatives.",
+    },
+  ],
+})
 
 const cards = cardsContent.cards;
 const currentCards = ref(cards.slice(0, 10));

@@ -86,6 +86,18 @@
 import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Audio Description Solutions for Accessible Media",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Make your media accessible to visually impaired audiences with Dicapta’s professional audio description services. Create inclusive content effortlessly. Contact us today!",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

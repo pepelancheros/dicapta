@@ -129,6 +129,21 @@
   </main>
 </template>
 
+<script setup>
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Contact Dicapta | Get in Touch for Accessible Media Solutions",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Have questions or need accessibility solutions? Contact Dicapta today to learn how our audio description, dubbing, and tech services can benefit your media.",
+    },
+  ],
+})
+</script>
+
 <style lang="scss" scoped>
 .contact {
   max-width: $size-1024;

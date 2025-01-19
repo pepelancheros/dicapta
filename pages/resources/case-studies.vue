@@ -29,6 +29,21 @@
   </main>
 </template>
 
+<script setup>
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Case Studies | Real-World Examples of Accessible Media Solutions",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Discover Dicapta's case studies, showcasing real-world examples of our innovative accessibility solutions in action. See how we enhance media for all audiences.",
+    },
+  ],
+})
+</script>
+
 <style scoped lang="scss">
 .case-studies {
   &__header {

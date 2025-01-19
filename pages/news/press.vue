@@ -20,6 +20,18 @@
 <script setup>
 import json from "~/assets/mocked/pressKitMocked.json";
 import GenericCard from "@/components/GenericCard.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Press Kit | Media Resources & Accessibility Information",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Access Dicapta's press kit for media resources, company information, and insights on our innovative accessibility solutions for inclusive media.",
+    },
+  ],
+})
 
 const pressKit = json.kit;
 </script>

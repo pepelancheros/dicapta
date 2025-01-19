@@ -88,6 +88,18 @@
 import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Professional Captioning for Media Accessibility",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Boost inclusivity with Dicapta’s expert captioning services. Perfect for TV, movies, and digital platforms, our solutions meet all accessibility needs. Learn more today!",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

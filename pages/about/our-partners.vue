@@ -133,6 +133,18 @@
 <script setup>
 import { Carousel, Navigation, Slide } from "vue3-carousel";
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Advisors | Expertise Driving Accessible Media",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Discover Dicapta’s trusted partners and collaborators, working together to create inclusive media and drive accessibility innovations across industries.",
+    },
+  ],
+})
 
 const televisionPartners = [
   "/assets/images/logos/bare-feet.png",

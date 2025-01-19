@@ -35,6 +35,18 @@ import { onMounted, ref } from "vue";
 // TODO: Delete this after client approves and sets the Cloduinary account
 // import json from "~/assets/mocked/newslettersMocked.json";
 import Loading from "vue-loading-overlay";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Newsletters | Subscribe for Updates on Accessibility and Media",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Sign up for Dicapta's newsletters to receive the latest updates on accessibility innovations, new services, and industry trends. Stay informed and connected!",
+    },
+  ],
+})
 
 // TODO: Delete this after client approves and sets the Cloduinary account
 // const newsletters = json.newsletters;

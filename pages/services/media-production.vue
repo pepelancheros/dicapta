@@ -130,6 +130,18 @@
 
 <script setup>
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Media Production Services for Accessible Content",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Create accessible media with ease. From concept to post-production, Dicapta’s expert team delivers engaging videos that ensure your content reaches all audiences. Contact us!",
+    },
+  ],
+})
 </script>
 
 <style scoped lang="scss">

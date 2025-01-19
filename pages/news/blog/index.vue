@@ -22,6 +22,18 @@
 <script setup>
 import ArticleCard from "@/components/ArticleCard.vue";
 import json from "~/assets/mocked/blogCardsMocked.json";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Blog | Insights on Accessibility, Media, and Technology",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Explore Dicapta’s blog for expert insights on accessible media, audio description, multilingual dubbing, and the latest technology trends shaping inclusive content.",
+    },
+  ],
+})
 
 const articles = json.articles;
 </script>

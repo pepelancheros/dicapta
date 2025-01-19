@@ -80,6 +80,18 @@
 import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumnTextAndImage from "@/components/TwoColumnTextAndImage.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "All4Voicing Lite | Streamlined Audio Description for Education",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Discover All4Voicing Lite, our new cloud platform for efficient audio description. Designed for educational use, it streamlines production workflows effortlessly.",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

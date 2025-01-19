@@ -156,6 +156,18 @@
 import { ref } from "vue";
 import TwoColumns from "@/components/TwoColumns.vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "All4Access | Simplifying Media Accessibility for Everyone",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "All4Access by Dicapta simplifies sharing and finding accessibility assets, empowering audiences to enjoy inclusive media in streaming and live events.",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

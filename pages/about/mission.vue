@@ -185,6 +185,18 @@
 
 <script setup>
 import TwoColumnTextAndImage from "@/components/TwoColumnTextAndImage.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Mission | Empowering Accessibility through Innovation",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Learn about Dicapta’s mission to make media accessible to all through cutting-edge solutions like audio description, captioning, and multilingual dubbing.",
+    },
+  ],
+})
 </script>
 
 <style scoped lang="scss">

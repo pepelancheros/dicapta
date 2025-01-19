@@ -62,6 +62,18 @@
 import { ref } from "vue";
 import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import TwoColumns from "@/components/TwoColumns.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Multilingual Dubbing for Inclusive Content",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Seamlessly localize your media with Dicapta’s multilingual dubbing services. Enjoy faster delivery and competitive pricing powered by our optimized processes. Learn more!",
+    },
+  ],
+})
 
 const rowWithIconsArray = ref([
   {

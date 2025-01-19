@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vueuse/head": "^2.0.0",
     "h3": "^1.13.0",
     "nuxt": "^3.14.1592",
     "vue": "^3.4.29",

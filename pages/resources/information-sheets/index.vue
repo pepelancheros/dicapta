@@ -18,6 +18,18 @@
 <script setup>
 import json from "~/assets/mocked/informationSheetsMocked.json";
 import GenericCard from "@/components/GenericCard.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Information Sheets | Dicapta’s Accessibility Insights",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Access Dicapta’s Information Sheets on sensory disabilities, Latinos with disabilities, accessible screenings, and more. Explore data and guidelines for inclusivity today!",
+    },
+  ],
+})
 
 const sheets = json.sheets;
 </script>

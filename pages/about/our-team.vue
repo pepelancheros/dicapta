@@ -123,6 +123,18 @@
 import leadership from "~/assets/mocked/leadershipTeamMocked.json";
 import production from "~/assets/mocked/productionTeamMocked.json";
 import advisory from "~/assets/mocked/advisoryGroupMocked.json";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta Team | Experts in Accessibility and Media Solutions",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Meet the passionate and skilled professionals behind Dicapta’s innovative accessibility solutions. Our team is dedicated to enhancing media for all audiences.",
+    },
+  ],
+})
 
 const leadershipTeam = leadership.team;
 const productionTeam = production.team;

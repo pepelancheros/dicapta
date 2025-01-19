@@ -243,9 +243,21 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 import { ref } from "vue";
-import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
 import NewslettersSubscription from "@/components/NewslettersSubscription.vue";
 import NewsCard from "@/components/NewsCard.vue";
+import RowWithIconsAndText from "@/components/RowWithIconsAndText.vue";
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta | Multilingual Accessibility Solutions for Inclusive Media",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Effortless accessibility starts here! Explore Dicapta's leading audio description, dubbing, and tech solutions tailored to your content needs. Learn more now!",
+    },
+  ],
+})
 
 const quotes = ref([
   {

@@ -555,6 +555,21 @@
   </main>
 </template>
 
+<script setup>
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: "Dicapta White Papers | In-Depth Insights on Accessibility Technology and Media",
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: "Explore Dicapta's white papers for in-depth insights on accessibility technology, media solutions, and industry best practices. Learn more about our impact.",
+    },
+  ],
+})
+</script>
+
 <style scoped lang="scss">
 .blue-background {
   background: var(--c-blue-600);
