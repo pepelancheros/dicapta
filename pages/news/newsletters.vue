@@ -5,7 +5,7 @@
     </div>
 
     <div class="newsletters__content">
-      <loading
+      <Loading
         class="loading"
         :active="isLoading"
         :is-full-page="true"
@@ -13,24 +13,33 @@
         :width="100"
         :height="100"
       />
-      <a
-        class="newsletters__card"
-        v-for="newsletter in newsletters"
-        :key="newsletter.id"
-        :href="newsletter.pdfUrl"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          :src="newsletter.imageUrl"
-          :alt="'newsletter of ' + getNewslettersMonth(newsletter)"
-        />
-      </a>
+        <a
+          class="newsletters__card"
+          v-for="newsletter in currentNewsletters"
+          :key="newsletter.id"
+          :href="newsletter.pdfUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            :src="newsletter.imageUrl"
+            :alt="'newsletter of ' + getNewslettersMonth(newsletter)"
+          />
+        </a>
+    </div>
+
+    <div class="newsletters__paginator-container">
+      <Paginator
+        :total-elements="newsletters.length"
+        :elements-per-page="9"
+        @page-changed="handlePageChange"
+      />
     </div>
   </main>
 </template>
 
 <script setup>
+import Paginator from "@/components/Paginator.vue";
 import { onMounted, ref } from "vue";
 // TODO: Delete this after client approves and sets the Cloduinary account
 // import json from "~/assets/mocked/newslettersMocked.json";
@@ -52,6 +61,7 @@ useHead({
 // const newsletters = json.newsletters;
 const isLoading = ref(false);
 const newsletters = ref([]);
+const currentNewsletters = ref([]);
 const monthsArray = [
   "January",
   "February",
@@ -77,6 +87,7 @@ async function setNewsletters() {
   try {
     const newslettersData = await fetchNewslettersData();
     newsletters.value = sortNewslettersByDate(newslettersData);
+    currentNewsletters.value = newsletters.value.slice(0, 9);
   } catch (error) {
     console.error("Error fetching newsletters:", error);
   } finally {
@@ -102,6 +113,12 @@ function sortNewslettersByDate(newsletters) {
 }
 
 onMounted(setNewsletters);
+
+const handlePageChange = (page) => {
+  const startIndex = (page - 1) * 9;
+  const endIndex = startIndex + 9;
+  currentNewsletters.value = newsletters.value.slice(startIndex, endIndex);
+};
 </script>
 
 <style scoped lang="scss">
@@ -123,7 +140,7 @@ onMounted(setNewsletters);
     justify-content: space-between;
     max-width: $size-1024;
     margin: auto;
-    padding: $size-48 $size-16;
+    padding: $size-48 $size-16 $size-16;
     min-height: $size-384;
   }
 
@@ -146,6 +163,12 @@ onMounted(setNewsletters);
         transform: scale(1.05);
       }
     }
+  }
+
+  &__paginator-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $size-48;
   }
 
   .loading {

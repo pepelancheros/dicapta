@@ -4,7 +4,7 @@
       <h1>New Accessibility Releases</h1>
     </div>
     <div class="new-releases__content">
-      <loading
+      <Loading
         class="loading"
         :active="isLoading"
         :is-full-page="true"
