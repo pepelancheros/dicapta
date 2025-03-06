@@ -4,16 +4,24 @@
       <h1>Blog</h1>
     </div>
     <div class="blog__content">
+      <Loading
+        class="loading"
+        :active="isLoading"
+        :is-full-page="true"
+        color="#0f52ba"
+        :width="100"
+        :height="100"
+      />
       <ArticleCard
-        class="test"
-        v-for="article in articles"
+        class="blog__card"
+        v-for="article in blogArticles"
         :key="article.id"
         :title="article.title"
-        :imgUrl="article.imgUrl"
-        :imgAlt="article.imgAlt"
+        :imgUrl="article.imageUrl"
+        :imgAlt="article.imageAltText"
         :publishDate="article.publishDate"
-        :text="article.text"
-        :link="`/news/blog/${article.id}`"
+        :text="article.cardText"
+        :link="`/news/blog/${article.documentId}`"
       ></ArticleCard>
     </div>
   </main>
@@ -21,8 +29,11 @@
 
 <script setup>
 import ArticleCard from "@/components/ArticleCard.vue";
-import json from "~/assets/mocked/blogCardsMocked.json";
+import { onMounted, ref } from "vue";
+import Loading from "vue-loading-overlay";
 import { useHead } from '@vueuse/head';
+
+const blogArticles = ref([]);
 
 useHead({
   title: "Dicapta Blog | Insights on Accessibility, Media, and Technology",
@@ -35,7 +46,30 @@ useHead({
   ],
 })
 
-const articles = json.articles;
+const isLoading = ref(false);
+
+async function setBlogArticles() {
+  isLoading.value = true;
+  try {
+    const blogArticlesData = await fetchBlogArticles();
+    blogArticles.value = blogArticlesData;
+  } catch (error) {
+    console.error("Error fetching blog articles:", error);
+  } finally {
+    isLoading.value = false;
+  }
+}
+
+async function fetchBlogArticles() {
+  const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
+  const url = new URL(`${API_URL}/blogs`);
+  url.searchParams.append("populate", "*");
+  const response = await fetch(url.toString());
+  const responseJson = await response.json();
+  return responseJson.data;
+}
+
+onMounted(setBlogArticles);
 </script>
 
 <style scoped lang="scss">
@@ -60,8 +94,12 @@ const articles = json.articles;
     padding: $size-48 $size-16;
   }
 
-  .test {
+  &__card {
     max-width: 400px;
+  }
+
+  .loading {
+    margin: 0 auto;
   }
 }
 

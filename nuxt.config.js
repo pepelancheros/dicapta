@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   ssr: true,
 
+  modules: ['nuxt-strapi-blocks-renderer'],
+
   app: {
     head: {
       title: "Dicapta Accessible Communication Developers",

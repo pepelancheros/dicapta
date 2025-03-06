@@ -68,6 +68,7 @@ const props = defineProps({
     font-size: $size-24;
     color: var(--c-black);
     line-height: 2rem;
+    margin-left: 0;
   }
 
   &__img-container {

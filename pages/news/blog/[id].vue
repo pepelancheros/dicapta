@@ -6,24 +6,41 @@
     <div class="blog-article__content">
       <img
         class="blog-article__image"
-        :src="currentArticle.internalImg || currentArticle.imgUrl"
-        :alt="currentArticle.imgAlt"
+        :src="currentArticle.imageUrl"
+        :alt="currentArticle.imageAltText"
       />
     </div>
-    <div v-html="currentArticle.content"></div>
+    <StrapiBlocksText v-if="currentArticle.content" :nodes="currentArticle.content" />
   </main>
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue";
 import { useRoute } from "nuxt/app";
-import json from "~/assets/mocked/blogCardsMocked.json";
 
-const articles = json.articles;
 const route = useRoute();
+const currentArticle = ref({});
 
-const currentArticle = articles.filter(
-  (article) => article.id === Number(route.params.id)
-)[0];
+async function setCurrentBlogArticle() {
+  try {
+    const articleData = await fetchCurrentBlogArticle();
+    currentArticle.value = articleData;
+  } catch (error) {
+    console.error("Error fetching blog article:", error);
+  }
+}
+
+async function fetchCurrentBlogArticle() {
+  const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
+  const url = new URL(`${API_URL}/blogs/${route.params.id}`);
+  url.searchParams.append("populate", "*");
+  const response = await fetch(url.toString());
+  const responseJson = await response.json();
+  return responseJson.data;
+}
+
+onMounted(setCurrentBlogArticle);
+
 </script>
 
 <style lang="scss" scoped>
