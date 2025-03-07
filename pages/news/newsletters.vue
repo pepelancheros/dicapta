@@ -41,8 +41,6 @@
 <script setup>
 import Paginator from "@/components/Paginator.vue";
 import { onMounted, ref } from "vue";
-// TODO: Delete this after client approves and sets the Cloduinary account
-// import json from "~/assets/mocked/newslettersMocked.json";
 import Loading from "vue-loading-overlay";
 import { useHead } from '@vueuse/head';
 
@@ -57,8 +55,6 @@ useHead({
   ],
 })
 
-// TODO: Delete this after client approves and sets the Cloduinary account
-// const newsletters = json.newsletters;
 const isLoading = ref(false);
 const newsletters = ref([]);
 const currentNewsletters = ref([]);

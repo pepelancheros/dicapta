@@ -14,7 +14,7 @@
       />
       <ArticleCard
         class="blog__card"
-        v-for="article in blogArticles"
+        v-for="article in currentBlogArticles"
         :key="article.id"
         :title="article.title"
         :imgUrl="article.imageUrl"
@@ -23,6 +23,13 @@
         :text="article.cardText"
         :link="`/news/blog/${article.documentId}`"
       ></ArticleCard>
+    </div>
+    <div class="blog__paginator-container">
+      <Paginator
+        :total-elements="blogArticles.length"
+        :elements-per-page="9"
+        @page-changed="handlePageChange"
+      />
     </div>
   </main>
 </template>
@@ -34,6 +41,8 @@ import Loading from "vue-loading-overlay";
 import { useHead } from '@vueuse/head';
 
 const blogArticles = ref([]);
+const currentBlogArticles = ref([]);
+const isLoading = ref(false);
 
 useHead({
   title: "Dicapta Blog | Insights on Accessibility, Media, and Technology",
@@ -46,13 +55,12 @@ useHead({
   ],
 })
 
-const isLoading = ref(false);
-
 async function setBlogArticles() {
   isLoading.value = true;
   try {
     const blogArticlesData = await fetchBlogArticles();
     blogArticles.value = blogArticlesData;
+    currentBlogArticles.value = blogArticles.value.slice(0, 9);
   } catch (error) {
     console.error("Error fetching blog articles:", error);
   } finally {
@@ -96,6 +104,12 @@ onMounted(setBlogArticles);
 
   &__card {
     max-width: 400px;
+  }
+
+  &__paginator-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $size-48;
   }
 
   .loading {

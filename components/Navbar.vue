@@ -74,7 +74,7 @@
               >
             </li>
             <li>
-              <NuxtLink to="/projects/all4voicing-lite"
+              <NuxtLink to="https://www.prismavoice.com/all4voicing-lite"
                 >All4Voicing Lite</NuxtLink
               >
             </li>
@@ -328,7 +328,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/projects/all4voicing-lite"
+                to="https://www.prismavoice.com/all4voicing-lite"
                 @click="handleMobileNavElementClick"
                 >All4Voicing lite</NuxtLink
               >

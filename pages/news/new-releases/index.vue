@@ -13,29 +13,38 @@
         :height="100"
       />
       <NewReleasesCard
-        v-for="release in newReleases"
+        v-for="release in currentNewReleases"
         class="new-releases__card"
         :key="release.id"
         :release="release"
       />
     </div>
-    <div class="new-releases__content"></div>
+    <div class="new-releases__paginator-container">
+      <Paginator
+        :total-elements="newReleases.length"
+        :elements-per-page="9"
+        @page-changed="handlePageChange"
+      />
+    </div>
   </main>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
 import Loading from "vue-loading-overlay";
 import NewReleasesCard from "@/components/NewReleasesCard.vue";
+import { onMounted, ref } from "vue";
+import Paginator from "@/components/Paginator.vue";
 
 const isLoading = ref(false);
 const newReleases = ref([]);
+const currentNewReleases = ref([]);
 
 async function setNewReleases() {
   isLoading.value = true;
   try {
     const newReleasesData = await fetchNewReleasesData();
     newReleases.value = newReleasesData;
+    currentNewReleases.value = newReleases.value.slice(0, 9);
   } catch (error) {
     console.error("Error fetching new releases:", error);
   } finally {
@@ -53,6 +62,12 @@ async function fetchNewReleasesData() {
 }
 
 onMounted(setNewReleases);
+
+const handlePageChange = (page) => {
+  const startIndex = (page - 1) * 9;
+  const endIndex = startIndex + 9;
+  currentNewReleases.value = newReleases.value.slice(startIndex, endIndex);
+};
 </script>
 
 <style scoped lang="scss">
@@ -81,6 +96,12 @@ onMounted(setNewReleases);
   &__card {
     max-width: 320px;
     margin-bottom: $size-32;
+  }
+
+  &__paginator-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $size-48;
   }
 
   .loading {
