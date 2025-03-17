@@ -72,12 +72,19 @@ async function fetchBlogArticles() {
   const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
   const url = new URL(`${API_URL}/blogs`);
   url.searchParams.append("populate", "*");
+  url.searchParams.append("sort", "publishDate:desc");
   const response = await fetch(url.toString());
   const responseJson = await response.json();
   return responseJson.data;
 }
 
 onMounted(setBlogArticles);
+
+const handlePageChange = (page) => {
+  const startIndex = (page - 1) * 9;
+  const endIndex = startIndex + 9;
+  currentBlogArticles.value = blogArticles.value.slice(startIndex, endIndex);
+};
 </script>
 
 <style scoped lang="scss">
