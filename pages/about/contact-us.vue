@@ -32,7 +32,7 @@
           alt="phone icon"
         />
         <p>call us at</p>
-        <a href="tel:4073890712">407-389-0712</a>
+        <a href="tel:4079060676">(407) 906-0676</a>
       </div>
       <div class="contact__card">
         <img
@@ -61,8 +61,8 @@
             1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL
             32708
           </p>
-          <p>Call: 407-389-0712<br />Fax: 407-682-1997</p>
-          <p>info@dicapta.com</p>
+          <p>Call:<a class="contact__link" href="tel:4079060676">(407) 906-0676</a></p>
+          <p><a class="contact__link" href="mailto:info@dicapta.com">info@dicapta.com</a></p>
         </address>
         <div class="contact__social-media-container">
           <a
@@ -221,6 +221,17 @@ useHead({
   &__map {
     border-radius: 30px;
     margin-bottom: $size-24;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover,
+    &:focus {
+      color: var(--c-blue-500);
+      text-decoration: underline;
+    }
   }
 
   &__button {

@@ -87,13 +87,13 @@
       <h2>Explore</h2>
       <ul class="footer__list-container">
         <li class="footer__list-element">
-          <a href="/services">Services</a>
+          <a href="/services/multilingual-dubbing">Services</a>
         </li>
         <li class="footer__list-element">
-          <a href="/projects">Projects</a>
+          <a href="/projects/tv-movie-access">Projects</a>
         </li>
         <li class="footer__list-element">
-          <a href="/resources">Resources</a>
+          <a href="/resources/accessibility-tips">Resources</a>
         </li>
       </ul>
     </section>
@@ -103,8 +103,12 @@
         <li class="footer__list-element">
           <a href="/news/newsletters">Newsletters</a>
         </li>
-        <li class="footer__list-element">Blog</li>
-        <li class="footer__list-element">New Releases</li>
+        <li class="footer__list-element">
+          <a href="/news/blog">Blog</a>
+        </li>
+        <li class="footer__list-element">
+          <a href="/news/new-releases">New Releases</a>
+        </li>
         <li class="footer__list-element">
           <a href="/news/press">Press kit</a>
         </li>
@@ -113,7 +117,7 @@
     <section class="footer__section">
       <h2>Company</h2>
       <ul class="footer__list-container">
-        <li class="footer__list-element"><a href="/about">About us</a></li>
+        <li class="footer__list-element"><a href="/about/mission">About us</a></li>
         <li class="footer__list-element">
           <a
             href="https://dicaptafoundation.org/"
@@ -142,8 +146,8 @@
           1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL
           32708
         </p>
-        <p>Call: 407-389-0712</p>
-        <p>info@dicapta.com</p>
+        <p>Call:<a class="footer__link" href="tel:4079060676">(407) 906-0676</a></p>
+        <p><a class="footer__link" href="mailto:info@dicapta.com">info@dicapta.com</a></p>
       </address>
     </section>
   </div>
@@ -203,6 +207,17 @@
 
   &__contact-us-container {
     padding-left: $size-12;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover,
+    &:focus {
+      color: var(--c-blue-500);
+      text-decoration: underline;
+    }
   }
 }
 
