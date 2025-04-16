@@ -94,7 +94,6 @@ async function setNewsletters() {
 async function fetchNewslettersData() {
   const API_URL = "https://dicapta-strapi-app-production.up.railway.app/api";
   const url = new URL(`${API_URL}/newsletters`);
-  url.searchParams.append("populate", "*");
   const response = await fetch(url.toString());
   const responseJson = await response.json();
   return responseJson.data;
