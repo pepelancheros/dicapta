@@ -170,7 +170,6 @@
             aria-labelledby="about-navbar"
           >
             <li><NuxtLink to="/about/mission">Mission</NuxtLink></li>
-            <li><NuxtLink to="/about/our-team">Our Team</NuxtLink></li>
             <li>
               <NuxtLink to="/about/our-partners">Our Partners</NuxtLink>
             </li>
@@ -432,13 +431,6 @@
             <li>
               <NuxtLink to="/about/mission" @click="handleMobileNavElementClick"
                 >Mission</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
-                to="/about/our-team"
-                @click="handleMobileNavElementClick"
-                >Our Team</NuxtLink
               >
             </li>
             <li>
