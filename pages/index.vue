@@ -139,48 +139,25 @@
     </section>
     <section class="our-partners">
       <h2 class="our-partners__title">Our partners</h2>
-      <div class="our-partners__content">
-        <img
-          src="/assets/images/logos/frp.webp"
-          alt="fred rogers productions logo"
-          class="our-partners__img"
-          loading="lazy"
-          width="160"
-          height="160"
-        />
-        <img
-          src="/assets/images/logos/sesame-workshop.webp"
-          alt="sesame workshop logo"
-          class="our-partners__img"
-          loading="lazy"
-          width="160"
-          height="160"
-        />
-        <img
-          src="/assets/images/logos/pov.webp"
-          alt="pov logo"
-          class="our-partners__img"
-          loading="lazy"
-          width="160"
-          height="160"
-        />
-        <img
-          src="/assets/images/logos/ptk.webp"
-          alt="passport to knowledge logo"
-          class="our-partners__img"
-          loading="lazy"
-          width="160"
-          height="160"
-        />
-        <img
-          src="/assets/images/logos/wb.webp"
-          alt="water bear logo"
-          class="our-partners__img"
-          loading="lazy"
-          width="164"
-          height="164"
-        />
-      </div>
+      <Carousel
+        class="our-partners__carousel"
+        v-bind="settings"
+        :breakpoints="breakpoints"
+        :autoplay="2000"
+        :wrap-around="true"
+      >
+        <Slide
+          v-for="element in partners"
+          :key="element"
+        >
+          <div>
+            <img :src="element" alt="bussiness logo" loading="lazy" />
+          </div>
+        </Slide>
+        <template #addons>
+          <Navigation />
+        </template>
+      </Carousel>
     </section>
     <section class="why">
       <h2 class="why__title">Why choose Dicapta?</h2>
@@ -306,6 +283,31 @@ const rowWithIconsArray = ref([
     text: "ENGLISH, SPANISH, FRENCH AND PORTUGUESE MARKET REACH",
   },
 ]);
+
+const partners = [
+  "/assets/images/logos/aph.png",
+  "/assets/images/logos/acb.png",
+  "/assets/images/logos/dcmp.png",
+  "/assets/images/logos/deaf-blind.png",
+  "/assets/images/logos/frp.webp",
+  "/assets/images/logos/fcc.png",
+  "/assets/images/logos/ncdb.png",
+  "/assets/images/logos/teach-access.png",
+  "/assets/images/logos/uc3m.png",
+];
+
+const breakpoints = {
+  // 700px and up
+  700: {
+    itemsToShow: 3.5,
+    snapAlign: "center",
+  },
+  // 1024 and up
+  1024: {
+    itemsToShow: 5,
+    snapAlign: "start",
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -441,12 +443,13 @@ main {
     text-align: center;
   }
 
-  &__content {
-    max-width: $size-384;
+  &__carousel {
+    max-width: $size-1024;
     margin: auto;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    padding: $size-32;
+    img {
+      width: 100px;
+    }
   }
 
   &__img {
@@ -627,10 +630,6 @@ main {
 
     &__title {
       font-size: $size-48;
-    }
-
-    &__content {
-      max-width: $size-1024;
     }
   }
 
