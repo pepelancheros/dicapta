@@ -143,10 +143,10 @@
       </ul>
       <address>
         <p>
-          1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL
-          32708
+          378 Woodland Ave <br />Cocoa Beach, FL
+          32931
         </p>
-        <p>Call:<a class="footer__link" href="tel:4079060676">(407) 906-0676</a></p>
+        <p>Call:<a class="footer__link" href="tel:4072791901">(407) 279-1901</a></p>
         <p><a class="footer__link" href="mailto:info@dicapta.com">info@dicapta.com</a></p>
       </address>
     </section>

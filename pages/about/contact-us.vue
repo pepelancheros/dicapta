@@ -32,7 +32,7 @@
           alt="phone icon"
         />
         <p>call us at</p>
-        <a href="tel:4079060676">(407) 906-0676</a>
+        <a href="tel:4072791901">(407) 279-1901</a>
       </div>
       <div class="contact__card">
         <img
@@ -46,7 +46,7 @@
     </section>
     <section class="contact__map-section">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.996851953853!2d-81.23469882449709!3d28.689740775633524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76beae436b827%3A0x1c910dd8620fb2e!2s1511%20E%20State%20Rd%20434%2C%20Winter%20Springs%2C%20FL%2032708%2C%20USA!5e0!3m2!1sen!2sco!4v1729733515861!5m2!1sen!2sco"
+        src="https://maps.google.com/maps?q=378+Woodland+Ave,+Cocoa+Beach,+FL+32931&t=&z=15&ie=UTF8&iwloc=&output=embed"
         width="600"
         height="450"
         class="contact__map"
@@ -58,10 +58,10 @@
       <div>
         <address>
           <p>
-            1511 E. State Road 434<br />Suite 2001-224<br />Winter Springs, FL
-            32708
+            378 Woodland Ave<br />Cocoa Beach, FL
+            32931
           </p>
-          <p>Call:<a class="contact__link" href="tel:4079060676">(407) 906-0676</a></p>
+          <p>Call:<a class="contact__link" href="tel:4072791901">(407) 279-1901</a></p>
           <p><a class="contact__link" href="mailto:info@dicapta.com">info@dicapta.com</a></p>
         </address>
         <div class="contact__social-media-container">
