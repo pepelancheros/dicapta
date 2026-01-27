@@ -1,4 +1,0 @@
-const TwoColumns_vue_vue_type_style_index_0_scoped_a0a46cc7_lang = ".two-columns[data-v-a0a46cc7]{display:flex;flex-direction:column;margin:auto;padding:3rem 2rem}.two-columns__left-column[data-v-a0a46cc7]{margin-bottom:1.5rem}.two-columns[data-v-a0a46cc7] img{width:100%}.two-columns[data-v-a0a46cc7] h2{font-size:1.5rem}.two-columns[data-v-a0a46cc7] p{font-size:1rem;margin-bottom:.75rem}.two-columns[data-v-a0a46cc7] li{font-size:1rem}@media (min-width:48rem){.two-columns[data-v-a0a46cc7]{flex-direction:row;max-width:64rem;padding:2rem}.two-columns__left-column[data-v-a0a46cc7]{margin-bottom:0;margin-right:2rem;width:50%}.two-columns__right-column[data-v-a0a46cc7]{margin-left:2rem;width:50%}}";
-
-export { TwoColumns_vue_vue_type_style_index_0_scoped_a0a46cc7_lang as T };
-//# sourceMappingURL=TwoColumns-styles-1.mjs-BdaselsJ.mjs.map

@@ -1,4 +1,0 @@
-const privacyPolicy_vue_vue_type_style_index_0_scope_true_lang = ".privacy-policy__header{background-color:var(--c-gray-300);padding:1rem}.privacy-policy__header h1{font-size:2rem;font-weight:600;text-align:center}.privacy-policy__content{margin:auto;max-width:64rem;padding:3rem 1rem}.privacy-policy__content p{margin-bottom:.75rem}.privacy-policy__content h2{color:var(--c-blue-500);font-size:1.5rem;line-height:1.2;margin-bottom:.75rem;margin-top:2rem}@media (min-width:48rem){.privacy-policy__header{padding:3rem}.privacy-policy__header h1{font-size:3rem}}";
-
-export { privacyPolicy_vue_vue_type_style_index_0_scope_true_lang as p };
-//# sourceMappingURL=privacy-policy-styles-1.mjs-BajNpuVg.mjs.map

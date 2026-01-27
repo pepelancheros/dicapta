@@ -1,4 +1,0 @@
-const consulting_vue_vue_type_style_index_0_scoped_e0eb1428_lang = ".title[data-v-e0eb1428]{font-size:3rem;font-weight:500;margin-top:6rem}.subtitle[data-v-e0eb1428],.title[data-v-e0eb1428]{padding:0 1rem;text-align:center}.subtitle[data-v-e0eb1428]{margin-bottom:1.5rem}.row-element[data-v-e0eb1428]{margin-bottom:3rem}.contact-button[data-v-e0eb1428]{display:flex;margin:1.5rem auto 4rem;width:-moz-fit-content;width:fit-content}@media (min-width:48rem){.title[data-v-e0eb1428]{margin-top:12rem}}";
-
-export { consulting_vue_vue_type_style_index_0_scoped_e0eb1428_lang as c };
-//# sourceMappingURL=consulting-styles-1.mjs-B0_tFkTX.mjs.map

@@ -1,4 +1,0 @@
-const termsAndConditions_vue_vue_type_style_index_0_scoped_66bcb6b1_lang = ".terms__header[data-v-66bcb6b1]{background-color:var(--c-gray-300);padding:1rem}.terms__header h1[data-v-66bcb6b1]{font-size:2rem;font-weight:600;text-align:center}.terms__content[data-v-66bcb6b1]{margin:auto;max-width:64rem;padding:3rem 1rem}.terms__content h2[data-v-66bcb6b1],.terms__content p[data-v-66bcb6b1]{margin-bottom:.75rem}.terms__content h2[data-v-66bcb6b1]{color:var(--c-blue-500);font-size:1.5rem;line-height:1.2;margin-top:2rem}@media (min-width:48rem){.terms__header[data-v-66bcb6b1]{padding:3rem}.terms__header h1[data-v-66bcb6b1]{font-size:3rem}}";
-
-export { termsAndConditions_vue_vue_type_style_index_0_scoped_66bcb6b1_lang as t };
-//# sourceMappingURL=terms-and-conditions-styles-1.mjs-CnhFcZVd.mjs.map

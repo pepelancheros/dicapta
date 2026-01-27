@@ -1,4 +1,0 @@
-const _id__vue_vue_type_style_index_0_scoped_8bb8feed_lang = ".article[data-v-8bb8feed] h2{font-size:1.5rem;line-height:2.2rem;margin-bottom:.75rem;margin-top:1.5rem}.article[data-v-8bb8feed] p{margin-bottom:.75rem}.article__header[data-v-8bb8feed]{align-items:center;background-color:var(--c-gray-300);display:flex;justify-content:center;padding:3rem}.article__header h2[data-v-8bb8feed]{font-size:3rem;font-weight:600;line-height:unset;margin-bottom:0;margin-top:0}.article__content[data-v-8bb8feed]{margin:auto;max-width:80rem;min-height:80vh;padding:3rem 1.5rem}.article__title[data-v-8bb8feed]{color:var(--c-blue-500);font-weight:500;margin-bottom:1.5rem}.article__image[data-v-8bb8feed]{float:left;margin-right:1.5rem;max-width:40rem}";
-
-export { _id__vue_vue_type_style_index_0_scoped_8bb8feed_lang as _ };
-//# sourceMappingURL=_id_-styles-1.mjs-DN-qbIyI.mjs.map

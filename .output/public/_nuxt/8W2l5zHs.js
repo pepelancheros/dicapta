@@ -1,1 +1,0 @@
-import{_ as s,o,c as r,b as e,j as a,bZ as n,ba as c,b_ as _,F as d}from"./BAnZIRC2.js";const l={class:"content"},u={__name:"default",setup(f){return(t,p)=>(o(),r(d,null,[e("header",null,[a(n)]),e("main",l,[c(t.$slots,"default",{},void 0,!0)]),a(_)],64))}},b=s(u,[["__scopeId","data-v-0ea9da13"]]);export{b as default};
