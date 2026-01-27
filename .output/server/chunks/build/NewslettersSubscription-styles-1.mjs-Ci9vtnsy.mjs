@@ -1,0 +1,4 @@
+const NewslettersSubscription_vue_vue_type_style_index_0_scoped_85b61c5b_lang = ".newsletters[data-v-85b61c5b]{background-color:var(--c-gray-300);border-bottom:3px solid var(--c-white);padding:3rem 0}.newsletters__title[data-v-85b61c5b]{font-size:2rem;margin-bottom:1rem;text-align:center}.newsletters form[data-v-85b61c5b]{display:flex;flex-direction:column;justify-content:center}.newsletters__input[data-v-85b61c5b]{border:none;border-radius:1rem;margin:0 .75rem 1.5rem;padding:.75rem 1rem}.newsletters__button[data-v-85b61c5b]{margin:0 .75rem}@media (min-width:48rem){.newsletters form[data-v-85b61c5b]{flex-direction:row}.newsletters__input[data-v-85b61c5b]{margin-bottom:0;min-width:300px}}";
+
+export { NewslettersSubscription_vue_vue_type_style_index_0_scoped_85b61c5b_lang as N };
+//# sourceMappingURL=NewslettersSubscription-styles-1.mjs-Ci9vtnsy.mjs.map

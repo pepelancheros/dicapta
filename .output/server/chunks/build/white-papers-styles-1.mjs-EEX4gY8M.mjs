@@ -1,0 +1,4 @@
+const whitePapers_vue_vue_type_style_index_0_scoped_1f953de4_lang = ".white-papers__header[data-v-1f953de4]{background-color:var(--c-gray-300);padding:1rem}.white-papers__header h1[data-v-1f953de4]{font-size:2rem;font-weight:600;text-align:center}.white-papers__content[data-v-1f953de4]{display:flex;flex-flow:wrap;justify-content:space-between;margin:auto;max-width:64rem;padding:3rem 1rem}.mocked-card[data-v-1f953de4]{max-width:400px}.mocked-card img[data-v-1f953de4]{width:100%}.mocked-card p[data-v-1f953de4]{margin-bottom:.75rem}.mocked-card a[data-v-1f953de4]{font-size:1rem;padding-left:0}.mocked-card a[data-v-1f953de4]:hover{color:var(--c-blue-300)}@media (min-width:48rem){.white-papers__header[data-v-1f953de4]{padding:3rem}.white-papers__header h1[data-v-1f953de4]{font-size:3rem}}";
+
+export { whitePapers_vue_vue_type_style_index_0_scoped_1f953de4_lang as w };
+//# sourceMappingURL=white-papers-styles-1.mjs-EEX4gY8M.mjs.map

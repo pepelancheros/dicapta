@@ -1,0 +1,1 @@
+import{x as r,o as t,c as s,ba as a}from"./BAnZIRC2.js";const c=["href"],f=r({__name:"LinkInlineNode",props:{url:{}},setup(e){const o=e;return(n,l)=>(t(),s("a",{href:o.url},[a(n.$slots,"default")],8,c))}});export{f as default};

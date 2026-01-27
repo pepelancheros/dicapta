@@ -1,0 +1,4 @@
+const mission_vue_vue_type_style_index_0_scoped_646bb352_lang = ".banner[data-v-646bb352]{background:radial-gradient(var(--c-gray-700),#000);height:500px;position:relative}.banner__img[data-v-646bb352]{height:500px;-o-object-fit:cover;object-fit:cover;opacity:.7;width:100%}.banner__text[data-v-646bb352]{color:var(--c-white-soft);font-size:3rem;left:30px;line-height:1.2;max-width:550px;position:absolute;top:100px}.beneficiaries[data-v-646bb352],.mission[data-v-646bb352],.technology[data-v-646bb352]{background-color:var(--c-gray-300)}.contact-us-button[data-v-646bb352]{border-radius:0;display:block;padding:1.5rem;width:100%}@media (min-width:48rem){.banner__text[data-v-646bb352]{font-size:4rem;left:140px}}";
+
+export { mission_vue_vue_type_style_index_0_scoped_646bb352_lang as m };
+//# sourceMappingURL=mission-styles-1.mjs-ksbhbVP4.mjs.map

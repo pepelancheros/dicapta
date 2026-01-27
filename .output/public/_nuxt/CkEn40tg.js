@@ -1,0 +1,1 @@
+import{x as a,o as i,c as o}from"./BAnZIRC2.js";const n=["src","alt","width","height"],m=a({__name:"ImageNode",props:{image:{}},setup(t){const e=t;return(r,s)=>(i(),o("img",{src:e.image.url,alt:e.image.alternativeText,width:e.image.width,height:e.image.height},null,8,n))}});export{m as default};
