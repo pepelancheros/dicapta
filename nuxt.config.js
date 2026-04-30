@@ -1,6 +1,15 @@
 export default defineNuxtConfig({
   ssr: true,
 
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://www.dicapta.com",
+    },
+    strapiApiUrl:
+      process.env.NUXT_STRAPI_API_URL ||
+      "https://dicapta-strapi-app-production.up.railway.app/api",
+  },
+
   modules: ['nuxt-strapi-blocks-renderer'],
 
   app: {
