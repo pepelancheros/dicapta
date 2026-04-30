@@ -2,8 +2,6 @@
   <a
     :href="href"
     class="generic-card"
-    target="_blank"
-    rel="noopener noreferrer"
   >
     <div class="generic-card__text-container">
       <h2 class="generic-card__title">{{ title }}</h2>
@@ -37,6 +35,8 @@ const props = defineProps({
 <style scoped lang="scss">
 .generic-card {
   width: 300px;
+  max-width: 100%;
+  min-width: 0;
   margin-bottom: $size-48;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
   padding: 0;
@@ -44,15 +44,18 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-top: 0.25rem solid transparent;
 
   img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   &:hover {
-    max-width: 310px;
     box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.24);
-    border-top: 0.25rem solid var(--c-blue-500);
+    border-top-color: var(--c-blue-500);
 
     h2 {
       color: var(--c-blue-500);

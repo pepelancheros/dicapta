@@ -121,6 +121,9 @@
             <li>
               <NuxtLink to="/resources/case-studies">Case Studies</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/resources/enh-access">EnhAccess</NuxtLink>
+            </li>
           </ul>
         </li>
         <li>
@@ -382,6 +385,13 @@
                 to="/resources/case-studies"
                 @click="handleMobileNavElementClick"
                 >Case Studies</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/resources/enh-access"
+                @click="handleMobileNavElementClick"
+                >EnhAccess</NuxtLink
               >
             </li>
           </ul>
