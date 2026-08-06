@@ -17,7 +17,9 @@
         :key="item.documentId"
         :title="item.title ?? ''"
         :imgUrl="cardImageUrl(item)"
-        :href="`/resources/enh-access/${item.documentId}`"
+        :href="item.pdfUrl ?? ''"
+        target="_blank"
+        rel="noopener noreferrer"
       />
     </div>
   </main>

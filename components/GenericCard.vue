@@ -1,6 +1,8 @@
 <template>
   <a
     :href="href"
+    :target="target"
+    :rel="rel"
     class="generic-card"
   >
     <div class="generic-card__text-container">
@@ -28,6 +30,14 @@ const props = defineProps({
   href: {
     type: String,
     default: "",
+  },
+  target: {
+    type: String,
+    default: null,
+  },
+  rel: {
+    type: String,
+    default: null,
   },
 });
 </script>
